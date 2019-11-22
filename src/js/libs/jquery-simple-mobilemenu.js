@@ -75,7 +75,7 @@
           dispar = $(this).parent(),
           lastActive =  dispar.siblings(".active");
       dispar.find("> ."+smMenu.settings.submenuClass).slideToggle(function() {
-        if ($(this).is(":visible")) {
+        if ($(this).is(":visible")) { 
           var offset = dis[0].offsetTop;
           $("." + smMenu.settings.wrapperClass).stop().animate({ scrollTop: offset }, 300);
         }
@@ -101,28 +101,3 @@
     smMenu.smmOuter.find("li.back a").click(goBack);
   };
 })(jQuery)
-
-$( document ).ready(function() {
-  $(".mobile_menu").slideMobileMenu({
-
-    // Hamburger Id
-    "hamburgerId"   : "sm_menu_ham",
-
-    // Menu Wrapper Class
-    "wrapperClass"  : "sm_menu_outer",
-
-    // Submenu Class
-    "submenuClass"  : "submenu",
-
-    // or 'accordion'
-    "menuStyle": "slide",
-
-    // Calls when menu loaded
-    "onMenuLoad"    : function() { return true; },
-
-    // Calls when menu open/close
-    "onMenuToggle"  : function() { return true; }
-
-  });
-
-});

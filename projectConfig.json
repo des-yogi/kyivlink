@@ -34,7 +34,7 @@
     "popover": [],
     "tooltip": [],
     "scrollspy": [],
-    "mobile": []
+    "metismenu": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -52,6 +52,7 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/jquery/dist/jquery.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/metismenu/dist/metisMenu.min.js",
     "./src/js/libs/popper.min.js",
     "./src/js/libs/util.min.js",
     "./src/js/libs/scrollspy.js",
