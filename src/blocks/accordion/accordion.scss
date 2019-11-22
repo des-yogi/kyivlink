@@ -1,0 +1,164 @@
+$accordion-icon-size: 0.85em !default;
+$accordion-icon-stroke-width: 2px !default;
+
+.accordion {
+  font-family: $font-family;
+
+  $block-name:                &; // #{$block-name}__element
+}
+
+.accordion__item {
+  border: 0px solid $body-bg;
+  border-bottom-width: 2px;
+
+  &:last-child {
+    border-bottom-width: 0;
+  }
+}
+
+.accordion__header {
+  // @include reset;
+  padding: 24px 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: inherit;
+  color: $title-color;
+  background-color: $white;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.accordion__header-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  flex: 1 1;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.accordion__header-units {
+  font-size: 14px;
+  color: $text-muted;
+}
+
+.accordion__header-icon  {
+  float: right; //flex fallback
+  flex-shrink: 0;
+  margin-right: 20px;
+  display: none;
+}
+
+.accordion__header-icon i { // arrow icon
+  position: relative;
+  width: $accordion-icon-size;
+  height: $accordion-icon-size;
+  display: block;
+  will-change: transform;
+
+  &::before, &::after {
+    content:'';
+    position: absolute;
+    width: $accordion-icon-stroke-width;
+    height: 80%;
+    background: currentColor;
+    top: 0;
+    transform-origin: 50% 100%;
+    will-change: transform;
+    transition: transform 0.2s;
+  }
+
+  &::before {
+    left: 50%;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    left: calc(50% - $accordion-icon-stroke-width/2);
+    transform: rotate(45deg);
+  }
+}
+
+.accordion__item--is-open > .accordion__header > .accordion__header-icon i {
+  &::before {
+    transform: translateY(-80%) rotate(-135deg);
+  }
+
+  &::after {
+    transform: translateY(-80%) rotate(135deg);
+  }
+}
+
+.accordion__header-icon .icon { // replace arrow with custom icon
+  width: $accordion-icon-size;
+  height: $accordion-icon-size;
+  color: inherit;
+}
+
+.accordion__panel-content {
+  padding: 5px 0 20px;
+
+  &--range {
+    min-height: 35px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.js {
+  .accordion__header-icon {
+    display: block;
+  }
+
+  .accordion__panel {
+    display: none;
+    overflow: hidden;
+    will-change: height;
+    transform: translateZ(0px);
+  }
+
+  .accordion__item--is-open > .accordion__panel {
+    display: block;
+  }
+}
+
+// --icon-plus -> switch to +/- icons
+.accordion--icon-plus {
+
+  .accordion__header-icon i {
+    height: $accordion-icon-stroke-width;
+    background-color: currentColor;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: 50% 50%;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .accordion__item--is-open > .accordion__header > .accordion__header-icon i {
+    &::after {
+      transform: rotate(0deg);
+    }
+  }
+}
