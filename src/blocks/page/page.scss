@@ -22,6 +22,8 @@
   //font-size: 15px;
 
   &__inner {
+    position: relative;
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -170,6 +172,14 @@ a {
 
 .fade:not(.show) {
   opacity: 0;
+}
+
+.collapse {
+  transition: all 0.3s ease-out;
+}
+
+.collapse:not(.show) {
+  display: none;
 }
 
 .visually-hidden {
