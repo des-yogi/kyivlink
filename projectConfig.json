@@ -37,7 +37,10 @@
     "metismenu": [],
     "app-store": [],
     "messengers": [],
-    "socials": []
+    "socials": [],
+    "main-slider": [],
+    "services-index": [],
+    "header-block": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

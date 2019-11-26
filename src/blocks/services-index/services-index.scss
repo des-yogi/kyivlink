@@ -1,0 +1,86 @@
+.services-index {
+  margin-bottom: 60px;
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 100px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 20px;
+    border: 2px solid $border-color;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1 calc(100% / 2);
+      padding: 30px;
+      border-bottom: none !important;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex: 1 1 calc(100% / 3);
+      padding: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 60px;
+    }
+
+    &:first-child {
+      flex: 1 1 100%;
+      color: $white;
+      border-color: $main-color;
+      background-color: $main-color;
+
+      @media (min-width: $screen-lg) {
+        flex: 1 1 calc(100% / 3);
+      }
+
+      h3,
+      p {
+        color: currentColor;
+      }
+
+      .btn.btn--link {
+        color: $white;
+        background: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+
+        &::after {
+          background-color: $white;
+        }
+
+        &:hover,
+        &:focus {
+          color: $white;
+        }
+      }
+    }
+
+    &:last-child {
+      border-top: none;
+      border-bottom: none;
+
+      @media (min-width: $screen-md) {
+        border-top: 2px solid $border-color;
+        border-left: none;
+      }
+    }
+  }
+
+  &__content {
+
+  }
+}

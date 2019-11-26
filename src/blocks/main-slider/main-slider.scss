@@ -1,0 +1,115 @@
+.main-slider {
+  margin-bottom: 60px;
+  background: $main-color;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 100px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+
+    // @media (min-width: $screen-md) {
+    //   display: flex;
+    //   justify-content: space-between;
+    // }
+  }
+
+  &__left-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+
+    @media (min-width: $screen-md) {
+      padding-right: 0;
+    }
+  }
+
+  &__right-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+
+    @media (min-width: $screen-md) {
+      padding-left: 0;
+    }
+  }
+
+  &__left,
+  &__right {
+    padding-top: 40px;
+  }
+
+  &__right {
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+    @media (min-width: $screen-lg) {
+      position: relative;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__img {
+
+    @media (min-width: $screen-lg) {
+      max-width: 450px;
+    }
+  }
+
+  &__text {
+    color: $white;
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    color: inherit;
+  }
+
+  &__content {
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      margin-top: 1em;
+    }
+  }
+
+  &__controls {
+    position: static;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    &--left {
+
+      @media (min-width: $screen-lg) {
+        justify-content: flex-start;
+      }
+    }
+
+    &--right {
+
+      @media (min-width: $screen-lg) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

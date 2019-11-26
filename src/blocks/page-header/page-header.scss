@@ -51,6 +51,7 @@
       display: block;
       width: 32px;
       height: 32px;
+      fill: currentColor !important;
     }
 
     &:hover,
@@ -61,6 +62,25 @@
         text-decoration: underline;
       }
     }
+
+    &[aria-expanded="true"] {
+
+      #{$block-name}__icon-menu {
+        display: none !important;
+      }
+
+      #{$block-name}__icon-close {
+        display: block !important;
+      }
+    }
+  }
+
+  &__icon-menu {
+    display: block;
+  }
+
+  &__icon-close {
+    display: none !important;
   }
 
   &__icon-text {
