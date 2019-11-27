@@ -1,0 +1,16 @@
+.section {
+  margin-bottom: 60px;
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 100px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &--color {
+    background-color: $main-color;
+    margin-bottom: 0 !important;
+  }
+}

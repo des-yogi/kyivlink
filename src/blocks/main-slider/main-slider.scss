@@ -58,6 +58,8 @@
   }
 
   &__img {
+    object-fit: cover;
+    object-position: center;
 
     @media (min-width: $screen-lg) {
       max-width: 450px;

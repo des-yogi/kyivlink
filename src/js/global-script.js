@@ -34,32 +34,32 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 // });
 
 (function(){
-  // code
-/*  const name = 'Doode';
-  let str = `
-  Здравствуйте ${name}.
-  Мы в ${new Date().getFullYear()} году
-  `;
-  let caption = document.querySelector('h1');
-  console.log(str);
 
-  const newCaption = 'ES6 работает';
-  let anyFn = (elem) => {
-    elem.innerText = `Новый заголовок: ${name}, ${newCaption}`;
-  };
-  anyFn(caption);
-*/
-  // for ...of
-/*const array = ['a', 'b', 'c', 'd'];
-for (const element of array) {
-    console.log(element);
-}
+  var bLazy = new Blazy({
+    selector: '.b-lazy'
+  });
 
-function printf(format, ...params) {
-  console.log('params: ', params);
-  console.log('format: ', format);
-}
+  /*$( window ).resize(function() {
+    if ( $( window ).width() >= 992 || $( window ).width() >= 1280 ) {
+      // подзагрузка скрытых изображений по ширине экрана
+      bLazy.load($('.b-lazy'), true);
+    }
+  });*/
 
-printf('%s %d %.2f', 'adrian', 321, Math.PI);
-*/
 }());
+
+(function () {
+  const submitBtn = document.querySelector('.partnership__submit');
+  const agreementCheckbox = document.querySelector('#agreement');
+  const agreementHandler = function (e) {
+    if (!this.checked) {
+      submitBtn.disabled = true;
+    } else {
+      submitBtn.disabled = false;
+    }
+  };
+
+  if (agreementCheckbox) {
+    agreementCheckbox.addEventListener('change', agreementHandler);
+  }
+})();

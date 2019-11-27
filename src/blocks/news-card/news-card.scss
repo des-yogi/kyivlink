@@ -1,0 +1,138 @@
+.news-card {
+  position: relative;
+  border-left: 2px solid $border-color;
+  border-right: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+
+    li {
+      flex: 1 1 100%;
+
+      &:first-child {
+
+        .news-card {
+          border-top: 2px solid $border-color;
+        }
+      }
+
+      &:last-child {
+
+        .news-card {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &__img {
+
+    @media (min-width: $screen-md) {
+      flex: 0 0 286px;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 465px;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: 582px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      flex-basis: 648px;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    padding: 20px;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 60px;
+    }
+  }
+
+  &__content {
+
+    p {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  &__link {
+    margin-top: 20px;
+  }
+
+  &--hit {
+
+    &::before {
+      display: block;
+      content: attr(data-label);
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      right: 15px;
+      padding: 5px 30px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+      color: $white;
+      background-color: $hit-color;
+      border-radius: $border-radius;
+
+      @media (min-width: $screen-md) {
+        top: 20px;
+        right: 20px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 40px;
+        right: 40px;
+      }
+
+      @media (min-width: $screen-xl) {
+        top: 60px;
+        right: 60px;
+      }
+    }
+  }
+}

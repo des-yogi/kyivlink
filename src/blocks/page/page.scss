@@ -266,6 +266,10 @@ a {
     $xl-grid-gutter:  $grid-gutter-width,
     $xxl-grid-gutter: $grid-gutter-width
   );
+
+  &--full-width {
+
+  }
 }
 
 // Родитель. Указаны промежутки между ячейками: XS|SM|MD|LG|XL|XXL;
@@ -335,10 +339,12 @@ a {
 }
 
 .swiper-button-prev {
+  left: 0;
   transform: scale(-1, 1);
   background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
 }
 
 .swiper-button-next {
+  right: 0;
   background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
 }

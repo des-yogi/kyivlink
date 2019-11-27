@@ -40,7 +40,11 @@
     "socials": [],
     "main-slider": [],
     "services-index": [],
-    "header-block": []
+    "header-block": [],
+    "news-card": [],
+    "date": [],
+    "label": [],
+    "section": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
