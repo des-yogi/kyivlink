@@ -22,14 +22,14 @@
 
     @media (min-width: $screen-lg) {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
     }
 
     & > div {
 
       @media (min-width: $screen-lg) {
-        flex: 1 1 50%;
+        flex: 0 1 50%;
       }
     }
   }

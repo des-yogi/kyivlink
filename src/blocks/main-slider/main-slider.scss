@@ -8,14 +8,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__row {
-
-    // @media (min-width: $screen-md) {
-    //   display: flex;
-    //   justify-content: space-between;
-    // }
-  }
-
   &__left-col {
     @include col(xs, 12, $grid-columns, 30px);
     @include col(md, 6, $grid-columns, 30px);
@@ -47,33 +39,42 @@
   &__slide {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     @media (min-width: $screen-lg) {
       position: relative;
+      flex-wrap: nowrap;
       flex-direction: row;
       justify-content: flex-end;
     }
   }
 
   &__img {
+    max-width: 450px;
+    width: 450px;
     object-fit: cover;
     object-position: center;
+    margin-left: auto;
 
     @media (min-width: $screen-lg) {
-      max-width: 450px;
+      margin-left: 0;
     }
   }
 
   &__text {
+    flex: 1 1 100%;
     color: $white;
+    order: -1;
 
     @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       position: absolute;
       top: 0;
       left: 0;
-      width: 45%;
+      width: 50%;
       height: 100%;
     }
   }
