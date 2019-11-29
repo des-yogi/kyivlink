@@ -1,0 +1,48 @@
+.socials {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border-left: 2px solid $border-color;
+
+  @media (min-width: $screen-sm) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-left: 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+
+    & + & {
+      margin-left: 12px;
+
+      @media (min-width: $screen-sm) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+
+    @media (min-width: $screen-md) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

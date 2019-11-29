@@ -1,0 +1,27 @@
+.date {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-left: 40px;
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-muted;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px auto;
+  background-image: svg-load('../blocks/sprite-svg/svg/calendar_icon.svg', fill=$main-color);
+
+  @media (min-width: $screen-lg) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: 20px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &--time-left {
+    background-image: svg-load('../blocks/sprite-svg/svg/clock_icon.svg', fill=$main-color);
+  }
+}

@@ -1,0 +1,154 @@
+.main-slider {
+  margin-bottom: 60px;
+  background: $main-color;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 100px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+  &__left-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+
+    // @media (min-width: $screen-md) {
+    //   padding-right: 0;
+    // }
+  }
+
+  &__right-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+
+    // @media (min-width: $screen-md) {
+    //   padding-left: 0;
+    // }
+  }
+
+  &__left,
+  &__right {
+    padding-top: 40px;
+  }
+
+  &__left {
+
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    border-bottom: 2px solid $white;
+
+    &::after {
+
+      @media (min-width: $screen-md) {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $white;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: relative;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__img {
+    max-width: 450px;
+    width: 450px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+
+    @media (min-width: $screen-lg) {
+      max-width: 465px;
+      width: 465px;
+      margin-left: 0;
+    }
+
+    @media (min-width: $screen-xxl) {
+      max-width: 500px;
+      width: 500px;
+    }
+  }
+
+  &__text {
+    flex: 1 1 100%;
+    color: $white;
+    order: -1;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    color: inherit;
+
+    @media (min-width: $screen-md) {
+      // мин. 2 строки для заголовка, для выравнивания высоты слайдеров
+      // тоже надо делать и для текста, иначе левый и правый слайдеры
+      // будут разной высоты
+      height: 88px; // ??
+    }
+  }
+
+  &__content {
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__controls {
+    position: static;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    &--left {
+
+      @media (min-width: $screen-md) {
+        justify-content: flex-start;
+      }
+    }
+
+    &--right {
+
+      @media (min-width: $screen-md) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

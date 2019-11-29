@@ -13,14 +13,563 @@
   <div class="page__inner">
 
     <div class="page__content">
+
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      @@include('blocks/main-nav/main-nav.html')
 
-        <div class="container">
+      <main class="main" role="main">
 
+        <section class="main-slider">
+          <div class="container">
+            <div class="row">
 
-        </div>
+              <div class="main-slider__left-col">
+                <div class="main-slider__left  swiper-container">
+
+                  <div class="swiper-wrapper">
+
+                    <a href="#" class="swiper-slide  main-slider__slide">
+
+                      <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
+                        <picture>
+                          <source data-srcset="img/slider-img-1.webp" media="(min-width: 1680px)" type="image/webp">
+                          <source data-srcset="img/slider-img-1.jpg" media="(min-width: 1680px)">
+                          <!-- 500x375 -->
+                          <source data-srcset="img/slider-img-1.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source data-srcset="img/slider-img-1.jpg" media="(min-width: 1280px)">
+                          <!-- 465x349 -->
+                          <source data-srcset="img/slider-img-1.webp" type="image/webp">
+                          <img class="swiper-lazy" data-src="img/slider-img-1.jpg" alt="Слайд" width="450" height="337">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </div>
+
+                      <div class="main-slider__text">
+                        <h2 class="h1  main-slider__title">Переходьте в Kyiv Link</h2>
+                        <div class="main-slider__content">
+                          <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
+                        </div>
+                      </div>
+
+                    </a>
+
+                    <a href="#" class="swiper-slide  main-slider__slide">
+
+                      <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
+                        <picture>
+                          <source data-srcset="img/slider-img-2.webp" media="(min-width: 1680px)" type="image/webp">
+                          <source data-srcset="img/slider-img-2.jpg" media="(min-width: 1680px)">
+                          <!-- 500x375 -->
+                          <source data-srcset="img/slider-img-2.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source data-srcset="img/slider-img-2.jpg" media="(min-width: 1280px)">
+                          <!-- 465x349 -->
+                          <source data-srcset="img/slider-img-2.webp" type="image/webp">
+                          <img class="swiper-lazy" data-src="img/slider-img-2.jpg" alt="Слайд" width="450" height="337">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </div>
+
+                      <div class="main-slider__text">
+                        <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 2</h2>
+                        <div class="main-slider__content">
+                          <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
+                        </div>
+                      </div>
+
+                    </a>
+
+                    <a href="#" class="swiper-slide  main-slider__slide">
+
+                      <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
+                        <picture>
+                          <source data-srcset="img/slider-img-3.webp" media="(min-width: 1680px)" type="image/webp">
+                          <source data-srcset="img/slider-img-3.jpg" media="(min-width: 1680px)">
+                          <!-- 500x375 -->
+                          <source data-srcset="img/slider-img-3.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source data-srcset="img/slider-img-3.jpg" media="(min-width: 1280px)">
+                          <!-- 465x349 -->
+                          <source data-srcset="img/slider-img-3.webp" type="image/webp">
+                          <img class="swiper-lazy" data-src="img/slider-img-3.jpg" alt="Слайд" width="450" height="337">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </div>
+
+                      <div class="main-slider__text">
+                        <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 3</h2>
+                        <div class="main-slider__content">
+                          <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
+                        </div>
+                      </div>
+
+                    </a>
+
+                  </div>
+
+                  <div class="main-slider__controls  main-slider__controls--left">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="main-slider__right-col">
+                <div class="main-slider__right  swiper-container">
+
+                  <div class="swiper-wrapper">
+
+                    <a href="#" class="swiper-slide  main-slider__slide">
+
+                      <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
+                        <picture>
+                          <source data-srcset="img/slider-img-1.webp" media="(min-width: 1680px)" type="image/webp">
+                          <source data-srcset="img/slider-img-1.jpg" media="(min-width: 1680px)">
+                          <!-- 500x375 -->
+                          <source data-srcset="img/slider-img-1.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source data-srcset="img/slider-img-1.jpg" media="(min-width: 1280px)">
+                          <!-- 465x349 -->
+                          <source data-srcset="img/slider-img-1.webp" type="image/webp">
+                          <img class="swiper-lazy" data-src="img/slider-img-1.jpg" alt="Слайд" width="450" height="337">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </div>
+
+                      <div class="main-slider__text">
+                        <h2 class="h1  main-slider__title">Переходьте в Kyiv Link</h2>
+                        <div class="main-slider__content">
+                          <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
+                        </div>
+                      </div>
+
+                    </a>
+
+                    <a href="#" class="swiper-slide  main-slider__slide">
+
+                      <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
+                        <picture>
+                          <source data-srcset="img/slider-img-2.webp" media="(min-width: 1680px)" type="image/webp">
+                          <source data-srcset="img/slider-img-2.jpg" media="(min-width: 1680px)">
+                          <!-- 500x375 -->
+                          <source data-srcset="img/slider-img-2.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source data-srcset="img/slider-img-2.jpg" media="(min-width: 1280px)">
+                          <!-- 465x349 -->
+                          <source data-srcset="img/slider-img-2.webp" type="image/webp">
+                          <img class="swiper-lazy" data-src="img/slider-img-2.jpg" alt="Слайд" width="450" height="337">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </div>
+
+                      <div class="main-slider__text">
+                        <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 2</h2>
+                        <div class="main-slider__content">
+                          <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
+                        </div>
+                      </div>
+
+                    </a>
+
+                    <a href="#" class="swiper-slide  main-slider__slide">
+
+                      <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
+                        <picture>
+                          <source data-srcset="img/slider-img-3.webp" media="(min-width: 1680px)" type="image/webp">
+                          <source data-srcset="img/slider-img-3.jpg" media="(min-width: 1680px)">
+                          <!-- 500x375 -->
+                          <source data-srcset="img/slider-img-3.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source data-srcset="img/slider-img-3.jpg" media="(min-width: 1280px)">
+                          <!-- 465x349 -->
+                          <source data-srcset="img/slider-img-3.webp" type="image/webp">
+                          <img class="swiper-lazy" data-src="img/slider-img-3.jpg" alt="Слайд" width="450" height="337">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </div>
+
+                      <div class="main-slider__text">
+                        <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 3</h2>
+                        <div class="main-slider__content">
+                          <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
+                        </div>
+                      </div>
+
+                    </a>
+
+                  </div>
+
+                  <div class="main-slider__controls  main-slider__controls--right">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="container  services-index">
+
+          @@include('blocks/header-block/header-block.html')
+
+          <ul class="list-nostyled  services-index__list">
+
+            <li class="services-index__item">
+              <div class="services-index__content">
+                <h3>Інтернет для дому</h3>
+                <p>Домашний интернет по технологии Wi-Fi от «Kyiv Link» для вас на лучших условиях. Слишком высокая стоимость или невозможность проводного подключения больше не проблема.</p>
+              </div>
+              <a href="#" class="btn  btn--link">Детальніше</a>
+            </li>
+
+            <li class="services-index__item">
+              <div class="services-index__content">
+                <h3>Інтернет для бізнесу</h3>
+                <p>Для юридичних осіб ми пропонуємо найкращі цінові пропозиції та умови підключення до мережі Інтернет.</p>
+              </div>
+              <a href="#" class="btn  btn--link">Детальніше</a>
+            </li>
+
+            <li class="services-index__item">
+              <div class="services-index__content">
+                <h3>Забудовникам</h3>
+                <p>Компанія «К-Лінк» запрошує до взаємовигідної співпраці забудовників житлової та комерційної нерухомості.</p>
+              </div>
+              <a href="#" class="btn  btn--link">Детальніше</a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="container  section">
+
+          <div class="header-block">
+            <h2><span>Тарифи</span><span class="header-block__help-text">Виберіть місце підключення:</span></h2>
+            <a href="#" class="btn  btn--link">Всі тарифи</a>
+          </div>
+
+          <div class="rate-index">
+            <ul class="row  list-nostyled">
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-01.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>КНУБА</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-03.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>Новомостисько-Замковецький ЖК</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-02.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>ЖК Новомостисько-Замковецький</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-04.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>ЖК Новомостисько-Замковецький</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-01.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>КНУБА</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-03.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>ЖК Новомостисько-Замковецький</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-02.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>ЖК Новомостисько-Замковецький</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+              <li class="rate-index__col">
+                <a href="#" class="rate-index__item">
+                  <div class="rate-index__header">
+                    <div class="rate-index__header-logo">
+                      <img src="img/logo-04.png" alt="Заголовок">
+                    </div>
+                    <div class="rate-index__header-title"><h5>ЖК Новомостисько-Замковецький</h5></div>
+                  </div>
+                  <div class="embed-responsive embed-responsive--4-3  rate-index__img">
+                    <picture>
+                      <source data-srcset="img/rate-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/rate-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Заголовок" width="365" height="274">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="container  section">
+
+          <div class="header-block">
+            <h2><span>Новини</span><span class="header-block__help-text">Слідкуйте за останніми новинами</span></h2>
+            <a href="#" class="btn  btn--link">Всі новини</a>
+          </div>
+
+          <ul class="list-nostyled  news-card__wrapper">
+
+            <li>
+              <article class="news-card  news-card--hit" data-label="Хит">
+                <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                  <picture>
+                    <source data-srcset="img/news-1.webp" media="(min-width: 1680px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 1680px)">
+                    <!-- 648x486 -->
+                    <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+                    <!-- 465x349 -->
+                    <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+                    <!-- 286x215 -->
+                    <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+                    <!-- 740x555 -->
+                    <source data-srcset="img/news-1.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                  </picture>
+                </div>
+                <div class="news-card__text">
+                  <div class="news-card__content">
+                    <h3>News 1</h3>
+                    <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+                  </div>
+                  <div  class="news-card__footer">
+
+                    @@include('blocks/date/date.html')
+                    <span class="news-card__link">
+                      <a href="#" class="btn  btn--link">Детальніше</a>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="news-card">
+                <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                  <picture>
+                    <source data-srcset="img/news-2.webp" media="(min-width: 1680px)" type="image/webp">
+                    <source data-srcset="img/news-2.jpg" media="(min-width: 1680px)">
+                    <!-- 648x486 -->
+                    <source data-srcset="img/news-2.webp" media="(min-width: 1280px)" type="image/webp">
+                    <source data-srcset="img/news-2.jpg" media="(min-width: 1280px)">
+                    <!-- 465x349 -->
+                    <source data-srcset="img/news-2.webp" media="(min-width: 768px)" type="image/webp">
+                    <source data-srcset="img/news-2.jpg" media="(min-width: 768px)">
+                    <!-- 286x215 -->
+                    <source data-srcset="img/news-2.webp" media="(min-width: 480px)" type="image/webp">
+                    <source data-srcset="img/news-2.jpg" media="(min-width: 480px)">
+                    <!-- 740x555 -->
+                    <source data-srcset="img/news-2.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-2.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                  </picture>
+                </div>
+                <div class="news-card__text">
+                  <div class="news-card__content">
+                    <h3>News 1</h3>
+                    <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+                  </div>
+                  <div  class="news-card__footer">
+
+                    @@include('blocks/date/date.html')
+                    <span class="news-card__link">
+                      <a href="#" class="btn  btn--link">Детальніше</a>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+           <li>
+              <article class="news-card">
+                <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                  <picture>
+                    <source data-srcset="img/news-1.webp" media="(min-width: 1680px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 1680px)">
+                    <!-- 648x486 -->
+                    <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+                    <!-- 465x349 -->
+                    <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+                    <!-- 286x215 -->
+                    <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                    <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+                    <!-- 740x555 -->
+                    <source data-srcset="img/news-1.webp" type="image/webp">
+                    <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                  </picture>
+                </div>
+                <div class="news-card__text">
+                  <div class="news-card__content">
+                    <h3>News 1</h3>
+                    <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+                  </div>
+                  <div  class="news-card__footer">
+                    @@include('blocks/date/date.html')
+                    <span class="news-card__link">
+                      <a href="#" class="btn  btn--link">Детальніше</a>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="app-store">
+          <div class="container  section  section--color">
+
+            <div class="header-block  header-block--invert">
+              <h2><span>Встанови додаток</span><span class="header-block__help-text">Так зручніше і цікавіше! :)</span></h2>
+            </div>
+
+            <div class="app-store__inner">
+
+              <div class="app-store__text">
+
+                <div class="app-store__text-content">
+                  <p class="h4">Ми запустили додаток для вашого смартфона щоб вам було зручніше оплачувати послуги та управляти своїм кабінетом!</p>
+                  <p>В даний момент додаток проходить відкритий бета-тест, тому про будь-які несправності або недоліки повідомляйте в техпідтримку.</p>
+                  <p>Також ми будемо раді почути думку про поліпшення взаємодії і впровадження нового функціоналу що б вам було зручніше.</p>
+                </div>
+
+                <div class="app-store__text-content">
+                  <p class="h4">Допоможіть нам зробити додаток ще краще! Наразі додаток має такий функціонал:</p>
+                  <ul>
+                    <li>Унікальні акції для користувачів додатка</li>
+                    <li>Зміна тарифного плану</li>
+                    <li>Оплата послуг</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="app-store__img">
+
+                <span class="app-store__img-phone">
+                  <picture>
+                    <source data-srcset="img/smartphone-mockup.png" media="(min-width: 1680px)">
+                      <!-- height: 940px; -->
+                    <source data-srcset="img/smartphone-mockup.png" media="(min-width: 1280px)">
+                      <!-- height: 640px; -->
+                    <source data-srcset="img/smartphone-mockup.png" media="(min-width: 768px)">
+                    <!-- height: 605px; -->
+                    <img class="b-lazy" data-src="img/smartphone-mockup.png" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Smartphone" height="390">
+                  </picture>
+                </span>
+
+                <span class="app-store__img-code">
+                  <picture>
+                    <source data-srcset="img/app-store-dt@1x.png" media="(min-width: 768px)">
+                    <img class="b-lazy" data-src="img/app-store-mob@1x.png" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="QR-Code">
+                  </picture>
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
 
       </main>
 

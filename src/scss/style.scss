@@ -6,6 +6,7 @@
 
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
+@import '../../node_modules/swiper/css/swiper.css';
 @import './src/blocks/accordion/accordion.scss';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
@@ -13,10 +14,14 @@
 @import './src/blocks/close/close.scss';
 @import './src/blocks/dropdown/dropdown.scss';
 @import './src/blocks/embed-responsive/embed-responsive.scss';
+@import './src/blocks/field-actions/field-actions.scss';
+@import './src/blocks/field-checkbox/field-checkbox.scss';
+@import './src/blocks/field-select/field-select.scss';
+@import './src/blocks/field-text/field-text.scss';
+@import './src/blocks/field-toggler/field-toggler.scss';
 @import './src/blocks/form/form.scss';
 @import './src/blocks/is-mobile/is-mobile.scss';
 @import './src/blocks/lang-switcher/lang-switcher.scss';
-@import './src/blocks/loader/loader.scss';
 @import './src/blocks/logo/logo.scss';
 @import './src/blocks/main-nav/main-nav.scss';
 @import './src/blocks/modal/modal.scss';
@@ -25,10 +30,7 @@
 @import './src/blocks/page-footer/page-footer.scss';
 @import './src/blocks/page-header/page-header.scss';
 @import './src/blocks/pagination/pagination.scss';
-@import './src/blocks/pie-chart/pie-chart.scss';
 @import './src/blocks/scroll-link/scroll-link.scss';
-@import './src/blocks/sprite-png/sprite-png.scss';
-@import './src/blocks/sprite-png/sprite-png__demo.scss';
 @import './src/blocks/sprite-svg/sprite-svg.scss';
 @import './src/blocks/table/table.scss';
 @import './src/blocks/table-mobile-scroll/table-mobile-scroll.scss';
@@ -36,4 +38,19 @@
 @import './src/blocks/tabs/tabs.scss';
 @import './src/blocks/to-top/to-top.scss';
 @import './src/blocks/typo/typo.scss';
+@import './src/blocks/popover/popover.scss';
+@import './src/blocks/tooltip/tooltip.scss';
+@import './src/blocks/scrollspy/scrollspy.scss';
+@import './src/blocks/metismenu/metismenu.scss';
+@import './src/blocks/app-store/app-store.scss';
+@import './src/blocks/messengers/messengers.scss';
+@import './src/blocks/socials/socials.scss';
+@import './src/blocks/main-slider/main-slider.scss';
+@import './src/blocks/services-index/services-index.scss';
+@import './src/blocks/header-block/header-block.scss';
+@import './src/blocks/news-card/news-card.scss';
+@import './src/blocks/date/date.scss';
+@import './src/blocks/label/label.scss';
+@import './src/blocks/section/section.scss';
+@import './src/blocks/rate-index/rate-index.scss';
 @import './src/scss/print.scss';

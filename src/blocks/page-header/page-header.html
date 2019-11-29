@@ -7,5 +7,75 @@
 -->
 
 <header class="page-header" role="banner">
-  page-header
+  <div class="container">
+    <div class="page-header__inner">
+
+      <a href="index.html" class="logo">
+        <img src="img/kyivlink_logo.svg" alt="logo" width="120" height="40">
+      </a>
+
+      <div class="page-header__menu-block">
+
+        <a href="#" class="page-header__icon">
+          <span>
+            <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#account-32px_icon"></use></svg>
+          </span>
+          <span class="page-header__icon-text">Профиль</span>
+        </a>
+
+        <a id="menu-toggler" class="page-header__icon" data-toggle="collapse" href="#collapseMainNav" role="button" aria-expanded="false" aria-controls="collapseMainNav">
+          <span>
+            <svg class="page-header__icon-menu" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#menu-32px_icon"></use></svg>
+            <svg class="page-header__icon-close" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close-32px_icon"></use></svg>
+          </span>
+          <span class="page-header__icon-text">Меню</span>
+        </a>
+
+      </div>
+
+      <div class="page-header__service-block">
+
+        <div class="dropdown">
+
+          <a class="dropdown__toggle  dropdown-toggle" href="#" role="button" id="dropdownPhone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            +38 (068) 223-52-70
+          </a>
+
+          <ul class="dropdown-menu  dropdown__menu  list-nostyled" aria-labelledby="dropdownPhone">
+            <li class="dropdown-item">
+              <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="page-header__callback-link">Передзвоніть мені</a>
+
+        <div class="dropdown">
+          <a class="dropdown__toggle  dropdown-toggle" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Рус
+          </a>
+
+          <ul class="dropdown-menu  dropdown__menu  list-nostyled" aria-labelledby="dropdownLang">
+            <li class="dropdown-item">
+              <a class="dropdown__link" href="#">Укр</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown__link" href="#">Рус</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown__link" href="#">Анг</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 </header>

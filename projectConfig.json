@@ -34,7 +34,18 @@
     "popover": [],
     "tooltip": [],
     "scrollspy": [],
-    "mobile": []
+    "metismenu": [],
+    "app-store": [],
+    "messengers": [],
+    "socials": [],
+    "main-slider": [],
+    "services-index": [],
+    "header-block": [],
+    "news-card": [],
+    "date": [],
+    "label": [],
+    "section": [],
+    "rate-index": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -52,9 +63,11 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/jquery/dist/jquery.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/metismenu/dist/metisMenu.min.js",
     "./src/js/libs/popper.min.js",
     "./src/js/libs/util.min.js",
     "./src/js/libs/scrollspy.js",
+    "./src/js/libs/collapse.js",
     "./src/js/libs/tooltip.js",
     "./src/js/libs/popover.js"
   ],

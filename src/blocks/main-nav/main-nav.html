@@ -1,61 +1,387 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/main-nav/main-nav.html')
+-->
 
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
+<div class="collapse  main-nav" id="collapseMainNav">
 
+  <div class="main-nav__inner">
 
+    <div class="main-nav__content">
 
-<nav id="main-nav" class="main-nav" role="navigation">
-  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-  <ul class="main-nav__list">
-    <li class="main-nav__item  main-nav__item--active">
-      <a href="" class="main-nav__link">
-        Страницы
-      </a>
-      <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-        <ul class="main-nav__list  main-nav__list--lvl-2">
-          <li class="main-nav__item  main-nav__item--lvl-2">
-            <a href="" class="main-nav__link  main-nav__link--lvl-2">
-              Контакты
-            </a>
+      <nav class="main-nav__mobile">
+        <ul id="metismenu" class="metismenu  list-nostyled">
+          <li class="metismenu__item">
+            <a class="has-arrow  h4  metismenu__link" href="#" aria-expanded="false">Інтернет додому</a>
+            <ul class="metismenu__submenu">
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                </a>
+              </li>
+              <li class="metismenu__item  active">
+                <a class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                  Послуги
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                  Тарифи
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                  Покриття
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/info_icon.svg);"></span>
+                  Правила користування мережею
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/contract_icon.svg);"></span>
+                  Публічний договір
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="main-nav__item  main-nav__item--lvl-2">
-            <a href="" class="main-nav__link  main-nav__link--lvl-2">
-              Услуги
-            </a>
-            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-              <ul class="main-nav__list  main-nav__list--lvl-3">
-                <li class="main-nav__item  main-nav__item--lvl-3">
-                  <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                    Вёрстка HTML-CSS
+          <li class="metismenu__item">
+            <a class="has-arrow  h4  metismenu__link" href="#" aria-expanded="false">Інтернет для бізнесу</a>
+            <ul class="metismenu__submenu">
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                </a>
+              </li>
+              <li class="metismenu__item  active">
+                <a class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                  Послуги
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                  Тарифи
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>
+                  Реєстрація доменних імен
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                  IP-транзит
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                  Colocation
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                  Інтернет для бізнесу
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="metismenu__item">
+            <a href="#" class="has-arrow  h4  metismenu__link">Забудовникам</a>
+            <ul class="metismenu__submenu">
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                </a>
+              </li>
+              <li class="metismenu__item  active">
+                <a class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                  Послуги
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                  Тарифи
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="metismenu__item">
+            <a href="#" class="has-arrow  h4  metismenu__link">Абоненту</a>
+            <ul class="metismenu__submenu">
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                </a>
+              </li>
+              <li class="metismenu__item  active">
+                <a class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                  Послуги
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                  Тарифи
+                </a>
+              </li>
+              <li class="metismenu__item">
+                <a href="#" class="metismenu__link">
+                  <span class="metismenu__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                  Покриття
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="metismenu__item">
+            <a href="#" class="h4  metismenu__link">Про нас</a>
+          </li>
+          <li class="metismenu__item">
+            <a href="#" class="h4  metismenu__link">Новини</a>
+          </li>
+          <li class="metismenu__item">
+            <a href="#" class="h4  metismenu__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="main-nav__desktop">
+        <div class="container">
+
+          <ul class="list-nostyled  main-nav__list">
+            <li class="main-nav__item">
+              <a class="h4  main-nav__link" href="#">Інтернет додому</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(../img/stocks_icon.svg);"></span>Акціі
                   </a>
                 </li>
-                <li class="main-nav__item  main-nav__item--lvl-3">
-                  <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                    Стриптиз
+                <li class="main-nav__item  active">
+                  <a class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                    Послуги
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                    Тарифи
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                    Покриття
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/info_icon.svg);"></span>
+                    Правила користування мережею
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/contract_icon.svg);"></span>
+                    Публічний договір
                   </a>
                 </li>
               </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </li>
-    <li class="main-nav__item">
-      <a href="https://github.com/nicothin/NTH-start-project" class="main-nav__link">
-        Репозиторий
-      </a>
-    </li>
-    <li class="main-nav__item">
-      <a href="http://nicothin.pro/" class="main-nav__link">
-        Сайт автора
-      </a>
-    </li>
-  </ul>
-</nav>
+            </li>
+            <li class="main-nav__item">
+              <a class="h4  main-nav__link" href="#">Інтернет для бізнесу</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                  </a>
+                </li>
+                <li class="main-nav__item  active">
+                  <a class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                    Послуги
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                    Тарифи
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>
+                    Реєстрація доменних імен
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                    IP-транзит
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                    Colocation
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                    Інтернет для бізнесу
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="h4  main-nav__link">Забудовникам</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                  </a>
+                </li>
+                <li class="main-nav__item  active">
+                  <a class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                    Послуги
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                    Тарифи
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="h4  main-nav__link">Абоненту</a>
+              <ul class="main-nav__submenu">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                  </a>
+                </li>
+                <li class="main-nav__item  active">
+                  <a class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                    Послуги
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                    Тарифи
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span class="main-nav__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                    Покриття
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="h4  main-nav__link">Про нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="h4  main-nav__link">Новини</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="h4  main-nav__link">Контакти</a>
+            </li>
+          </ul>
 
--->
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="main-nav__footer">
+      <div class="container">
+
+        <div class="main-nav__footer-row">
+
+          <div class="main-nav__copyrights">
+            <span>© 2019 Kyiv Link. Все права защищены</span>
+          </div>
+
+          <div class="main-nav__applications">
+            <a href="#" title="Get It on GooglePlay" target="_blank" rel="nofollow noopener">
+              <img src="img/google-play-app.svg" alt="GooglePlay" width="152" height="44">
+            </a>
+            <a href="#" title="Download on AppStore" target="_blank" rel="nofollow noopener">
+              <img src="img/apple-store-app.svg" alt="AppStore" width="152" height="44">
+            </a>
+          </div>
+
+          <div class="main-nav__online">
+
+            <ul class="list-nostyled  messengers">
+              <li class="messengers__item">
+                <a href="#" class="messengers__link" title="FB Messenger">
+                  <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fb-messenger_icon"></use></svg>
+                </a>
+              </li>
+              <li class="messengers__item">
+                <a href="#" class="messengers__link" title="Telegram">
+                  <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram_icon"></use></svg>
+                </a>
+              </li>
+              <li class="messengers__item">
+                <a href="#" class="messengers__link" title="Viber">
+                  <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber_icon"></use></svg>
+                </a>
+              </li>
+              <li class="messengers__item">
+                <a href="#" class="messengers__link" title="WhatsApp">
+                  <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp_icon"></use></svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="list-nostyled  socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link" title="Facebook">
+                  <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook_icon"></use></svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link" title="Instagram">
+                  <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram_icon"></use></svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link" title="LinkedIn">
+                  <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin_icon"></use></svg>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
