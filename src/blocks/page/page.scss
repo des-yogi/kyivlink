@@ -159,6 +159,28 @@ a {
   }
 }
 
+.main {
+
+  &--noindex {
+    padding-bottom: 60px;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 100px;
+    }
+
+    ul > li:first-child {
+
+      .news-card {
+        border-top-width: 0;
+      }
+    }
+  }
+}
+
 // BS4 Хелперы для BS4 табов и т.п.
 .fade {
   transition: opacity 0.15s linear;
@@ -250,7 +272,7 @@ a {
 
   @media (min-width: $screen-xxl) {
     $padding-min: 140px; // нужный отступ от краев экрана
-    $half-screen-xl: $screen-xl / 2 - $padding-min;
+    $half-screen-xl: $screen-xxl / 2 - $padding-min;
     // padding: 1em calc(50% - 600px); //600px - это $screen-xl / 2 - нужный отступ от края экрана
     padding-left: calc(50% - #{$half-screen-xl});
     padding-right: calc(50% - #{$half-screen-xl});
@@ -347,4 +369,15 @@ a {
 .swiper-button-next {
   right: 0;
   background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+}
+
+/* Кастомизируем выделение текста на сайте */
+*:not(img)::selection {
+  color: $white;
+  background-color: $main-color; /* Safari, Chrome, Opera */
+}
+
+*:not(img)::-moz-selection {
+  color: $white;
+  background-color: $main-color; /* FireFox */
 }

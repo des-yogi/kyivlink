@@ -44,15 +44,11 @@
       padding: 60px;
     }
 
-    &:first-child {
-      flex: 1 1 100%;
+    &:hover,
+    &:focus {
       color: $white;
       border-color: $main-color;
       background-color: $main-color;
-
-      @media (min-width: $screen-lg) {
-        flex: 0 1 33.333%;
-      }
 
       h3,
       p {
@@ -72,6 +68,19 @@
           color: $white;
         }
       }
+    }
+
+    &:first-child {
+      flex: 1 1 100%;
+      border-bottom-width: 0;
+
+
+      @media (min-width: $screen-lg) {
+        flex: 0 1 33.333%;
+        border-right-width: 0;
+      }
+
+
     }
 
     &:last-child {

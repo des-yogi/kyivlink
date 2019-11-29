@@ -13,4 +13,12 @@
     background-color: $main-color;
     margin-bottom: 0 !important;
   }
+
+  &--solo {
+    margin-bottom: 0;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+  }
 }

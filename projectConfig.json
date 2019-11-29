@@ -44,7 +44,8 @@
     "news-card": [],
     "date": [],
     "label": [],
-    "section": []
+    "section": [],
+    "rate-index": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
