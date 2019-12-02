@@ -1,0 +1,56 @@
+.rates-home {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__intro {
+    padding: 30px 0;
+
+    @media (min-width: $screen-lg) {
+      padding: 40px 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 60px 0;
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__intro-content {
+
+    @media (min-width: $screen-md) {
+      column-count: 2;
+      column-gap: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      column-gap: 60px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+    @include col(xl, 4);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+  }
+}

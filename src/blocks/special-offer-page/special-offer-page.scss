@@ -1,0 +1,9 @@
+// В этом файле должны быть стили для БЭМ-блока special-offer-page, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.special-offer-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+}

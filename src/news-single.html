@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Новости</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/main-nav/main-nav.html')
+
+      <main class="main  main--noindex" role="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container  section  section--solo">
+
+          <article class="news-page">
+
+            <div class="news-page__header">
+              <div class="row">
+
+                <div class="news-page__col-img">
+
+                  <div class="embed-responsive embed-responsive--4-3  news-page__header-img">
+                    <picture>
+                      <source data-srcset="img/news-1.webp" media="(min-width: 1680px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 1680px)">
+                      <!-- 648x486 -->
+                      <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+                      <!-- 465x349 -->
+                      <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+                      <!-- 286x215 -->
+                      <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+                      <!-- 740x555 -->
+                      <source data-srcset="img/news-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                    </picture>
+                  </div>
+
+                </div>
+
+                <div class="news-page__col-text">
+                  <div class="news-page__text">
+                    <h1>Какая хорошая скорость для домашнего Интернета</h1>
+                    @@include('blocks/date/date.html')
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="article">
+
+            </div>
+
+          </article>
+
+        </div>
+
+        <!-- @@include('blocks/pagination/pagination.html') -->
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

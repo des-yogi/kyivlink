@@ -1,0 +1,20 @@
+.services {
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 20px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+  }
+}
