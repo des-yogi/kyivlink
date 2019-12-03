@@ -62,7 +62,8 @@
     "news-page": [],
     "subsection": [],
     "rates-link": [],
-    "rates-slider": []
+    "rates-slider": [],
+    "rate-summary": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -57,7 +57,9 @@
 
 @mixin field-focus {
   outline: 0;
-  box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  background-color: $white;
+  border-color: $main-color;
+  //box-shadow: 0 0 0 2px rgba($color-main, $opacity);
 }
 
 

@@ -334,6 +334,18 @@ a {
     margin-left: 40px;
     margin-right: 40px;
   }
+
+  &--white-bg {
+
+    .swiper-pagination-bullet {
+      background: $border-color;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $main-color;
+    }
+  }
 }
 
 .swiper-pagination-bullet {
@@ -360,17 +372,27 @@ a {
   background-size: 6px 9px;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+
+  &--white-bg {
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$text-muted);
+
+    &:hover,
+    &:focus {
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
+    }
+  }
 }
 
 .swiper-button-prev {
   left: 0;
   transform: scale(-1, 1);
-  background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+  //background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
 }
 
 .swiper-button-next {
   right: 0;
-  background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+  //background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
 }
 
 /* Кастомизируем выделение текста на сайте */

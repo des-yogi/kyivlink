@@ -1,9 +1,13 @@
-// В этом файле должны быть стили для БЭМ-блока rates-slider, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .rates-slider {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__container {}
+
+  &__controls {
+    position: static;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
 }
