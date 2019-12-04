@@ -1,14 +1,105 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/request-modal/request-modal.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="request-modal">content</div>
-
 -->
+
+<div class="request-modal modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="request-modal-title" aria-hidden="true" aria-modal="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title" id="request-modal-title">Заявка на підключення</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form class="request-modal__form" action="/" method="post">
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="input-name" class="text-input__field" type="text" name="name" value="" onblur="this.setAttribute('value', this.value);" required>
+              <label class="text-input__label" for="input-name">
+                <span class="text-input__label-content">ПІП</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="input-email" class="text-input__field" type="text" name="email" value="" onblur="this.setAttribute('value', this.value);" required>
+              <label class="text-input__label" for="input-email">
+                <span class="text-input__label-content">E-mail</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="input-tel" class="text-input__field" type="text" name="tel" value="" onblur="this.setAttribute('value', this.value);" required>
+              <label class="text-input__label" for="input-tel">
+                <span class="text-input__label-content">Телефон</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <input id="input-street" class="text-input__field" type="text" name="street" value="" onblur="this.setAttribute('value', this.value);">
+              <label class="text-input__label" for="input-street">
+                <span class="text-input__label-content">Улица</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <div class="request-modal__input-group">
+
+            <div class="text-input">
+              <div class="text-input__wrapper">
+                <input id="input-house" class="text-input__field" type="text" name="house" value="" onblur="this.setAttribute('value', this.value);">
+                <label class="text-input__label" for="input-house">
+                  <span class="text-input__label-content">Дом</span>
+                </label>
+              </div>
+              <span class="text-input__error"></span>
+            </div>
+
+            <div class="text-input">
+              <div class="text-input__wrapper">
+                <input id="input-floor" class="text-input__field" type="text" name="floor" value="" onblur="this.setAttribute('value', this.value);">
+                <label class="text-input__label" for="input-floor">
+                  <span class="text-input__label-content">Пов.</span>
+                </label>
+              </div>
+              <span class="text-input__error"></span>
+            </div>
+
+            <div class="text-input">
+              <div class="text-input__wrapper">
+                <input id="input-apartment" class="text-input__field" type="text" name="apartment" value="" onblur="this.setAttribute('value', this.value);">
+                <label class="text-input__label" for="input-apartment">
+                  <span class="text-input__label-content">Кв.</span>
+                </label>
+              </div>
+              <span class="text-input__error"></span>
+            </div>
+
+          </div>
+
+          <button type="submit" class="">Відправити запит</button>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

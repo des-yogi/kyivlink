@@ -88,4 +88,17 @@
       color: inherit;
     }
   }
+
+  &--border-bottom {
+    margin-bottom: 30px;
+    border-bottom: 2px solid $border-color;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 60px;
+    }
+  }
 }

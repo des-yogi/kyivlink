@@ -1,6 +1,5 @@
 .rate-card {
   box-sizing: border-box;
-  border: 1px solid $border-color;
 
   &:hover,
   &:focus {
@@ -42,6 +41,8 @@
 
   &__header-inner {
     padding: 20px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
     border-bottom: 2px solid $border-color;
 
     @media (min-width: $screen-lg) {
@@ -89,6 +90,8 @@
   &__body {
     padding-top: 10px;
     //padding-bottom: 10px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
 
     .field-toggler {
       display: inline-block;

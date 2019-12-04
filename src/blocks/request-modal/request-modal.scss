@@ -1,9 +1,31 @@
-// В этом файле должны быть стили для БЭМ-блока request-modal, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .request-modal {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__input-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .text-input {
+      flex: 1 1 auto;
+      margin-right: 5px;
+
+      @media (min-width: $screen-sm) {
+        margin-right: 20px;
+      }
+
+      @media (min-width: $screen-md) {
+        margin-right: 30px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-right: 40px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }

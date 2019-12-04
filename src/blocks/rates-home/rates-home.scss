@@ -54,3 +54,28 @@
     }
   }
 }
+
+h2.container {
+
+  span {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+      margin-right: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 40px;
+    }
+
+    &.hint {
+      margin-right: 0 !important;
+      font-size: 18px;
+      font-weight: 600;
+      color: $text-color;
+    }
+  }
+}
