@@ -64,7 +64,8 @@
     "rates-link": [],
     "rates-slider": [],
     "rate-summary": [],
-    "text-input": []
+    "text-input": [],
+    "cover": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -28,4 +28,71 @@
       }
     }
   }
+
+  &__submit {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    //text-transform: uppercase;
+    white-space: nowrap;
+    color: $white;
+    background-color: $main-color;
+    border: 2px solid $main-color;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+    background-repeat: no-repeat;
+    background-position: right 17px center;
+    background-size: 6px 9px;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+      background-color: $white;
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
+      border-color: currentColor;
+    }
+  }
+
+  &__agreement-wrapper {
+    text-align: center;
+  }
+
+  &__agreement-info {
+    margin-top: 10px !important;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  &__help {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $title-color;
+
+    a {
+      white-space: nowrap;
+    }
+  }
 }

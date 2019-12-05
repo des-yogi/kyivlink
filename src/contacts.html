@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакти</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/main-nav/main-nav.html')
+
+      <main class="main  main--noindex" role="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container">
+          <h1>Контакти</h1>
+        </div>
+
+        <div class="container  section  contacts">
+
+          <div class="row">
+
+            <div class="contacts__info-col">
+              <div class="contacts__info">
+                <h2>Інформація</h2>
+
+                <div class="contacts__info-inner">
+                  <h4>Киів</h4>
+                  <p>вул. Васильківська, буд 4, оф. 12</p>
+                  <ul class="list-nostyled">
+                    <li>
+                      <span>тел.</span> <a href="tel:+380443329655">+38 (044) 332-96-55</a>
+                    </li>
+                    <li>
+                      <span>тел.</span> <a href="tel:+380443329655">+38 (044) 332-96-55</a>
+                    </li>
+                    <li>
+                      <span>тел.</span> <a href="tel:+380443329655">+38 (044) 332-96-55</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="contacts__info-inner">
+                  <h4>Поштова адреса</h4>
+                  <p><span>м. Київ</span>, <span>вул. Васильківська, буд. 7/7, <br>а/с 136</span>, індекс <span>03040</span></p>
+                </div>
+
+                <div class="contacts__info-inner">
+                  <h4>Юридична адреса</h4>
+                  <p>м. Київ, вул. Крутий Узвіз, буд. 6/2а</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="contacts__form-col">
+              <div class="contacts__form">
+                <h2>Зворотній зв’язок</h2>
+
+                <form class="request-modal__form" action="/" method="post">
+
+                  <div class="text-input">
+                    <div class="text-input__wrapper">
+                      <input id="input-name" class="text-input__field" type="text" name="name" value="" onblur="this.setAttribute('value', this.value);" required>
+                      <label class="text-input__label" for="input-name">
+                        <span class="text-input__label-content">Ім'я</span>
+                      </label>
+                    </div>
+                    <span class="text-input__error"></span>
+                  </div>
+
+                  <div class="text-input">
+                    <div class="text-input__wrapper">
+                      <input id="input-email" class="text-input__field" type="text" name="email" value="" onblur="this.setAttribute('value', this.value);" required>
+                      <label class="text-input__label" for="input-email">
+                        <span class="text-input__label-content">E-mail</span>
+                      </label>
+                    </div>
+                    <span class="text-input__error"></span>
+                  </div>
+
+                  <div class="text-input">
+                    <div class="text-input__wrapper">
+                      <input id="input-subject" class="text-input__field" type="text" name="subject" value="" onblur="this.setAttribute('value', this.value);" required>
+                      <label class="text-input__label" for="input-subject">
+                        <span class="text-input__label-content">Тема</span>
+                      </label>
+                    </div>
+                    <span class="text-input__error"></span>
+                  </div>
+
+                  <div class="text-input">
+                    <div class="text-input__wrapper">
+                      <textarea id="input-message" class="text-input__field  text-input__field--textarea" name="message" rows
+        ="4" value="" onblur="this.setAttribute('value', this.value);" required></textarea>
+                      <label class="text-input__label" for="input-message">
+                        <span class="text-input__label-content">Повідомлення</span>
+                      </label>
+                    </div>
+                    <span class="text-input__error"></span>
+                  </div>
+
+                  <button type="submit" class="request-modal__submit">Відправити запит</button>
+
+                  <div class="request-modal__agreement-wrapper">
+                    <p class="request-modal__agreement-info" style="margin-bottom:0;">Нажимая на кнопку, вы принимаете наше <a href="#">«Соглашение о сборе данных»</a></p>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="container  section  section--solo  cover">
+
+          <section class="cover__map">
+            <h2 class="visually-hidden">Карта покрытия услугами KyivLink</h2>
+            <div class="cover__map-container">
+              <iframe class="b-lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5086.640930899103!2d30.501921102502575!3d50.397864970919834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8cb8f4051f3%3A0xb918111a24666c08!2zMkEsINGD0LsuINCS0LDRgdC40LvRjNC60L7QstGB0LrQsNGPLCAy0JAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1575537148304!5m2!1sru!2sua" allowfullscreen></iframe>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- @@include('blocks/pagination/pagination.html') -->
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/request-modal/request-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

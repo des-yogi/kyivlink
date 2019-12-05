@@ -1,9 +1,88 @@
-// В этом файле должны быть стили для БЭМ-блока article, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .article {
 
   $block-name:                &; // #{$block-name}__element
 
+  .news-card {
+    border: none;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content-wrapper {
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__content-nav {
+
+    @media (min-width: $screen-lg) {
+      position: relative;
+      width: 26.25%;
+      flex: 0 0 26.25%;
+    }
+  }
+
+  &__nav-wrapper {
+    position: sticky;
+    top: 10px;
+  }
+
+  &__content {
+
+    @media (min-width: $screen-lg) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__nav-list {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__nav-item {
+    position: relative;
+    color: $title-color;
+    transition: all 0.25s ease-out;
+
+    &::before {
+    }
+
+    &:hover,
+    &:focus {
+      margin-left: 10px;
+      color: $main-color;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(-1.3em - 10px);
+        width: 4px;
+        height: 100%;
+        background-color: currentColor;
+      }
+    }
+  }
+
+  &__nav-link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__content-block {
+
+  }
 }

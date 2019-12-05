@@ -101,4 +101,8 @@
       margin-bottom: 60px;
     }
   }
+
+  &--border-bottom-mb0 {
+    border-bottom: 2px solid $border-color;
+  }
 }

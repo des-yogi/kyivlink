@@ -91,12 +91,26 @@
 
           </div>
 
-          <button type="submit" class="">Відправити запит</button>
+          <div class="text-input">
+            <div class="text-input__wrapper">
+              <textarea id="input-message" class="text-input__field" name="message" rows
+="4" value="" onblur="this.setAttribute('value', this.value);"></textarea>
+              <label class="text-input__label" for="input-message">
+                <span class="text-input__label-content">Додаткова інформація</span>
+              </label>
+            </div>
+            <span class="text-input__error"></span>
+          </div>
+
+          <button type="submit" class="request-modal__submit">Відправити запит</button>
+
+          <div class="request-modal__agreement-wrapper">
+            <p class="request-modal__agreement-info">Нажимая на кнопку, вы принимаете наше <a href="#">«Соглашение о сборе данных»</a></p>
+            <p class="request-modal__help">Якщо ви не можете визначитися з вибором — зателефонуйте нам по телефону <a href="tel:+380682235270">+38 (068) 223-52-70</a>.</p>
+            <p class="request-modal__help">Ми підберемо для вас оптимальний варіант.</p>
+          </div>
+
         </form>
-      </div>
-
-      <div class="modal-footer">
-
       </div>
 
     </div>

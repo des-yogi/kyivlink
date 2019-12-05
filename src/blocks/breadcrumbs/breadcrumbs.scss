@@ -76,4 +76,8 @@ $text-color:                  hsl(0, 0%, 10%) !default;
       //text-decoration: none;
     }
   }
+
+  &--mb0 {
+    margin-bottom: 0 !important;
+  }
 }

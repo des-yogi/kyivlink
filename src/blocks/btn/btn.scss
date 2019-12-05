@@ -123,3 +123,38 @@
   //   }
   // }
 }
+
+.btn-submit {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  //text-transform: uppercase;
+  white-space: nowrap;
+  color: $white;
+  background-color: $main-color;
+  border: 2px solid $main-color;
+  background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+  background-repeat: no-repeat;
+  background-position: right 17px center;
+  background-size: 6px 9px;
+  border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $main-color;
+    background-color: $white;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
+    border-color: currentColor;
+  }
+}

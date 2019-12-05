@@ -71,6 +71,13 @@
       color: $text-muted;
       opacity: 1;
     }
+
+    &--textarea {
+
+      &[required] {
+        background-position: right 15px top 20px;
+      }
+    }
   }
 
   &__label {
