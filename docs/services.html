@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Услуги</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/main-nav/main-nav.html')
+
+      <main class="main  main--noindex" role="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container">
+          <h1>Інтернет додому</h1>
+        </div>
+
+        <div class="container  section  section--solo">
+
+          <h2 class="visually-hidden">Разделы блока "Інтернет додому"</h2>
+
+          <p class="h2">Виберіть категорію що вам потрібна:</p>
+
+          <ul class="list-nostyled  row  services">
+            <li class="services__col">
+              <a href="#" class="subsection">
+                <span class="subsection__img">
+                  <img src="img/cat-stocks_icon.svg" alt="Иконка услуги">
+                </span>
+                <span class="subsection__text">Акціі</span>
+              </a>
+            </li>
+            <li class="services__col">
+              <a href="#" class="subsection">
+                <span class="subsection__img">
+                  <img src="img/cat-cover_icon.svg" alt="Иконка услуги">
+                </span>
+                <span class="subsection__text">Покриття</span>
+              </a>
+            </li>
+            <li class="services__col">
+              <a href="#" class="subsection">
+                <span class="subsection__img">
+                  <img src="img/cat-services_icon.svg" alt="Иконка услуги">
+                </span>
+                <span class="subsection__text">Послуги</span>
+              </a>
+            </li>
+            <li class="services__col">
+              <a href="#" class="subsection">
+                <span class="subsection__img">
+                  <img src="img/cat-rates_icon.svg" alt="Иконка услуги">
+                </span>
+                <span class="subsection__text">Тарифи</span>
+              </a>
+            </li>
+            <li class="services__col">
+              <a href="#" class="subsection">
+                <span class="subsection__img">
+                  <img src="img/cat-contract_icon.svg" alt="Иконка услуги">
+                </span>
+                <span class="subsection__text">Публічний договір</span>
+              </a>
+            </li>
+            <li class="services__col">
+              <a href="#" class="subsection">
+                <span class="subsection__img">
+                  <img src="img/cat-info_icon.svg" alt="Иконка услуги">
+                </span>
+                <span class="subsection__text">Правила користування мережею</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- @@include('blocks/pagination/pagination.html') -->
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сторінка 404</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/main-nav/main-nav.html')
+
+      <main class="main  main--noindex" role="main">
+
+        <div class="container  section  section--solo  page-404">
+
+          <div class="page-404__inner">
+            <h1 class="page-404__title">Сторінка не знайдена або не існує…</h1>
+            <p class="h4">Cхоже, не вдалося знайти сторінку, яку ви шукаєте</p>
+            <a href="index.html" class="btn-submit">На головну</a>
+          </div>
+
+          <div class="row">
+            <div class="page-404__col">
+              <img src="img/p404.svg" alt="Error 404. The page not found" title="Error 404. The page not found">
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/request-modal/request-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
