@@ -3375,13 +3375,15 @@ pre code {
     overflow: hidden;
     font-weight: 700;
     text-decoration: none; }
+.rate-index__item:hover, .rate-index__item:focus {
+      text-decoration: none; }
 .rate-index__item:hover .rate-index__header, .rate-index__item:focus .rate-index__header {
-      -webkit-box-shadow: 0px 25px 50px rgba(22, 65, 255, 0.32);
-              box-shadow: 0px 25px 50px rgba(22, 65, 255, 0.32); }
+        -webkit-box-shadow: 0px 25px 50px rgba(22, 65, 255, 0.32);
+                box-shadow: 0px 25px 50px rgba(22, 65, 255, 0.32); }
 .rate-index__item:hover .rate-index__img::after, .rate-index__item:focus .rate-index__img::after {
-      opacity: 0; }
+        opacity: 0; }
 .rate-index__item:hover .rate-index__header-title, .rate-index__item:focus .rate-index__header-title {
-      background-color: #0077ff; }
+        background-color: #0077ff; }
 .rate-index__header {
     position: relative;
     z-index: 1;
