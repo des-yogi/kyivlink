@@ -70,6 +70,23 @@
     }
   }
 
+  &__btn-wrapper {
+
+    .btn {
+      vertical-align: baseline;
+      margin-right: 15px;
+      margin-bottom: 20px;
+
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-right: 35px;
+      }
+    }
+  }
+
   &--invert {
     color: $white;
     border-left: 2px solid currentColor;

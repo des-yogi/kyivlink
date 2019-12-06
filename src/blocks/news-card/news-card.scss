@@ -18,22 +18,6 @@
 
   &__img {
 
-    /* @media (min-width: $screen-md) {
-      flex: 0 0 286px;
-    }
-
-    @media (min-width: $screen-lg) {
-      flex-basis: 465px;
-    }
-
-    @media (min-width: $screen-xl) {
-      flex-basis: 582px;
-    }
-
-    @media (min-width: $screen-xxl) {
-      flex-basis: 648px;
-    } */
-
     img {
       object-fit: cover;
       object-position: center;

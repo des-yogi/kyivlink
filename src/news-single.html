@@ -54,44 +54,50 @@
           </div>
         </nav>
 
-        <div class="container  article">
+        <article class="article">
 
-          <div class="news-card" data-label="">
+          <!-- <div class="container">
+            <h1 class="article__title">Заголовок статьи без медиаблока</h1>
+          </div> -->
 
-            <div class="row">
+          <div class="container">
 
-              <div class="news-card__img-col">
-                <div class="embed-responsive embed-responsive--4-3  news-card__img">
-                  <picture>
-                    <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
-                    <!-- 648x486 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
-                    <!-- 740x555 -->
-                    <source data-srcset="img/news-1.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
-                  </picture>
-                </div>
-              </div>
+            <div class="news-card  news-card--label  news-card--label--blue" data-label="Хит">
+              <div class="row">
 
-              <div class="news-card__text-col">
-                <div class="news-card__text">
-                  <div class="news-card__content">
-                    <h1>Какая хорошая скорость для домашнего Интернета?</h1>
-                      @@include('blocks/date/date.html')
+                <div class="news-card__img-col">
+                  <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                    <picture>
+                      <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+
+                      <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+
+                      <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+
+                      <source data-srcset="img/news-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                    </picture>
                   </div>
                 </div>
-              </div>
 
+                <div class="news-card__text-col">
+                  <div class="news-card__text">
+                    <div class="news-card__content">
+                      <h1>Какая хорошая скорость для домашнего Интернета?</h1>
+                      <span class="date">25 Січня, 2019</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
           </div>
 
-          <div class="section  section--solo  article__content-wrapper">
+          <div class="container  section  section--solo  article__content-wrapper">
 
             <div class="article__content-nav">
 
@@ -100,26 +106,26 @@
 
                 <ol id="aside-nav" class="article__nav-list">
                   <li class="article__nav-item">
-                    <a href="#block1" class="article__nav-link">Правила надання послуг до мережі Інтернет</a>
+                    <a href="#block1" data-scroll-link="" class="scroll-link  article__nav-link">Правила надання послуг до мережі Інтернет</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block2" class="article__nav-link">Обмеження на інформаційний шум (спам)</a>
+                    <a href="#block2" data-scroll-link="" class="scroll-link  article__nav-link">Обмеження на інформаційний шум (спам)</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block3" class="article__nav-link">Заборона несанкціонованого доступу і мережевих атак</a>
+                    <a href="#block3" data-scroll-link="" class="scroll-link  article__nav-link">Заборона несанкціонованого доступу і мережевих атак</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block4" class="article__nav-link">Дотримання правил, встановлених власниками ресурсів</a>
+                    <a href="#block4" data-scroll-link="" class="scroll-link  article__nav-link">Дотримання правил, встановлених власниками ресурсів</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block5" class="article__nav-link">Неприпустимість фальсифікації</a>
+                    <a href="#block5" data-scroll-link="" class="scroll-link  article__nav-link">Неприпустимість фальсифікації</a>
                   </li>
                 </ol>
               </div>
 
             </div>
 
-            <div class="article__content" data-spy="scroll" data-target="#aside-nav" data-offset="0">
+            <div class="article__content">
               <div id="block1" class="article__content-block">
                 <h2>Правила надання послуг до мережі Інтернет</h2>
                 <p>Мережа Інтернет є глобальним об'єднанням комп'ютерних мереж та інформаційних ресурсів, що належать безлічі різних людей і організацій. Це об'єднання децентралізоване, і єдиної загальнообов'язкової збірки правил (законів) користування мережею Інтернет не встановлено. Існують, проте, загальноприйняті норми роботи в мережі Інтернет, спрямовані на те, щоб діяльність кожного користувача мережі не заважала роботі інших користувачів.</p>
@@ -129,7 +135,7 @@
               <div id="block2" class="article__content-block">
                 <h3>Обмеження на інформаційний шум (спам)</h3>
                 <p>Мережа Інтернет є глобальним об'єднанням комп'ютерних мереж та інформаційних ресурсів, що належать безлічі різних людей і організацій. Це об'єднання децентралізоване, і єдиної загальнообов'язкової збірки правил (законів) користування мережею Інтернет не встановлено. Існують, проте, загальноприйняті норми роботи в мережі Інтернет, спрямовані на те, щоб діяльність кожного користувача мережі не заважала роботі інших користувачів.</p>
-                Розвиток Мережі спричинив одну з основних проблем користувачів - надлишок інформації. Тому, Замовник зобов'язаний дотримуватись спеціальних правила, спрямованих на захист користувача від непотрібної/незапитуваної інформації (спаму). Зокрема, є неприпустимими:
+                <p>Розвиток Мережі спричинив одну з основних проблем користувачів - надлишок інформації. Тому, Замовник зобов'язаний дотримуватись спеціальних правила, спрямованих на захист користувача від непотрібної/незапитуваної інформації (спаму). Зокрема, є неприпустимими:</p>
 
                 <ul>
                   <li>Масова розсилка повідомлень за допомогою електронної пошти та інших засобів персонального обміну інформацією (включаючи служби негайної доставки повідомлень, такі як SMS, IRC і т.д.), інакше як за явно і недвозначно вираженою ініціативою одержувача.</li>
@@ -144,7 +150,7 @@
 
               <div id="block3" class="article__content-block">
                 <h2>Заборона несанкціонованого доступу і мережевих атак</h2>
-                Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:
+                <p>Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:</p>
 
                 <ul>
                   <li>Дії, спрямовані на порушення нормального функціонування елементів Мережі (комп'ютерів, іншого обладнання або програмного забезпечення), що не належать користувачу.</li>
@@ -159,7 +165,7 @@
 
               <div id="block4" class="article__content-block">
                 <h2>Дотримання правил, встановлених власниками ресурсів</h2>
-                Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:
+                <p>Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:</p>
 
                 <ul>
                   <li>Дії, спрямовані на порушення нормального функціонування елементів Мережі (комп'ютерів, іншого обладнання або програмного забезпечення), що не належать користувачу.</li>
@@ -174,7 +180,7 @@
 
               <div id="block5" class="article__content-block">
                 <h2>Неприпустимість фальсифікації</h2>
-                Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:
+                <p>Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:</p>
 
                 <ul>
                   <li>Дії, спрямовані на порушення нормального функціонування елементів Мережі (комп'ютерів, іншого обладнання або програмного забезпечення), що не належать користувачу.</li>
@@ -191,9 +197,7 @@
 
           </div>
 
-        </div>
-
-        <!-- @@include('blocks/pagination/pagination.html') -->
+        </article>
 
       </main>
 

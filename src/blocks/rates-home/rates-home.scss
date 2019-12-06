@@ -46,7 +46,8 @@
     @include col(xs, 12, $grid-columns, 30px);
     @include col(md, 6, $grid-columns, 30px);
     @include col(lg, 6);
-    @include col(xl, 4);
+    //@include col(xl, 6);
+    @include col(xxl, 4);
     margin-bottom: 20px;
 
     @media (min-width: $screen-lg) {
