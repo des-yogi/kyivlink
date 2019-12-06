@@ -1508,7 +1508,7 @@ input:checked ~ .field-toggler__name-text:before {
     height: 40px; }
 .main-nav {
   position: fixed;
-  z-index: 10;
+  z-index: 15;
   width: 100%;
   height: calc(100vh - 137px);
   background-color: white;
