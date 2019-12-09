@@ -63,6 +63,14 @@
     }
   }
 
+  &__submit-wrapper {
+    margin-top: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-top: 40px;
+    }
+  }
+
   &__footer {
     display: flex;
     flex-direction: column;

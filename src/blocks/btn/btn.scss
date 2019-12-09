@@ -129,4 +129,8 @@
     background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
     border-color: currentColor;
   }
+
+  &--offer {
+    max-width: 325px;
+  }
 }

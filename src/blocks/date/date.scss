@@ -12,6 +12,7 @@
   background-image: svg-load('../blocks/sprite-svg/svg/calendar_icon.svg', fill=$main-color);
 
   @media (min-width: $screen-lg) {
+    display: block;
     font-size: 18px;
   }
 
@@ -21,7 +22,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+
   &--time-left {
+    display: block;
+    margin-top: 15px;
     background-image: svg-load('../blocks/sprite-svg/svg/clock_icon.svg', fill=$main-color);
   }
 }

@@ -20,7 +20,7 @@
 
       <main class="main  main--noindex" role="main">
 
-        <nav class="breadcrumbs  breadcrumbs--mb0">
+        <nav class="breadcrumbs">
           <div class="container">
             <h4 class="visually-hidden">Постраничная навигация — ваш путь на сайте</h4>
 
@@ -62,7 +62,7 @@
 
           <div class="container">
 
-            <div class="news-card  news-card--label  news-card--label--blue" data-label="Хит">
+            <div class="news-card">
               <div class="row">
 
                 <div class="news-card__img-col">
@@ -88,6 +88,12 @@
                     <div class="news-card__content">
                       <h1>Какая хорошая скорость для домашнего Интернета?</h1>
                       <span class="date">25 Січня, 2019</span>
+                      <span class="date  date--time-left" data-countdown="12/31/2019 24:00:00">
+                        До кінця акції залишилося:&nbsp;@@include('blocks/countdown/countdown.html')
+                      </span>
+                      <div class="news-card__submit-wrapper">
+                        <a href="#" class="btn-submit  btn-submit--offer">Участвовать в акции</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -104,23 +110,23 @@
               <div class="article__nav-wrapper">
                 <h3>Розділ:</h3>
 
-                <ol id="aside-nav" class="article__nav-list">
+                <ul id="aside-nav" class="list-nostyled  article__nav-list">
                   <li class="article__nav-item">
-                    <a href="#block1" data-scroll-link="" class="scroll-link  article__nav-link">Правила надання послуг до мережі Інтернет</a>
+                    <a href="#block1" class="scroll-link  article__nav-link"  data-scroll-link>Правила надання послуг до мережі Інтернет</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block2" data-scroll-link="" class="scroll-link  article__nav-link">Обмеження на інформаційний шум (спам)</a>
+                    <a href="#block2" class="scroll-link  article__nav-link"  data-scroll-link>Обмеження на інформаційний шум (спам)</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block3" data-scroll-link="" class="scroll-link  article__nav-link">Заборона несанкціонованого доступу і мережевих атак</a>
+                    <a href="#block3" class="scroll-link  article__nav-link"  data-scroll-link>Заборона несанкціонованого доступу і мережевих атак</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block4" data-scroll-link="" class="scroll-link  article__nav-link">Дотримання правил, встановлених власниками ресурсів</a>
+                    <a href="#block4" class="scroll-link  article__nav-link"  data-scroll-link>Дотримання правил, встановлених власниками ресурсів</a>
                   </li>
                   <li class="article__nav-item">
-                    <a href="#block5" data-scroll-link="" class="scroll-link  article__nav-link">Неприпустимість фальсифікації</a>
+                    <a href="#block5" class="scroll-link  article__nav-link"  data-scroll-link>Неприпустимість фальсифікації</a>
                   </li>
-                </ol>
+                </ul>
               </div>
 
             </div>
@@ -198,6 +204,492 @@
           </div>
 
         </article>
+
+        <section class="rates-block  rates-block--mt">
+
+          <h2 class="container">Тарифи</h2>
+
+
+          <div class="container section section--solo  rates-slider">
+            <div class="swiper-container  rates-slider__container">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide  rate-card">
+
+                  <div class="rate-card__header">
+                    <h3>Комфорт</h3>
+                    <div class="rate-card__header-inner">
+                      <div class="rate-card__header-price">
+                        <span class="currency">
+                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ua-hrn-icon"></use></svg>
+                        </span>
+                        <span class="rate-card__header-sum">150
+                          <span class="rate-card__label" style="background-color: green;">-20%</span>
+                        </span>&thinsp;/місяць
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rate-card__body">
+                    <table class="rate-card__table">
+
+                      <tfoot>
+                        <tr>
+                          <td class="rate-card__footer-total">Итого:</td>
+                          <td class="rate-card__footer-total">150<span>₴</span>
+                          </td>
+                        </tr>
+                      </tfoot>
+
+                      <tbody>
+
+                        <tr>
+                          <td>World</td>
+                          <td>50 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Швидкість UA-IX</td>
+                          <td>100 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Безліміт UA</td>
+                          <td><span class="rate-card__availability">+</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Зовнішній IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Гігабітний порт</span>
+                          </td>
+                          <td><span class="rate-card__availability">-</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Back-Resolving IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Додатковий IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Вартість підключення</td>
+                          <td>1<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Авансовий платіж</td>
+                          <td>250<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="rate-card__title-color">OMEGA.TV</span></td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
+                            <label class="field-select">
+                              <span class="field-select__select-wrap">
+                                <select class="field-select__select  field-select__select--omegaTV" disabled>
+                                  <option value="">Premium TV</option>
+                                  <option value="">Hrenium TV</option>
+                                  <option value="">Durium TV</option>
+                                </select>
+                              </span>
+                            </label>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class="rate-card__footer">
+                    <button class="rate-card__to-submit" type="button" data-toggle="modal" data-target="#requestModal">Обрати тариф</button>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide  rate-card">
+
+                  <div class="rate-card__header">
+                    <h3>Оптимальний</h3>
+                    <div class="rate-card__header-inner">
+                      <div class="rate-card__header-price">
+                        <span class="currency">
+                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ua-hrn-icon"></use></svg>
+                        </span>
+                        <span class="rate-card__header-sum">170
+                          <span class="rate-card__label" style="background-color: green;">-10%</span>
+                        </span>&thinsp;/місяць
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rate-card__body">
+                    <table class="rate-card__table">
+
+                      <tfoot>
+                        <tr>
+                          <td class="rate-card__footer-total">Итого:</td>
+                          <td class="rate-card__footer-total">150<span>₴</span>
+                          </td>
+                        </tr>
+                      </tfoot>
+
+                      <tbody>
+
+                        <tr>
+                          <td>World</td>
+                          <td>50 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Швидкість UA-IX</td>
+                          <td>100 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Безліміт UA</td>
+                          <td><span class="rate-card__availability">+</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Зовнішній IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Гігабітний порт</span>
+                          </td>
+                          <td><span class="rate-card__availability">-</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Back-Resolving IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Додатковий IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Вартість підключення</td>
+                          <td>1<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Авансовий платіж</td>
+                          <td>250<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="rate-card__title-color">OMEGA.TV</span></td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
+                            <label class="field-select">
+                              <span class="field-select__select-wrap">
+                                <select class="field-select__select  field-select__select--omegaTV" disabled>
+                                  <option value="">Premium TV</option>
+                                  <option value="">Hrenium TV</option>
+                                  <option value="">Durium TV</option>
+                                </select>
+                              </span>
+                            </label>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class="rate-card__footer">
+                    <button class="rate-card__to-submit" type="button">Обрати тариф</button>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide  rate-card">
+
+                  <div class="rate-card__header">
+                    <h3>Гігабіт</h3>
+                    <div class="rate-card__header-inner">
+                      <div class="rate-card__header-price">
+                        <span class="currency">
+                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ua-hrn-icon"></use></svg>
+                        </span>
+                        <span class="rate-card__header-sum">200
+                          <span class="rate-card__label" style="background-color: red;">Суперхит</span>
+                        </span>&thinsp;/місяць
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rate-card__body">
+                    <table class="rate-card__table">
+
+                      <tfoot>
+                        <tr>
+                          <td class="rate-card__footer-total">Итого:</td>
+                          <td class="rate-card__footer-total">150<span>₴</span>
+                          </td>
+                        </tr>
+                      </tfoot>
+
+                      <tbody>
+
+                        <tr>
+                          <td>World</td>
+                          <td>50 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Швидкість UA-IX</td>
+                          <td>100 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Безліміт UA</td>
+                          <td><span class="rate-card__availability">+</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Зовнішній IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Гігабітний порт</span>
+                          </td>
+                          <td><span class="rate-card__availability">-</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Back-Resolving IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Додатковий IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Вартість підключення</td>
+                          <td>1<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Авансовий платіж</td>
+                          <td>250<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="rate-card__title-color">OMEGA.TV</span></td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
+                            <label class="field-select">
+                              <span class="field-select__select-wrap">
+                                <select class="field-select__select  field-select__select--omegaTV" disabled>
+                                  <option value="">Premium TV</option>
+                                  <option value="">Hrenium TV</option>
+                                  <option value="">Durium TV</option>
+                                </select>
+                              </span>
+                            </label>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class="rate-card__footer">
+                    <button class="rate-card__to-submit" type="button">Обрати тариф</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="rates-slider__controls">
+                <div class="swiper-button-prev  swiper-button-prev--white-bg"></div>
+                <div class="swiper-pagination  swiper-pagination--white-bg"></div>
+                <div class="swiper-button-next  swiper-button-prev--white-bg"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
 
       </main>
 

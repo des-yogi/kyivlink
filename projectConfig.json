@@ -66,7 +66,11 @@
     "rate-summary": [],
     "text-input": [],
     "cover": [],
-    "news-block": []
+    "news-block": [],
+    "countdown": [],
+    "rates-block": [],
+    "payments": [],
+    "payments-card": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -85,6 +89,7 @@
     "./node_modules/jquery/dist/jquery.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/metismenu/dist/metisMenu.min.js",
+    "./src/js/libs/jquery.downCount.js",
     "./src/js/libs/popper.min.js",
     "./src/js/libs/util.min.js",
     "./src/js/libs/scrollspy.js",

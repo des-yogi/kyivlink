@@ -73,11 +73,10 @@ $text-color:                  hsl(0, 0%, 10%) !default;
     &:hover,
     &:focus {
       color: $main-color;
-      //text-decoration: none;
     }
   }
 
-  &--mb0 {
+  /* &--mb0 {
     margin-bottom: 0 !important;
-  }
+  } */
 }
