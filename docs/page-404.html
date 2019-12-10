@@ -546,12 +546,20 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"></span>
           </button>
+          <div class="request-modal__summary">
+            <table class="request-modal__table">
+              <tr>
+                <td>Итого:</td>
+                <td><span id="final-sum">251</span>₴</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="modal-body">
-          <form class="request-modal__form" action="/" method="post">
+          <div class="request-modal__form">
             <div class="text-input">
               <div class="text-input__wrapper">
-                <input id="input-name" class="text-input__field" type="text" name="name" value onblur="this.setAttribute('value', this.value);" required>
+                <input form id="input-name" class="text-input__field" type="text" name="name" value onblur="this.setAttribute('value', this.value);" required>
                 <label class="text-input__label" for="input-name">
                   <span class="text-input__label-content">ПІП</span>
                 </label>
@@ -560,7 +568,7 @@
             </div>
             <div class="text-input">
               <div class="text-input__wrapper">
-                <input id="input-email" class="text-input__field" type="text" name="email" value onblur="this.setAttribute('value', this.value);" required>
+                <input form id="input-email" class="text-input__field" type="email" name="email" value onblur="this.setAttribute('value', this.value);" required>
                 <label class="text-input__label" for="input-email">
                   <span class="text-input__label-content">E-mail</span>
                 </label>
@@ -569,7 +577,7 @@
             </div>
             <div class="text-input">
               <div class="text-input__wrapper">
-                <input id="input-tel" class="text-input__field" type="text" name="tel" value onblur="this.setAttribute('value', this.value);" required>
+                <input form id="input-tel" class="text-input__field" type="tel" name="tel" value onblur="this.setAttribute('value', this.value);" required>
                 <label class="text-input__label" for="input-tel">
                   <span class="text-input__label-content">Телефон</span>
                 </label>
@@ -578,7 +586,7 @@
             </div>
             <div class="text-input">
               <div class="text-input__wrapper">
-                <input id="input-street" class="text-input__field" type="text" name="street" value onblur="this.setAttribute('value', this.value);">
+                <input form id="input-street" class="text-input__field" type="text" name="street" value onblur="this.setAttribute('value', this.value);">
                 <label class="text-input__label" for="input-street">
                   <span class="text-input__label-content">Улица</span>
                 </label>
@@ -588,7 +596,7 @@
             <div class="request-modal__input-group">
               <div class="text-input">
                 <div class="text-input__wrapper">
-                  <input id="input-house" class="text-input__field" type="text" name="house" value onblur="this.setAttribute('value', this.value);">
+                  <input form id="input-house" class="text-input__field" type="text" name="house" value onblur="this.setAttribute('value', this.value);">
                   <label class="text-input__label" for="input-house">
                     <span class="text-input__label-content">Дом</span>
                   </label>
@@ -597,7 +605,7 @@
               </div>
               <div class="text-input">
                 <div class="text-input__wrapper">
-                  <input id="input-floor" class="text-input__field" type="text" name="floor" value onblur="this.setAttribute('value', this.value);">
+                  <input form id="input-floor" class="text-input__field" type="text" name="floor" value onblur="this.setAttribute('value', this.value);">
                   <label class="text-input__label" for="input-floor">
                     <span class="text-input__label-content">Пов.</span>
                   </label>
@@ -606,7 +614,7 @@
               </div>
               <div class="text-input">
                 <div class="text-input__wrapper">
-                  <input id="input-apartment" class="text-input__field" type="text" name="apartment" value onblur="this.setAttribute('value', this.value);">
+                  <input form id="input-apartment" class="text-input__field" type="text" name="apartment" value onblur="this.setAttribute('value', this.value);">
                   <label class="text-input__label" for="input-apartment">
                     <span class="text-input__label-content">Кв.</span>
                   </label>
@@ -616,20 +624,20 @@
             </div>
             <div class="text-input">
               <div class="text-input__wrapper">
-                <textarea id="input-message" class="text-input__field" name="message" rows="4" onblur="this.setAttribute('value', this.value);"></textarea>
+                <textarea form id="input-message" class="text-input__field" name="message" rows="4" onblur="this.setAttribute('value', this.value);"></textarea>
                 <label class="text-input__label" for="input-message">
                   <span class="text-input__label-content">Додаткова інформація</span>
                 </label>
               </div>
               <span class="text-input__error"></span>
             </div>
-            <button type="submit" class="request-modal__submit">Відправити запит</button>
+            <button id="requestModalSubmit" form type="submit" class="request-modal__submit">Відправити запит</button>
             <div class="request-modal__agreement-wrapper">
               <p class="request-modal__agreement-info">Нажимая на кнопку, вы принимаете наше <a href="#">«Соглашение о сборе данных»</a></p>
               <p class="request-modal__help">Якщо ви не можете визначитися з вибором — зателефонуйте нам по телефону <a href="tel:+380682235270">+38 (068) 223-52-70</a>.</p>
               <p class="request-modal__help">Ми підберемо для вас оптимальний варіант.</p>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
