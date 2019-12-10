@@ -7,6 +7,7 @@ $( document ).ready(function() {
     var omegaTVselect = card.querySelector('.field-select__select--omegaTV');
     var selectContainer = card.querySelector('.rate-card__select--omegaTV');
 
+    var currentForm = card.querySelector('form');
     var rateTitle = card.querySelector('.rate-card__title');
     var rateBase = card.querySelector('.base-sum');
     var rateTotal = card.querySelector('.total-sum');
@@ -28,7 +29,6 @@ $( document ).ready(function() {
     };
 
     var rateCalculator = function (e) {
-      //console.log(prepayment);
       var totalOptions = 0;
       var omegaTvCost = 0;
       var totalSum;
@@ -46,15 +46,57 @@ $( document ).ready(function() {
       totalSum = parseInt(rateBase.innerText, 10) + parseInt(connectionCost.innerText, 10)
                    + parseInt(prepayment.innerText, 10) + omegaTvCost + totalOptions;
 
-      console.log(totalSum);
       rateTotal.innerText = totalSum;
+    };
+
+    var completeFormHandler = function (e) {
+      var requestModal = document.getElementById('requestModal');
+      var submitBtn = document.getElementById('requestModalSubmit');
+      var finalSum = document.getElementById('final-sum');
+
+      var inputFields = requestModal.querySelectorAll('.text-input__field');
+      var formId = currentForm.id;
+
+      var requestModalTable = requestModal.querySelector('.request-modal__table');
+      var tableInnerContent = requestModalTable.querySelector('tbody');
+
+      Array.prototype.forEach.call( inputFields, function( field, idx ) {
+        field.setAttribute('form', formId);
+      });
+
+      submitBtn.setAttribute('form', formId);
+
+      finalSum.innerText = rateTotal.innerText;
+
+      Array.prototype.forEach.call( togglers, function( toggler ) {
+        if ( toggler.checked && toggler.value !== '0' ) {
+          var togglerTitleClassName = toggler.name + '-title';
+          var togglerTitleElem = card.querySelector('.' + togglerTitleClassName).innerText;
+          var togglerValue = toggler.value;
+
+          tableInnerContent.insertAdjacentHTML('beforeend', '<tr><td>' + togglerTitleElem + '</td><td>' + togglerValue + '₴</td></tr>');
+        }
+      });
+
+      if ( !omegaTVselect.disabled ) {
+        var options = omegaTVselect.selectedOptions;
+
+        Array.prototype.forEach.call( options, function( option ) {
+          tableInnerContent.insertAdjacentHTML('beforeend', '<tr><td>' + option.label + '</td><td>' + option.value + '₴</td></tr>');
+        });
+      }
+
     };
 
     rateCalculator();
 
-
     omegaTVinput.addEventListener('change', inputCheckHandler);
     card.addEventListener('change', rateCalculator);
+    selectRateBtn.addEventListener('click', completeFormHandler);
+
+    $('#requestModal').on('hide.bs.modal', function (e) {
+      window.location.reload();
+    })
 
   });
 

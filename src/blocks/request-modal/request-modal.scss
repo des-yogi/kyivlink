@@ -48,7 +48,6 @@
           font-weight: 700;
           color: $title-color;
           border-top: 2px solid $border-color;
-          border-bottom: 2px solid $border-color;
 
           @media (min-width: $screen-md) {
             font-size: 18px;
@@ -63,19 +62,23 @@
           }
         }
       }
+
+      &:last-child {
+
+        td {
+          padding-bottom: 15px;
+          border-bottom: 2px solid $border-color;
+        }
+      }
     }
 
     td {
-      padding: 5px 0;
+      padding: 5px 0 0;
       font-size: 14px;
 
       &:last-child {
         font-weight: 700;
         text-align: right;
-      }
-
-      @media (min-width: $screen-md) {
-        font-size: 16px;
       }
     }
   }
