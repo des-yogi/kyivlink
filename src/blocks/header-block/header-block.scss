@@ -70,6 +70,23 @@
     }
   }
 
+  &__btn-wrapper {
+
+    .btn {
+      vertical-align: baseline;
+      margin-right: 15px;
+      margin-bottom: 20px;
+
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-right: 35px;
+      }
+    }
+  }
+
   &--invert {
     color: $white;
     border-left: 2px solid currentColor;
@@ -87,5 +104,22 @@
     #{$block-name}__help-text {
       color: inherit;
     }
+  }
+
+  &--border-bottom {
+    margin-bottom: 30px;
+    border-bottom: 2px solid $border-color;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--border-bottom-mb0 {
+    border-bottom: 2px solid $border-color;
   }
 }

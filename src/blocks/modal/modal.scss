@@ -61,7 +61,7 @@
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  //border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
 }
@@ -85,21 +85,35 @@
 }
 
 .modal-header {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #e9ecef;
+  padding: 40px 20px 20px;
+  //border-bottom: 1px solid #e9ecef;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
+
+  @media (min-width: $screen-md) {
+    padding: 40px 30px 30px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 40px;
+  }
 }
 
 .modal-header .close {
-  padding: 1rem;
-  margin: -1rem -1rem -1rem auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  //margin: -1rem -1rem -1rem auto;
 }
 
 .modal-title {
+  width: 100%;
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -107,15 +121,31 @@
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0 20px 20px;
+
+  @media (min-width: $screen-md) {
+    padding: 0 30px 30px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 0 40px 40px;
+  }
 }
 
 .modal-footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 1rem;
-  border-top: 1px solid #e9ecef;
+  padding: 20px;
+  //border-top: 1px solid #e9ecef;
+
+  @media (min-width: $screen-md) {
+    padding: 10px 30px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 20px 40px;
+  }
 }
 
 .modal-footer > :not(:first-child) {
@@ -134,9 +164,9 @@
   overflow: scroll;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 540px;
     margin: 1.75rem auto;
   }
   .modal-dialog-centered {
@@ -151,7 +181,7 @@
 }
 
 @media (min-width: 992px) {
-  .modal-lg {
-    max-width: 800px;
+  .modal-dialog {
+    max-width: 790px;
   }
 }

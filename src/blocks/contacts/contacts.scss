@@ -1,0 +1,84 @@
+.contacts {
+  margin-bottom: 0 !important;
+  border-bottom-width: 0;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__info-col,
+  &__form-col {
+    padding: 30px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 40px 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 60px 0;
+    }
+  }
+
+  &__info-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col-offset(lg, 1);
+    @include col(lg, 5);
+    position: relative;
+    border-bottom: 2px solid $border-color;
+
+    @media (min-width: $screen-md) {
+      border-bottom: none;
+      border-right: 2px solid $border-color;
+    }
+
+    @media (min-width: $screen-lg) {
+      border-right: none;
+    }
+
+    &:after {
+
+      @media (min-width: $screen-lg) {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+        background-color: $border-color;
+        right: -29px;
+      }
+    }
+  }
+
+  &__form-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col-offset(lg, 1);
+    @include col(lg, 4);
+  }
+
+  &__info {
+
+
+  }
+
+  &__info-inner {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__form {
+
+  }
+}

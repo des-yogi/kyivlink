@@ -1,0 +1,16 @@
+.rates-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &--mt {
+    margin-top: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 60px;
+    }
+  }
+}

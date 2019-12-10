@@ -1,11 +1,9 @@
 .btn {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0;
-  padding: 8px 20px;
-  white-space: nowrap;
   vertical-align: middle;
-  user-select: none;
+  padding: 8px 20px;
+  margin: 0;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -13,34 +11,43 @@
   line-height: $line-height;
   text-decoration: none;
   text-transform: none;
-  color: $text-color;
-  border: 2px solid $border-color;
+  white-space: nowrap;
+  color: $main-color;
+  border: 2px solid $main-color;
   border-radius: $border-radius;
   background-color: $white;
+  user-select: none;
   cursor: pointer;
+
+  @media (min-width: $screen-xl) {
+    padding: 13px 40px;
+    font-size: 20px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    // background-color: darken($gray-lightest, 10%);
-    // border-color: darken($gray-lighter, 12%);
+    color: $white;
+    background-color: $main-color;
+    //border-color: darken($gray-lighter, 12%);
   }
 
   &:active,
   &:focus {
-    // @include field-focus;
+    //@include field-focus;
+    color: $white;
+    background-color: $main-color;
   }
 
   &--disabled,
   &:disabled {
     // opacity: $opacity;
     cursor: not-allowed;
-    color: $text-color;
-    background-color: $gray-lightest;
-    border-color: $gray-lighter;
+    color: $text-muted;
+    background-color: $border-color;
+    border-color: $border-color;
 
     @at-root a.btn--disabled {
       pointer-events: none;
@@ -54,10 +61,15 @@
     font-size: 20px;
     color: $main-color;
     border: none;
+    background-color: $white;
     background: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
     background-size: 6px 9px !important;
     background-repeat: no-repeat !important;
     background-position: right 9px center !important;
+
+    @media (min-width: $screen-xl) {
+      padding: 0 $right-padding 0 0;
+    }
 
     &::after {
       position: absolute;
@@ -75,51 +87,50 @@
     &:hover,
     &:focus {
       color: $main-color;
+      background-color: $white;
 
       &::after {
         width: calc(100% - #{$right-padding});
       }
     }
+  }
+}
 
-    /* &--invert {
-      color: $white;
-      background: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+.btn-submit {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  //text-transform: uppercase;
+  white-space: nowrap;
+  color: $white;
+  background-color: $main-color;
+  border: 2px solid $main-color;
+  background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$white);
+  background-repeat: no-repeat;
+  background-position: right 17px center;
+  background-size: 6px 9px;
+  border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
 
-      &::after {
-        background-color: $white;
-      }
-
-      &:hover,
-      &:focus {
-        color: $white;
-      }
-    } */
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $main-color;
+    background-color: $white;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
+    border-color: currentColor;
   }
 
-  // &__icon {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  // }
-
-
-
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
-
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+  &--offer {
+    max-width: 325px;
+  }
 }

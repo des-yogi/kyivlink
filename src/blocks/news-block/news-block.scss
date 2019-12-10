@@ -1,0 +1,12 @@
+.news-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  li:last-child {
+
+    .news-card {
+      border-bottom: none;
+    }
+  }
+
+}

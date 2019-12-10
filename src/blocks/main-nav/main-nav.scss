@@ -1,17 +1,17 @@
 .main-nav {
   position: fixed;
-  z-index: 10;
+  z-index: 15;
   width: 100%;
   height: calc(100vh - 137px);
   background-color: $white;
   overflow-y: auto;
 
   @media (min-width: $screen-md) {
-    height: calc(100vh - 93px);
+    height: calc(100vh - 92px);
   }
 
   @media (min-width: $screen-lg) {
-    height: calc(100vh - 117px);
+    height: calc(100vh - 104px);
   }
 
   $block-name:                &; // #{$block-name}__element

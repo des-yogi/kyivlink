@@ -1,0 +1,13 @@
+.rates-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {}
+
+  &__controls {
+    position: static;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+}

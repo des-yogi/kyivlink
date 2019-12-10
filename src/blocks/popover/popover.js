@@ -6,12 +6,12 @@
 
 $( document ).ready(function() {
   $(function () {
-    $('.example-popover').popover({
-      container: 'body',
-      html: 'true',
-      placement: 'auto',
-      template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
-      trigger: ' click hover focus'
+    $('.rate-card__hint').popover({
+      //container: 'main',
+      html: true,
+      placement: 'bottom',
+      template: '<div class="popover" role="tooltip"><div class="arrow"></div><h5 class="popover-header"></h5><div class="popover-body"></div></div>',
+      trigger: 'click'
     })
   })
 });

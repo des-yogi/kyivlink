@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Новости</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/main-nav/main-nav.html')
+
+      <main class="main  main--noindex" role="main">
+
+        <nav class="breadcrumbs">
+          <div class="container">
+            <h4 class="visually-hidden">Постраничная навигация — ваш путь на сайте</h4>
+
+            <ol class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+                itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="#" class="breadcrumbs__link">
+                 <span itemprop="name">Главная</span>
+                 <meta itemprop="position" content="1" />
+                </a>
+              </li>
+
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope
+                itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="#" class="breadcrumbs__link">
+                  <span itemprop="name">Страница 1</span>
+                  <meta itemprop="position" content="2" />
+                </a>
+              </li>
+
+              <li class="breadcrumbs__item  active" itemprop="itemListElement" itemscope
+                itemtype="http://schema.org/ListItem">
+                <a itemprop="item" class="breadcrumbs__link">
+                  <span itemprop="name">Текущая страница</span>
+                  <meta itemprop="position" content="3" />
+                </a>
+              </li>
+
+            </ol>
+          </div>
+        </nav>
+
+        <article class="article">
+
+          <!-- <div class="container">
+            <h1 class="article__title">Заголовок статьи без медиаблока</h1>
+          </div> -->
+
+          <div class="container">
+
+            <div class="news-card">
+              <div class="row">
+
+                <div class="news-card__img-col">
+                  <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                    <picture>
+                      <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+
+                      <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+
+                      <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                      <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+
+                      <source data-srcset="img/news-1.webp" type="image/webp">
+                      <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="news-card__text-col">
+                  <div class="news-card__text">
+                    <div class="news-card__content">
+                      <h1>Какая хорошая скорость для домашнего Интернета?</h1>
+                      <span class="date">25 Січня, 2019</span>
+                      <span class="date  date--time-left" data-countdown="12/31/2019 24:00:00">
+                        До кінця акції залишилося:&nbsp;@@include('blocks/countdown/countdown.html')
+                      </span>
+                      <div class="news-card__submit-wrapper">
+                        <a href="#" class="btn-submit  btn-submit--offer">Участвовать в акции</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="container  section  section--solo  article__content-wrapper">
+
+            <div class="article__content-nav">
+
+              <div class="article__nav-wrapper">
+                <h3>Розділ:</h3>
+
+                <ul id="aside-nav" class="list-nostyled  article__nav-list">
+                  <li class="article__nav-item">
+                    <a href="#block1" class="scroll-link  article__nav-link"  data-scroll-link>Правила надання послуг до мережі Інтернет</a>
+                  </li>
+                  <li class="article__nav-item">
+                    <a href="#block2" class="scroll-link  article__nav-link"  data-scroll-link>Обмеження на інформаційний шум (спам)</a>
+                  </li>
+                  <li class="article__nav-item">
+                    <a href="#block3" class="scroll-link  article__nav-link"  data-scroll-link>Заборона несанкціонованого доступу і мережевих атак</a>
+                  </li>
+                  <li class="article__nav-item">
+                    <a href="#block4" class="scroll-link  article__nav-link"  data-scroll-link>Дотримання правил, встановлених власниками ресурсів</a>
+                  </li>
+                  <li class="article__nav-item">
+                    <a href="#block5" class="scroll-link  article__nav-link"  data-scroll-link>Неприпустимість фальсифікації</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="article__content">
+              <div id="block1" class="article__content-block">
+                <h2>Правила надання послуг до мережі Інтернет</h2>
+                <p>Мережа Інтернет є глобальним об'єднанням комп'ютерних мереж та інформаційних ресурсів, що належать безлічі різних людей і організацій. Це об'єднання децентралізоване, і єдиної загальнообов'язкової збірки правил (законів) користування мережею Інтернет не встановлено. Існують, проте, загальноприйняті норми роботи в мережі Інтернет, спрямовані на те, щоб діяльність кожного користувача мережі не заважала роботі інших користувачів.</p>
+                <p>Фундаментальне положення цих норм таке: правила користування будь-якими ресурсами мережі Інтернет визначають власники цих ресурсів, і лише вони (тут і далі словом "ресурс" позначається будь-яка сукупність програмних і апаратних засобів, що становлять у тому або іншому значенні єдине ціле; ресурсом мережі Інтернет можуть вважатися, наприклад, поштова скринька, персональний комп'ютер, віртуальний або фізичний сервер, локальна обчислювальна мережа, канал зв'язку і т. д.).</p>
+              </div>
+
+              <div id="block2" class="article__content-block">
+                <h3>Обмеження на інформаційний шум (спам)</h3>
+                <p>Мережа Інтернет є глобальним об'єднанням комп'ютерних мереж та інформаційних ресурсів, що належать безлічі різних людей і організацій. Це об'єднання децентралізоване, і єдиної загальнообов'язкової збірки правил (законів) користування мережею Інтернет не встановлено. Існують, проте, загальноприйняті норми роботи в мережі Інтернет, спрямовані на те, щоб діяльність кожного користувача мережі не заважала роботі інших користувачів.</p>
+                <p>Розвиток Мережі спричинив одну з основних проблем користувачів - надлишок інформації. Тому, Замовник зобов'язаний дотримуватись спеціальних правила, спрямованих на захист користувача від непотрібної/незапитуваної інформації (спаму). Зокрема, є неприпустимими:</p>
+
+                <ul>
+                  <li>Масова розсилка повідомлень за допомогою електронної пошти та інших засобів персонального обміну інформацією (включаючи служби негайної доставки повідомлень, такі як SMS, IRC і т.д.), інакше як за явно і недвозначно вираженою ініціативою одержувача.</li>
+
+                  <li>Відкрита публікація адреси електронної пошти або іншої системи персонального обміну інформацією не може служити підставою для залучення адреси до якого не будь списку для масової розсилки повідомлень. Залучення адреси, одержаної будь-яким шляхом (через веб-форму, через підписного робота і т.д.), до списку адрес, за якими проводиться будь-яка розсилка, допускається тільки за умови наявності належної технічної процедури підтвердження або передплати, яка гарантує, що адреса не потрапить до списку інакше, ніж за бажанням власника адреси. Процедура підтвердження передплати повинна виключати можливість включення адреси до списку адресатів будь-якої розсилки (одноразової або регулярної) за ініціативою третіх осіб (тобто осіб, що не є власниками даної адреси.</li>
+
+                  <li>Обов'язкова наявність можливості для будь-якого замовника за його бажанням негайно покинути список розсилки без будь-яких ускладнень. При цьому власне можливість вилучення зі списку не може бути підставою для внесення адрес до списку не за бажанням власників адрес.</li>
+
+                  <li>Відправлення електронних листів та інших повідомлень, що містять вкладені файли та/або мають значний обсяг, без заздалегідь отриманого дозволу адресата.</li>
+                </ul>
+              </div>
+
+              <div id="block3" class="article__content-block">
+                <h2>Заборона несанкціонованого доступу і мережевих атак</h2>
+                <p>Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:</p>
+
+                <ul>
+                  <li>Дії, спрямовані на порушення нормального функціонування елементів Мережі (комп'ютерів, іншого обладнання або програмного забезпечення), що не належать користувачу.</li>
+
+                  <li> Дії, спрямовані на отримання несанкціонованого доступу до ресурсу Мережі (комп'ютера, іншого обладнання або інформаційного ресурсу), подальше використання такого доступу, а також знищення або модифікація програмного забезпечення або даних, що не належать користувачу, без узгодження з власниками цього програмного забезпечення або адміністраторами даного інформаційного ресурсу. Під несанкціонованим доступом розуміється будь-який доступ способом, відмінним від ресурсу, що передбачався власником.</li>
+
+                  <li>Передача комп'ютерам або обладнанню Мережі безглуздої або непотрібної інформації, що створює паразитне навантаження на ці комп'ютери або обладнання, а також проміжні ділянки мережі в обсягах, що перевищують мінімально необхідні для перевірки зв'язності мереж і доступності окремих її елементів.</li>
+
+                  <li>Цілеспрямовані дії зі сканування вузлів мереж з метою виявлення внутрішньої структури мереж, списків відкритих портів і т. п. інакше, ніж у межах, мінімально необхідних для проведення штатних технічних заходів, що не ставлять за мету порушення пунктів 2.1 і 2.2 цього документа.</li>
+                </ul>
+              </div>
+
+              <div id="block4" class="article__content-block">
+                <h2>Дотримання правил, встановлених власниками ресурсів</h2>
+                <p>Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:</p>
+
+                <ul>
+                  <li>Дії, спрямовані на порушення нормального функціонування елементів Мережі (комп'ютерів, іншого обладнання або програмного забезпечення), що не належать користувачу.</li>
+
+                  <li> Дії, спрямовані на отримання несанкціонованого доступу до ресурсу Мережі (комп'ютера, іншого обладнання або інформаційного ресурсу), подальше використання такого доступу, а також знищення або модифікація програмного забезпечення або даних, що не належать користувачу, без узгодження з власниками цього програмного забезпечення або адміністраторами даного інформаційного ресурсу. Під несанкціонованим доступом розуміється будь-який доступ способом, відмінним від ресурсу, що передбачався власником.</li>
+
+                  <li>Передача комп'ютерам або обладнанню Мережі безглуздої або непотрібної інформації, що створює паразитне навантаження на ці комп'ютери або обладнання, а також проміжні ділянки мережі в обсягах, що перевищують мінімально необхідні для перевірки зв'язності мереж і доступності окремих її елементів.</li>
+
+                  <li>Цілеспрямовані дії зі сканування вузлів мереж з метою виявлення внутрішньої структури мереж, списків відкритих портів і т. п. інакше, ніж у межах, мінімально необхідних для проведення штатних технічних заходів, що не ставлять за мету порушення пунктів 2.1 і 2.2 цього документа.</li>
+                </ul>
+              </div>
+
+              <div id="block5" class="article__content-block">
+                <h2>Неприпустимість фальсифікації</h2>
+                <p>Не допускається здійснення спроб несанкціонованого доступу до ресурсів Мережі, проведення мережевих атак і мережевого злому і участь у них, за винятком випадків, коли атака на мережевий ресурс проводиться з явного дозволу власника або адміністратора цього ресурсу. Зокрема заборонені:</p>
+
+                <ul>
+                  <li>Дії, спрямовані на порушення нормального функціонування елементів Мережі (комп'ютерів, іншого обладнання або програмного забезпечення), що не належать користувачу.</li>
+
+                  <li> Дії, спрямовані на отримання несанкціонованого доступу до ресурсу Мережі (комп'ютера, іншого обладнання або інформаційного ресурсу), подальше використання такого доступу, а також знищення або модифікація програмного забезпечення або даних, що не належать користувачу, без узгодження з власниками цього програмного забезпечення або адміністраторами даного інформаційного ресурсу. Під несанкціонованим доступом розуміється будь-який доступ способом, відмінним від ресурсу, що передбачався власником.</li>
+
+                  <li>Передача комп'ютерам або обладнанню Мережі безглуздої або непотрібної інформації, що створює паразитне навантаження на ці комп'ютери або обладнання, а також проміжні ділянки мережі в обсягах, що перевищують мінімально необхідні для перевірки зв'язності мереж і доступності окремих її елементів.</li>
+
+                  <li>Цілеспрямовані дії зі сканування вузлів мереж з метою виявлення внутрішньої структури мереж, списків відкритих портів і т. п. інакше, ніж у межах, мінімально необхідних для проведення штатних технічних заходів, що не ставлять за мету порушення пунктів 2.1 і 2.2 цього документа.</li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <section class="rates-block  rates-block--mt">
+
+          <h2 class="container">Тарифи</h2>
+
+
+          <div class="container section section--solo  rates-slider">
+            <div class="swiper-container  rates-slider__container">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide  rate-card">
+
+                  <div class="rate-card__header">
+                    <h3>Комфорт</h3>
+                    <div class="rate-card__header-inner">
+                      <div class="rate-card__header-price">
+                        <span class="currency">
+                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ua-hrn-icon"></use></svg>
+                        </span>
+                        <span class="rate-card__header-sum">150
+                          <span class="rate-card__label" style="background-color: green;">-20%</span>
+                        </span>&thinsp;/місяць
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rate-card__body">
+                    <table class="rate-card__table">
+
+                      <tfoot>
+                        <tr>
+                          <td class="rate-card__footer-total">Итого:</td>
+                          <td class="rate-card__footer-total">150<span>₴</span>
+                          </td>
+                        </tr>
+                      </tfoot>
+
+                      <tbody>
+
+                        <tr>
+                          <td>World</td>
+                          <td>50 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Швидкість UA-IX</td>
+                          <td>100 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Безліміт UA</td>
+                          <td><span class="rate-card__availability">+</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Зовнішній IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Гігабітний порт</span>
+                          </td>
+                          <td><span class="rate-card__availability">-</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Back-Resolving IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Додатковий IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Вартість підключення</td>
+                          <td>1<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Авансовий платіж</td>
+                          <td>250<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="rate-card__title-color">OMEGA.TV</span></td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
+                            <label class="field-select">
+                              <span class="field-select__select-wrap">
+                                <select class="field-select__select  field-select__select--omegaTV" disabled>
+                                  <option value="">Premium TV</option>
+                                  <option value="">Hrenium TV</option>
+                                  <option value="">Durium TV</option>
+                                </select>
+                              </span>
+                            </label>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class="rate-card__footer">
+                    <button class="rate-card__to-submit" type="button" data-toggle="modal" data-target="#requestModal">Обрати тариф</button>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide  rate-card">
+
+                  <div class="rate-card__header">
+                    <h3>Оптимальний</h3>
+                    <div class="rate-card__header-inner">
+                      <div class="rate-card__header-price">
+                        <span class="currency">
+                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ua-hrn-icon"></use></svg>
+                        </span>
+                        <span class="rate-card__header-sum">170
+                          <span class="rate-card__label" style="background-color: green;">-10%</span>
+                        </span>&thinsp;/місяць
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rate-card__body">
+                    <table class="rate-card__table">
+
+                      <tfoot>
+                        <tr>
+                          <td class="rate-card__footer-total">Итого:</td>
+                          <td class="rate-card__footer-total">150<span>₴</span>
+                          </td>
+                        </tr>
+                      </tfoot>
+
+                      <tbody>
+
+                        <tr>
+                          <td>World</td>
+                          <td>50 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Швидкість UA-IX</td>
+                          <td>100 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Безліміт UA</td>
+                          <td><span class="rate-card__availability">+</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Зовнішній IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Гігабітний порт</span>
+                          </td>
+                          <td><span class="rate-card__availability">-</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Back-Resolving IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Додатковий IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Вартість підключення</td>
+                          <td>1<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Авансовий платіж</td>
+                          <td>250<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="rate-card__title-color">OMEGA.TV</span></td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
+                            <label class="field-select">
+                              <span class="field-select__select-wrap">
+                                <select class="field-select__select  field-select__select--omegaTV" disabled>
+                                  <option value="">Premium TV</option>
+                                  <option value="">Hrenium TV</option>
+                                  <option value="">Durium TV</option>
+                                </select>
+                              </span>
+                            </label>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class="rate-card__footer">
+                    <button class="rate-card__to-submit" type="button">Обрати тариф</button>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide  rate-card">
+
+                  <div class="rate-card__header">
+                    <h3>Гігабіт</h3>
+                    <div class="rate-card__header-inner">
+                      <div class="rate-card__header-price">
+                        <span class="currency">
+                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#ua-hrn-icon"></use></svg>
+                        </span>
+                        <span class="rate-card__header-sum">200
+                          <span class="rate-card__label" style="background-color: red;">Суперхит</span>
+                        </span>&thinsp;/місяць
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rate-card__body">
+                    <table class="rate-card__table">
+
+                      <tfoot>
+                        <tr>
+                          <td class="rate-card__footer-total">Итого:</td>
+                          <td class="rate-card__footer-total">150<span>₴</span>
+                          </td>
+                        </tr>
+                      </tfoot>
+
+                      <tbody>
+
+                        <tr>
+                          <td>World</td>
+                          <td>50 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Швидкість UA-IX</td>
+                          <td>100 Мбит</td>
+                        </tr>
+
+                        <tr>
+                          <td>Безліміт UA</td>
+                          <td><span class="rate-card__availability">+</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Зовнішній IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Гігабітний порт</span>
+                          </td>
+                          <td><span class="rate-card__availability">-</span></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Back-Resolving IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
+                            <span>Додатковий IP</span>
+                          </td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Вартість підключення</td>
+                          <td>1<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Авансовий платіж</td>
+                          <td>250<span>₴</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="rate-card__title-color">OMEGA.TV</span></td>
+                          <td>
+                            <div class="field-toggler">
+                              <div class="field-toggler__input-wrap">
+                                <label class="field-toggler__name">
+                                  <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name="" value="">
+                                  <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
+                            <label class="field-select">
+                              <span class="field-select__select-wrap">
+                                <select class="field-select__select  field-select__select--omegaTV" disabled>
+                                  <option value="">Premium TV</option>
+                                  <option value="">Hrenium TV</option>
+                                  <option value="">Durium TV</option>
+                                </select>
+                              </span>
+                            </label>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class="rate-card__footer">
+                    <button class="rate-card__to-submit" type="button">Обрати тариф</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="rates-slider__controls">
+                <div class="swiper-button-prev  swiper-button-prev--white-bg"></div>
+                <div class="swiper-pagination  swiper-pagination--white-bg"></div>
+                <div class="swiper-button-next  swiper-button-prev--white-bg"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

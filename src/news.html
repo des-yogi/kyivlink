@@ -28,112 +28,137 @@
 
         <div class="container  section  section--solo">
 
-          <ul class="list-nostyled  news-card__wrapper">
+          <ul class="list-nostyled  news-block">
 
             <li>
-              <article class="news-card  news-card--hit" data-label="Хит">
-                <div class="embed-responsive embed-responsive--4-3  news-card__img">
-                  <picture>
-                    <source data-srcset="img/news-1.webp" media="(min-width: 1680px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 1680px)">
-                    <!-- 648x486 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
-                    <!-- 286x215 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
-                    <!-- 740x555 -->
-                    <source data-srcset="img/news-1.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
-                  </picture>
-                </div>
-                <div class="news-card__text">
-                  <div class="news-card__content">
-                    <h3>News 1</h3>
-                    <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
-                  </div>
-                  <div  class="news-card__footer">
+              <article class="news-card  news-card--bt-0  news-card--label  news-card--label--green" data-label="СуперХит">
 
-                    @@include('blocks/date/date.html')
-                    <span class="news-card__link">
-                      <a href="#" class="btn  btn--link">Детальніше</a>
-                    </span>
+                <div class="row">
+
+                  <div class="news-card__img-col">
+                    <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                      <picture>
+                        <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+                        <!-- 648x486 -->
+                        <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+                        <!-- 465x349 -->
+                        <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+                        <!-- 740x555 -->
+                        <source data-srcset="img/news-1.webp" type="image/webp">
+                        <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                      </picture>
+                    </div>
                   </div>
+
+                  <div class="news-card__text-col">
+                    <div class="news-card__text">
+                      <div class="news-card__content">
+                        <h3>News 1</h3>
+                        <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+                      </div>
+                      <div  class="news-card__footer">
+
+                        @@include('blocks/date/date.html')
+                        <span class="news-card__link">
+                          <a href="news-single.html" class="btn  btn--link">Детальніше</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
+
               </article>
             </li>
 
             <li>
-              <article class="news-card">
-                <div class="embed-responsive embed-responsive--4-3  news-card__img">
-                  <picture>
-                    <source data-srcset="img/news-2.webp" media="(min-width: 1680px)" type="image/webp">
-                    <source data-srcset="img/news-2.jpg" media="(min-width: 1680px)">
-                    <!-- 648x486 -->
-                    <source data-srcset="img/news-2.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/news-2.jpg" media="(min-width: 1280px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/news-2.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/news-2.jpg" media="(min-width: 768px)">
-                    <!-- 286x215 -->
-                    <source data-srcset="img/news-2.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/news-2.jpg" media="(min-width: 480px)">
-                    <!-- 740x555 -->
-                    <source data-srcset="img/news-2.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/news-2.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
-                  </picture>
-                </div>
-                <div class="news-card__text">
-                  <div class="news-card__content">
-                    <h3>News 1</h3>
-                    <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
-                  </div>
-                  <div  class="news-card__footer">
+              <article class="news-card  news-card--bt-0  news-card--label  news-card--label--green" data-label="СуперХит">
 
-                    @@include('blocks/date/date.html')
-                    <span class="news-card__link">
-                      <a href="#" class="btn  btn--link">Детальніше</a>
-                    </span>
+                <div class="row">
+
+                  <div class="news-card__img-col">
+                    <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                      <picture>
+                        <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+                        <!-- 648x486 -->
+                        <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+                        <!-- 465x349 -->
+                        <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+                        <!-- 740x555 -->
+                        <source data-srcset="img/news-1.webp" type="image/webp">
+                        <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                      </picture>
+                    </div>
                   </div>
+
+                  <div class="news-card__text-col">
+                    <div class="news-card__text">
+                      <div class="news-card__content">
+                        <h3>News 1</h3>
+                        <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+                      </div>
+                      <div class="news-card__footer">
+
+                        @@include('blocks/date/date.html')
+                        <span class="news-card__link">
+                          <a href="news-single.html" class="btn  btn--link">Детальніше</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
+
               </article>
             </li>
 
-           <li>
-              <article class="news-card">
-                <div class="embed-responsive embed-responsive--4-3  news-card__img">
-                  <picture>
-                    <source data-srcset="img/news-1.webp" media="(min-width: 1680px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 1680px)">
-                    <!-- 648x486 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
-                    <!-- 286x215 -->
-                    <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
-                    <!-- 740x555 -->
-                    <source data-srcset="img/news-1.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
-                  </picture>
-                </div>
-                <div class="news-card__text">
-                  <div class="news-card__content">
-                    <h3>News 1</h3>
-                    <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+            <li>
+              <article class="news-card  news-card--bt-0  news-card--label  news-card--label--green" data-label="СуперХит">
+
+                <div class="row">
+
+                  <div class="news-card__img-col">
+                    <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                      <picture>
+                        <source data-srcset="img/news-1.webp" media="(min-width: 1280px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 1280px)">
+                        <!-- 648x486 -->
+                        <source data-srcset="img/news-1.webp" media="(min-width: 768px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 768px)">
+                        <!-- 465x349 -->
+                        <source data-srcset="img/news-1.webp" media="(min-width: 480px)" type="image/webp">
+                        <source data-srcset="img/news-1.jpg" media="(min-width: 480px)">
+                        <!-- 740x555 -->
+                        <source data-srcset="img/news-1.webp" type="image/webp">
+                        <img class="b-lazy" data-src="img/news-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="450" height="337">
+                      </picture>
+                    </div>
                   </div>
-                  <div  class="news-card__footer">
-                    @@include('blocks/date/date.html')
-                    <span class="news-card__link">
-                      <a href="#" class="btn  btn--link">Детальніше</a>
-                    </span>
+
+                  <div class="news-card__text-col">
+                    <div class="news-card__text">
+                      <div class="news-card__content">
+                        <h3>News 1</h3>
+                        <p>"3+2" Кожен новий абонент, підключаючись до мережі KyivLink, може скористатися акцією "3+2". Умови акції дуже прості: оплативши при підключенні три місяці роботи в мережі Інтернет, ще два місяці отримуєте в подарунок.</p>
+                      </div>
+                      <div  class="news-card__footer">
+
+                        @@include('blocks/date/date.html')
+                        <span class="news-card__link">
+                          <a href="news-single.html" class="btn  btn--link">Детальніше</a>
+                        </span>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
+
               </article>
             </li>
 
