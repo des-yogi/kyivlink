@@ -108,7 +108,12 @@ h1 {
 h2 {
   font-size: $font-size--h2;
 
+  @media (min-width: $screen-md) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $screen-lg) {
+    margin-bottom: 40px;
     font-size: $font-size--h2 * 1.143;
   }
 

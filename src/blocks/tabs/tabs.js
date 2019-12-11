@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
       var target = event.target.hash === undefined ? event.target.dataset.target : event.target.hash;
       if ( target !== undefined ) {
         showTab(target);
+        var bLazy = new Blazy();
+        bLazy.revalidate();
         if(history && history.pushState && history.replaceState) {
           var stateObject = {'url' : target};
           if (window.location.hash && stateObject.url !== window.location.hash) {

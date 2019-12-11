@@ -2,6 +2,8 @@ $( document ).ready(function() {
 
   var rateCards = document.querySelectorAll('.rate-card');
 
+  if ( rateCards === undefined ) { return; }
+
   Array.prototype.forEach.call( rateCards, function( card ) {
     var omegaTVinput = card.querySelector('.field-toggler__input--omegaTV');
     var omegaTVselect = card.querySelector('.field-select__select--omegaTV');
@@ -96,7 +98,7 @@ $( document ).ready(function() {
 
     $('#requestModal').on('hide.bs.modal', function (e) {
       window.location.reload();
-    })
+    });
 
   });
 
