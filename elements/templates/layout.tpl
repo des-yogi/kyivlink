@@ -228,16 +228,20 @@
                       <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#facebook_icon"/></svg>
                     </a>
                   </li>
+                  [[++instagram_page:notempty=`
                   <li class="socials__item">
                     <a href="[[++instagram_page]]" class="socials__link" title="Instagram">
                       <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#instagram_icon"/></svg>
                     </a>
                   </li>
+                  `]]
+                  [[++linkedin_page:notempty=`
                   <li class="socials__item">
                     <a href="[[++linkedin_page]]" class="socials__link" title="LinkedIn">
                       <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#linkedin_icon"/></svg>
                     </a>
                   </li>
+                  `]]
                 </ul>
               </div>
             </div>
@@ -279,6 +283,10 @@
                     <span>
                       <a href="tel:+[[++company_tel_3]]">[[++company_tel_3:phone_format]]</a>
                     </span>
+                    <span>
+                      <a href="tel:+[[++company_tel_4]]">[[++company_tel_4:phone_format]]</a>
+                    </span>
+                    
                   </dd>
                 </div>
               </dl>
@@ -327,42 +335,46 @@
             <div class="page-footer__online">
               <ul class="list-nostyled  messengers">
                 <li class="messengers__item">
-                  <a href="https://www.messenger.com/t/[[++fb_messenger]]" class="messengers__link" title="FB Messenger">
+                  <a href="https://www.messenger.com/t/[[++fb_messenger]]" class="messengers__link" title="FB Messenger" target="_blank">
                     <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#fb-messenger_icon"/></svg>
                   </a>
                 </li>
                 <li class="messengers__item">
-                  <a href="https://t.me/[[++telegram]]" class="messengers__link" title="Telegram">
+                  <a href="https://t.me/[[++telegram]]" class="messengers__link" title="Telegram" target="_blank">
                     <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#telegram_icon"/></svg>
                   </a>
                 </li>
                 <li class="messengers__item">
-                  <a href="viber://chat?number=+[[++viber]]" class="messengers__link" title="Viber">
+                  <a href="viber://chat?number=+[[++viber]]" class="messengers__link" title="Viber" target="_blank">
                     <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#viber_icon"/></svg>
                   </a>
                 </li>
                 <li class="messengers__item">
-                  <a href="whatsapp://send?phone=+[[++whatsapp]]" class="messengers__link" title="WhatsApp">
+                  <a href="whatsapp://send?phone=+[[++whatsapp]]" class="messengers__link" title="WhatsApp" target="_blank">
                     <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#whatsapp_icon"/></svg>
                   </a>
                 </li>
               </ul>
               <ul class="list-nostyled  socials">
                 <li class="socials__item">
-                  <a href="[[++facebook_page]]" class="socials__link" title="Facebook">
+                  <a href="[[++facebook_page]]" class="socials__link" title="Facebook" target="_blank">
                     <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#facebook_icon"/></svg>
                   </a>
                 </li>
+                [[++instagram_page:notempty=`
                 <li class="socials__item">
-                  <a href="[[++instagram_page]]" class="socials__link" title="Instagram">
+                  <a href="[[++instagram_page]]" class="socials__link" title="Instagram" target="_blank">
                     <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#instagram_icon"/></svg>
                   </a>
                 </li>
+                `]]
+                [[++linkedin_page:notempty=`
                 <li class="socials__item">
-                  <a href="[[++linkedin_page]]" class="socials__link" title="LinkedIn">
+                  <a href="[[++linkedin_page]]" class="socials__link" title="LinkedIn" target="_blank">
                     <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#linkedin_icon"/></svg>
                   </a>
                 </li>
+                `]]
               </ul>
             </div>
             <div class="page-footer__dev">
@@ -392,8 +404,8 @@
         &hooks=`email`
         &emailFrom=`postman@kyivlink.com`
         &emailTpl=`@FILE chunks/emails/email_tpl.tpl`
-        &emailTo=`des.yogi@ukr.net`
-        &emailBCC=``
+        &emailTo=`info@kyivlink.com`
+        &emailBCC=`dm@itdoors.com.ua`
         &emailSubject=`[[$langs? &uk=`Замовлення на зворотний дзвінок с` &ru=`Заказ на обратный звонок с` &en=`Callback order from`]] [[++site_name]]`
         &validate=`name:required,tel:required:isNumber,activity:blank`
         &validationErrorMessage=`[[$langs? &uk=`У формі містяться помилки!` &ru=`В форме содержатся ошибки!` &en=`The form contains errors!`]]`

@@ -8,69 +8,13 @@
           <div class="main-slider__left-col">
             <div class="main-slider__left  swiper-container">
               <div class="swiper-wrapper">
-                <a href="news-single.html" class="swiper-slide  main-slider__slide">
-                  <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
-                    <picture>
-                      <source data-srcset="assets/img/slider-img-1.webp" media="(min-width: 1680px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-1.jpg" media="(min-width: 1680px)">
-                      <!-- 500x375 -->
-                      <source data-srcset="assets/img/slider-img-1.webp" media="(min-width: 1280px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-1.jpg" media="(min-width: 1280px)">
-                      <!-- 465x349 -->
-                      <source data-srcset="assets/img/slider-img-1.webp" type="image/webp">
-                      <img class="swiper-lazy" data-src="/assets/img/slider-img-1.jpg" alt="Слайд" width="450" height="337">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="main-slider__text">
-                    <h2 class="h1  main-slider__title">Переходьте в Kyiv Link</h2>
-                    <div class="main-slider__content">
-                      <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="news-single.html" class="swiper-slide  main-slider__slide">
-                  <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
-                    <picture>
-                      <source data-srcset="assets/img/slider-img-2.webp" media="(min-width: 1680px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-2.jpg" media="(min-width: 1680px)">
-                      <!-- 500x375 -->
-                      <source data-srcset="assets/img/slider-img-2.webp" media="(min-width: 1280px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-2.jpg" media="(min-width: 1280px)">
-                      <!-- 465x349 -->
-                      <source data-srcset="assets/img/slider-img-2.webp" type="image/webp">
-                      <img class="swiper-lazy" data-src="/assets/img/slider-img-2.jpg" alt="Слайд" width="450" height="337">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="main-slider__text">
-                    <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 2</h2>
-                    <div class="main-slider__content">
-                      <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="news-single.html" class="swiper-slide  main-slider__slide">
-                  <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
-                    <picture>
-                      <source data-srcset="assets/img/slider-img-3.webp" media="(min-width: 1680px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-3.jpg" media="(min-width: 1680px)">
-                      <!-- 500x375 -->
-                      <source data-srcset="assets/img/slider-img-3.webp" media="(min-width: 1280px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-3.jpg" media="(min-width: 1280px)">
-                      <!-- 465x349 -->
-                      <source data-srcset="assets/img/slider-img-3.webp" type="image/webp">
-                      <img class="swiper-lazy" data-src="/assets/img/slider-img-3.jpg" alt="Слайд" width="450" height="337">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="main-slider__text">
-                    <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 3</h2>
-                    <div class="main-slider__content">
-                      <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
-                    </div>
-                  </div>
-                </a>
+                [[pdoResources?
+                &parents=`[[BabelTranslation:default=`54`? &resourceId=`54` &contextKey=`[[*context_key]]`]]`
+                &depth=`0`
+                &tpl=`@FILE chunks/banner_left.tpl`
+                &includeTVs=`image_slide`
+                &sortby=`{ "publishedon":"DESC" }`
+                ]]
               </div>
               <div class="main-slider__controls  main-slider__controls--left">
                 <div class="swiper-button-prev"></div>
@@ -82,69 +26,11 @@
           <div class="main-slider__right-col">
             <div class="main-slider__right  swiper-container">
               <div class="swiper-wrapper">
-                <a href="news-single.html" class="swiper-slide  main-slider__slide">
-                  <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
-                    <picture>
-                      <source data-srcset="assets/img/slider-img-1.webp" media="(min-width: 1680px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-1.jpg" media="(min-width: 1680px)">
-                      <!-- 500x375 -->
-                      <source data-srcset="assets/img/slider-img-1.webp" media="(min-width: 1280px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-1.jpg" media="(min-width: 1280px)">
-                      <!-- 465x349 -->
-                      <source data-srcset="assets/img/slider-img-1.webp" type="image/webp">
-                      <img class="swiper-lazy" data-src="/assets/img/slider-img-1.jpg" alt="Слайд" width="450" height="337">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="main-slider__text">
-                    <h2 class="h1  main-slider__title">Переходьте в Kyiv Link</h2>
-                    <div class="main-slider__content">
-                      <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="news-single.html" class="swiper-slide  main-slider__slide">
-                  <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
-                    <picture>
-                      <source data-srcset="assets/img/slider-img-2.webp" media="(min-width: 1680px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-2.jpg" media="(min-width: 1680px)">
-                      <!-- 500x375 -->
-                      <source data-srcset="assets/img/slider-img-2.webp" media="(min-width: 1280px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-2.jpg" media="(min-width: 1280px)">
-                      <!-- 465x349 -->
-                      <source data-srcset="assets/img/slider-img-2.webp" type="image/webp">
-                      <img class="swiper-lazy" data-src="/assets/img/slider-img-2.jpg" alt="Слайд" width="450" height="337">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="main-slider__text">
-                    <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 2</h2>
-                    <div class="main-slider__content">
-                      <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="news-single.html" class="swiper-slide  main-slider__slide">
-                  <div class="embed-responsive  embed-responsive--4-3  main-slider__img">
-                    <picture>
-                      <source data-srcset="assets/img/slider-img-3.webp" media="(min-width: 1680px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-3.jpg" media="(min-width: 1680px)">
-                      <!-- 500x375 -->
-                      <source data-srcset="assets/img/slider-img-3.webp" media="(min-width: 1280px)" type="image/webp">
-                      <source data-srcset="assets/img/slider-img-3.jpg" media="(min-width: 1280px)">
-                      <!-- 465x349 -->
-                      <source data-srcset="assets/img/slider-img-3.webp" type="image/webp">
-                      <img class="swiper-lazy" data-src="/assets/img/slider-img-3.jpg" alt="Слайд" width="450" height="337">
-                    </picture>
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                  </div>
-                  <div class="main-slider__text">
-                    <h2 class="h1  main-slider__title">Переходьте в Kyiv Link 3</h2>
-                    <div class="main-slider__content">
-                      <p>Зі своїм номером та отримаєте знижку на абонентську плату</p>
-                    </div>
-                  </div>
-                </a>
+                [[!getImageList?
+                &tvname=`connect_announce`
+                &tpl=`banner_right_tpl`
+                &docid=`[[*id]]`
+                ]]
               </div>
               <div class="main-slider__controls  main-slider__controls--right">
                 <div class="swiper-button-prev"></div>
@@ -197,6 +83,8 @@
           &depth=`0`
           &tpl=`@FILE chunks/rate_index_card.tpl`
           &includeTVs=`rate_logo,rate_image`
+          &sortdir=`ASC`
+          &sortby=`menuindex`
           ]]
         </ul>
       </div>
