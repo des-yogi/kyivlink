@@ -6,14 +6,6 @@
     <div class="container">
       <h1>[[*longtitle:default=`[[*pagetitle]]`]]</h1>
     </div>
-    <section class="container  section  rates-home">
-      <div class="rates-home__intro">
-        <h2 class="rates-home__title">[[$langs? &uk=`Загальна інформація` &ru=`Общая информация` &en=`General information`]]</h2>
-        <div class="rates-home__intro-content">
-          [[*content]]
-        </div>
-      </div>
-    </section>
     <section class="rates-block">
       <h2 id="rateFormStart" class="container"><span>[[$langs? &uk=`Вибір тарифу` &ru=`Выбор тарифа` &en=`Choosing a rate`]]</span> <span class="hint">[[$langs? &uk=`Оберіть тарифний план та його умови` &ru=`Выберите тарифный план и его условия` &en=`Choose a rate plan and its terms`]] </span></h2>
       [[!FormIt?
@@ -21,7 +13,7 @@
       &hooks=`email`
       &emailFrom=`postman@kyivlink.com`
       &emailTpl=`@FILE chunks/emails/rate_email.tpl`
-      &emailTo=`des.yogi@ukr.net`
+      &emailTo=`[[++post_email]]`
       &emailBCC=``
       &emailSubject=`[[$langs? &uk=`Замовлення на підключення с` &ru=`Заказ на подключение с` &en=`Network Connection Order from`]] | [[++site_name]]`
       &validate=`email:email,activity:blank`
@@ -44,6 +36,14 @@
             <div class="swiper-pagination  swiper-pagination--white-bg"></div>
             <div class="swiper-button-next  swiper-button-prev--white-bg"></div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="container  section  rates-home" style="border-top:none;">
+      <div class="rates-home__intro">
+        <h2 class="rates-home__title">[[$langs? &uk=`Загальна інформація` &ru=`Общая информация` &en=`General information`]]</h2>
+        <div class="rates-home__intro-content">
+          [[*content]]
         </div>
       </div>
     </section>
