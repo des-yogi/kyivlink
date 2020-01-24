@@ -1,0 +1,65 @@
+//
+// Base styles
+//
+
+.alert {
+  position: relative;
+  padding: 10px 25px 10px 17px;
+  margin-bottom: 20px;
+  color: $white;
+  border: none;
+  border-radius: $border-radius;
+}
+
+// Provide class for links that match alerts
+.alert-link {
+  font-weight: 14px;
+
+  @media (min-width: $screen-lg) {
+    font-size: 16px;
+  }
+}
+
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissible {
+  padding-right: 25px;
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    color: $white;
+    background-color: rgba(255, 255, 255, 0);
+
+    span::before,
+    span::after {
+      background-color: $white;
+      opacity: 0.6;
+    }
+
+    &:hover,
+    &:focus {
+
+      span::before,
+      span::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.alert {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &--succsess {
+    background-color: $hit-color;
+  }
+}

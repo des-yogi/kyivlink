@@ -70,7 +70,8 @@
     "countdown": [],
     "rates-block": [],
     "payments": [],
-    "payments-card": []
+    "payments-card": [],
+    "alert": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -95,6 +96,7 @@
     "./src/js/libs/scrollspy.js",
     "./src/js/libs/collapse.js",
     "./src/js/libs/tooltip.js",
+    "./src/js/libs/alert.js",
     "./src/js/libs/popover.js"
   ],
   "addJsAfter": [

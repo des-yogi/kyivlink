@@ -25,7 +25,7 @@
 
   &__content {
     flex: 0 1 auto;
-    margin-bottom: 40px;
+    margin-bottom: auto;
 
     @media (min-width: $menu-desktop-width) {
       overflow-y: auto;

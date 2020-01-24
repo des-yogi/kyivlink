@@ -52,6 +52,7 @@ $( document ).ready(function() {
     };
 
     var completeFormHandler = function (e) {
+
       var requestModal = document.getElementById('requestModal');
       var submitBtn = document.getElementById('requestModalSubmit');
       var finalSum = document.getElementById('final-sum');
@@ -75,20 +76,28 @@ $( document ).ready(function() {
           var togglerTitleClassName = toggler.name + '-title';
           var togglerTitleElem = card.querySelector('.' + togglerTitleClassName).innerText;
           var togglerValue = toggler.value;
+          var togglerName = toggler.name;
 
-          tableInnerContent.insertAdjacentHTML('beforeend', '<tr><td>' + togglerTitleElem + '</td><td>' + togglerValue + '₴</td></tr>');
+          tableInnerContent.insertAdjacentHTML('beforeend', '<tr><td>' + togglerTitleElem + '</td><td>' + togglerValue + '₴</td><input form="' + formId + '" type="hidden" name="' + togglerName + '" value="' + togglerValue + '"></tr>');
         }
       });
 
       if ( !omegaTVselect.disabled ) {
+        var selectName = omegaTVselect.name;
         var options = omegaTVselect.selectedOptions;
 
         Array.prototype.forEach.call( options, function( option ) {
-          tableInnerContent.insertAdjacentHTML('beforeend', '<tr><td>' + option.label + '</td><td>' + option.value + '₴</td></tr>');
+          tableInnerContent.insertAdjacentHTML('beforeend', '<tr><td>' + option.label + '</td><td>' + option.value + '₴</td><input type="hidden" name="' + selectName + '" value="' + option.label + '"></tr>');
         });
       }
 
     };
+
+    /*var completeHiddenInput = function {
+      var requestModal = document.getElementById('requestModal');
+      var inputFields = requestModal.querySelectorAll('.text-input__field');
+
+    };*/
 
     rateCalculator();
 
