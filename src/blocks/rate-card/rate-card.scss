@@ -33,7 +33,7 @@
       color: $white;
       background-color: $title-color;
 
-      @media (min-width: $screen-lg) {
+      @media (min-width: $screen-xxl) {
         padding: 20px 40px;
       }
     }
@@ -45,7 +45,7 @@
     border-right: 1px solid $border-color;
     border-bottom: 2px solid $border-color;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-xxl) {
       padding: 20px 40px;
     }
   }
@@ -102,8 +102,21 @@
   &__body {
     padding-top: 10px;
     //padding-bottom: 10px;
+    font-size: 16px;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
+
+    @media (min-width: $screen-lg) {
+      font-size: 15px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      font-size: 17px;
+    }
 
     .field-toggler {
       display: inline-block;
@@ -135,7 +148,7 @@
           padding-left: 20px;
         }
 
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-xxl) {
           padding-left: 40px;
         }
       }
@@ -151,7 +164,7 @@
           padding-right: 20px;
         }
 
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-xxl) {
           padding-right: 40px;
         }
       }
@@ -167,7 +180,7 @@
           padding-left: 20px;
         }
 
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-xxl) {
           padding-left: 40px;
         }
       }
@@ -211,10 +224,6 @@
     }
   }
 
-  &__footer {
-
-  }
-
   &__to-submit {
     width: 100%;
     padding-top: 14px;
@@ -237,7 +246,7 @@
     user-select: none;
     cursor: pointer; //arrow-right-icon.svg
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-xxl) {
       padding-left: 40px;
       padding-right: 65px;
       background-position: right 42px center;
