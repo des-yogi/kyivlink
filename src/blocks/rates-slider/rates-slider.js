@@ -12,7 +12,7 @@
         slidesPerView: 2
       },
       1280: {
-        slidesPerView: 3
+        slidesPerView: 4
       },
       1920: {
         slidesPerView: 4
