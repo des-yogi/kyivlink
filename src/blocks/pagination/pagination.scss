@@ -13,7 +13,6 @@ $border-color:                hsl(0, 0%, 60%) !default;
   border-bottom: 2px solid $border-color;
 
   @media (min-width: $screen-md) {
-    justify-content: flex-start;
     padding-bottom: 40px;
     margin-top: 40px;
   }

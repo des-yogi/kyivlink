@@ -39,10 +39,13 @@
     border: 2px solid $white;
 
     @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
       padding: 30px;
     }
 
     @media (min-width: $screen-lg) {
+      display: block;
       padding: 40px;
       border-right-width: 0;
       border-bottom-width: 0;
@@ -55,6 +58,14 @@
 
   &__text-content {
     color: $white;
+
+    @media (min-width: $screen-md) {
+      width: calc(50% - 20px);
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 100%;
+    }
 
     & > * {
       color: inherit;
@@ -107,6 +118,7 @@
     }
 
     img {
+      display: block;
       width: auto;
       height: 390px;
 

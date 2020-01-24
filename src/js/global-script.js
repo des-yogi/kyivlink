@@ -58,7 +58,6 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
       submitBtn.disabled = false;
     }
   };
-
   if (agreementCheckbox) {
     agreementCheckbox.addEventListener('change', agreementHandler);
   }

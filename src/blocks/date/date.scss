@@ -27,5 +27,10 @@
     display: block;
     margin-top: 15px;
     background-image: svg-load('../blocks/sprite-svg/svg/clock_icon.svg', fill=$main-color);
+    background-position: left top 3px;
+
+    @media (min-width: $screen-lg) {
+      background-position: left top 8px;
+    }
   }
 }

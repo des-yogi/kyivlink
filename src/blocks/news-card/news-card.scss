@@ -32,7 +32,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      padding: 20px 30px 20px 0;
+      padding: 20px 20px 20px 0;
       overflow: hidden;
     }
 
@@ -41,7 +41,7 @@
     }
 
     @media (min-width: $screen-xl) {
-      padding: 60px 60px 60px 0;
+      //padding: 60px 0 60px 0;
     }
   }
 
@@ -52,6 +52,19 @@
 
     @media (min-width: $screen-md) {
       margin-bottom: auto;
+    }
+
+    h3 {
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+          color: $main-color;
+        }
+      }
     }
 
     p {
@@ -67,7 +80,7 @@
     margin-top: 20px;
 
     @media (min-width: $screen-lg) {
-      margin-top: 40px;
+      margin-top: 30px;
     }
   }
 
