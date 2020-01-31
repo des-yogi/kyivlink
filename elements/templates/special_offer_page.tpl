@@ -10,14 +10,14 @@
             <div class="news-card__img-col">
               <div class="embed-responsive embed-responsive--4-3  news-card__img">
                 <picture>
-                  <source data-srcset="[[*image:phpthumbon=`w=650&h=488&zc=C&f=webp&q=75`]]" media="(min-width: 1280px)" type="image/webp">
-                  <source data-srcset="[[*image:phpthumbon=`w=650&h=488&zc=C&f=jpeg&q=75`]]" media="(min-width: 1280px)">
-                  <source data-srcset="[[*image:phpthumbon=`w=465&h=350&zc=C&f=webp&q=75`]]" media="(min-width: 768px)" type="image/webp">
-                  <source data-srcset="[[*image:phpthumbon=`w=465&h=350&zc=C&f=jpeg&q=75`]]" media="(min-width: 768px)">
-                  <source data-srcset="[[*image:phpthumbon=`w=610&h=457&zc=C&f=webp&q=75`]]" media="(min-width: 480px)" type="image/webp">
-                  <source data-srcset="[[*image:phpthumbon=`w=610&h=457&zc=C&f=jpeg&q=75`]]" media="(min-width: 480px)">
-                  <source data-srcset="[[*image:phpthumbon=`w=450&h=337&zc=C&f=webp&q=75`]]" type="image/webp">
-                  <img class="b-lazy" data-src="[[*image:phpthumbon=`w=450&h=337&zc=C&f=jpeg&q=75`]]" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="[[*pagetitle]]" width="450" height="337">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=650&h=488&zc=C&f=webp&q=75`]]" media="(min-width: 1280px)" type="image/webp">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=650&h=488&zc=C&f=jpeg&q=75`]]" media="(min-width: 1280px)">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=465&h=350&zc=C&f=webp&q=75`]]" media="(min-width: 768px)" type="image/webp">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=465&h=350&zc=C&f=jpeg&q=75`]]" media="(min-width: 768px)">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=610&h=457&zc=C&f=webp&q=75`]]" media="(min-width: 480px)" type="image/webp">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=610&h=457&zc=C&f=jpeg&q=75`]]" media="(min-width: 480px)">
+                  <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=450&h=337&zc=C&f=webp&q=75`]]" type="image/webp">
+                  <img class="b-lazy" data-src="[[*image:replace=`/ru==`:phpthumbon=`w=450&h=337&zc=C&f=jpeg&q=75`]]" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="[[*pagetitle]]" width="450" height="337">
                 </picture>
               </div>
             </div>
@@ -62,7 +62,8 @@
                   </span>
                   `]]
                   <div class="news-card__submit-wrapper">
-                    <a href="#" class="btn-submit  btn-submit--offer">[[$langs? &uk=`Брати участь в акції` &ru=`Участвовать в акции` &en=`Take advantage`]]</a>
+                    {*<a href="#" class="btn-submit  btn-submit--offer">[[$langs? &uk=`Брати участь в акції` &ru=`Участвовать в акции` &en=`Take advantage`]]</a>*}
+                    <button class="btn-submit  btn-submit--offer" type="button" data-toggle="modal" data-target="#requestModalShort">[[$langs? &uk=`Брати участь в акції` &ru=`Участвовать в акции` &en=`Take advantage`]]</button>
                   </div>
                 </div>
               </div>
@@ -103,422 +104,128 @@
         </div>
       </div>
     </article>
-    
-    {*<section class="rates-block  rates-block--mt">
-      <h2 class="container">Тарифи</h2>
-      <div class="container section section--solo  rates-slider">
-        <div class="swiper-container  rates-slider__container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide  rate-card">
-              <div class="rate-card__header">
-                <h3>Комфорт</h3>
-                <div class="rate-card__header-inner">
-                  <div class="rate-card__header-price">
-                    <span class="currency">
-                      <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#ua-hrn-icon"/></svg>
-                    </span>
-                    <span class="rate-card__header-sum">150
-                      <span class="rate-card__label" style="background-color: green;">-20%</span>
-                    </span>&thinsp;/місяць
+  </main>
+{/block}
+
+{block 'requestmodal'}
+  <div class="request-modal modal fade" id="requestModalShort" tabindex="-1" role="dialog" aria-labelledby="request-modal-title" aria-hidden="true" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="request-modal-title">[[$langs? &uk=`Заявка на підключення` &ru=`Заявка на подключение` &en=`Application for connection`]]</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="[[$langs? &uk=`Закрити` &ru=`Закрыть` &en=`Close`]]">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          [[!FormIt?
+          &preHooks=`checkSpamTime`
+          &hooks=`email`
+          &emailFrom=`postman@kyivlink.com`
+          &emailTpl=`@FILE chunks/emails/sp_offer_email.tpl`
+          &emailTo=`info@kyivlink.com`
+          &emailBCC=`des.yogi@ukr.net`
+          &emailSubject=`[[$langs? &uk=`Замовлення на акційну пропозицію с` &ru=`Заказ на акционное предложение c` &en=`Promotion offer order from`]] [[++site_name]]`
+          &validate=`activity:blank`
+          &validationErrorMessage=`[[$langs? &uk=`У формі містяться помилки!` &ru=`В форме содержатся ошибки!` &en=`The form contains errors!`]]`
+          &successMessage=`[[$langs? &uk=`Повідомлення успішно відправлено!` &ru=`Сообщение успешно отправлено!` &en=`Message sent successfully!`]]`
+          &submitVar=`offerSubmit`
+          ]]
+          <form id="offerForm" action="[[~[[*id]]]]" method="post">
+            <div class="request-modal__form">
+              <div class="text-input">
+                <div class="text-input__wrapper">
+                  <input form="offerForm" type="hidden" name="offer" value="[[*longtitle:default=`[[*pagetitle]]`]]">
+                  <input form="offerForm" type="hidden" name="activity" value="">
+                  <input form="offerForm" id="input-name" class="text-input__field" type="text" name="name" value="[[!+fi.name]]" onblur="this.setAttribute('value', this.value);" required>
+                  <label class="text-input__label" for="input-name">
+                    <span class="text-input__label-content">[[$langs? &uk=`ПІП` &ru=`ФИО` &en=`Full name`]]</span>
+                  </label>
+                </div>
+                <span class="text-input__error">[[!+fi.error.name]]</span>
+              </div>
+              <div class="text-input">
+                <div class="text-input__wrapper">
+                  <input class="visually-hidden" type="text" name="activity" value="">
+                  <input form="offerForm" id="input-email" class="text-input__field" type="email" name="email" value="[[!+fi.email]]" onblur="this.setAttribute('value', this.value);" required>
+                  <label class="text-input__label" for="input-email">
+                    <span class="text-input__label-content">E-mail</span>
+                  </label>
+                </div>
+                <span class="text-input__error">[[!+fi.error.email]]</span>
+              </div>
+              <div class="text-input">
+                <div class="text-input__wrapper">
+                  <input form="offerForm" id="input-tel" class="text-input__field" type="tel" name="tel" value="[[!+fi.tel]]" onblur="this.setAttribute('value', this.value);" required>
+                  <label class="text-input__label" for="input-tel">
+                    <span class="text-input__label-content">[[$langs? &uk=`Телефон` &ru=`Телефон` &en=`Phone`]]</span>
+                  </label>
+                </div>
+                <span class="text-input__error">[[!+fi.error.tel]]</span>
+              </div>
+              <div class="text-input">
+                <div class="text-input__wrapper">
+                  <input form="offerForm" id="input-street" class="text-input__field" type="text" name="street" value="[[!+fi.street]]" onblur="this.setAttribute('value', this.value);">
+                  <label class="text-input__label" for="input-street">
+                    <span class="text-input__label-content">[[$langs? &uk=`Вулиця` &ru=`Улица` &en=`Street`]]</span>
+                  </label>
+                </div>
+                <span class="text-input__error">[[!+fi.error.street]]</span>
+              </div>
+              <div class="request-modal__input-group">
+                <div class="text-input">
+                  <div class="text-input__wrapper">
+                    <input form="offerForm" id="input-house" class="text-input__field" type="text" name="house" value="[[!+fi.house]]" onblur="this.setAttribute('value', this.value);">
+                    <label class="text-input__label" for="input-house">
+                      <span class="text-input__label-content">[[$langs? &uk=`Дім` &ru=`Дом` &en=`House`]]</span>
+                    </label>
                   </div>
+                  <span class="text-input__error">[[!+fi.error.house]]</span>
+                </div>
+                <div class="text-input">
+                  <div class="text-input__wrapper">
+                    <input form="offerForm" id="input-floor" class="text-input__field" type="text" name="floor" value="[[!+fi.floor]]" onblur="this.setAttribute('value', this.value);">
+                    <label class="text-input__label" for="input-floor">
+                      <span class="text-input__label-content">[[$langs? &uk=`Пов.` &ru=`Эт.` &en=`Fl.`]]</span>
+                    </label>
+                  </div>
+                  <span class="text-input__error">[[!+fi.error.floor]]</span>
+                </div>
+                <div class="text-input">
+                  <div class="text-input__wrapper">
+                    <input form="offerForm" id="input-apartment" class="text-input__field" type="text" name="apartment" value="[[!+fi.apartment]]" onblur="this.setAttribute('value', this.value);">
+                    <label class="text-input__label" for="input-apartment">
+                      <span class="text-input__label-content">[[$langs? &uk=`Кв` &ru=`Кв` &en=`Ap`]].</span>
+                    </label>
+                  </div>
+                  <span class="text-input__error">[[!+fi.error.apartment]]</span>
                 </div>
               </div>
-              <div class="rate-card__body">
-                <table class="rate-card__table">
-                  <tfoot>
-                  <tr>
-                    <td class="rate-card__footer-total">Итого:</td>
-                    <td class="rate-card__footer-total">150<span>₴</span>
-                    </td>
-                  </tr>
-                  </tfoot>
-                  <tbody>
-                  <tr>
-                    <td>World</td>
-                    <td>50 Мбит</td>
-                  </tr>
-                  <tr>
-                    <td>Швидкість UA-IX</td>
-                    <td>100 Мбит</td>
-                  </tr>
-                  <tr>
-                    <td>Безліміт UA</td>
-                    <td><span class="rate-card__availability">+</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Зовнішній IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Гігабітний порт</span>
-                    </td>
-                    <td><span class="rate-card__availability">-</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Back-Resolving IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Додатковий IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Вартість підключення</td>
-                    <td>1<span>₴</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Авансовий платіж</td>
-                    <td>250<span>₴</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="rate-card__title-color">OMEGA.TV</span></td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
-                      <label class="field-select">
-                              <span class="field-select__select-wrap">
-                                <select class="field-select__select  field-select__select--omegaTV" disabled>
-                                  <option value>Premium TV</option>
-                                  <option value>Hrenium TV</option>
-                                  <option value>Durium TV</option>
-                                </select>
-                              </span>
-                      </label>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="rate-card__footer">
-                <button class="rate-card__to-submit" type="button" data-toggle="modal" data-target="#requestModal">Обрати тариф</button>
-              </div>
-            </div>
-            <div class="swiper-slide  rate-card">
-              <div class="rate-card__header">
-                <h3>Оптимальний</h3>
-                <div class="rate-card__header-inner">
-                  <div class="rate-card__header-price">
-                        <span class="currency">
-                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#ua-hrn-icon"/></svg>
-                        </span>
-                    <span class="rate-card__header-sum">170
-                          <span class="rate-card__label" style="background-color: green;">-10%</span>
-                        </span>&thinsp;/місяць
-                  </div>
+              <div class="text-input">
+                <div class="text-input__wrapper">
+                  <textarea form="offerForm" id="input-message" class="text-input__field" name="message" rows="4" value="[[!+fi.message]]" onblur="this.setAttribute('value', this.value);"></textarea>
+                  <label class="text-input__label" for="input-message">
+                    <span class="text-input__label-content">[[$langs? &uk=`Додаткова інформація` &ru=`Дополнительная информация` &en=`Additional Information`]]</span>
+                  </label>
                 </div>
+                <span class="text-input__error">[[!+fi.error.message]]</span>
               </div>
-              <div class="rate-card__body">
-                <table class="rate-card__table">
-                  <tfoot>
-                  <tr>
-                    <td class="rate-card__footer-total">Итого:</td>
-                    <td class="rate-card__footer-total">150<span>₴</span>
-                    </td>
-                  </tr>
-                  </tfoot>
-                  <tbody>
-                  <tr>
-                    <td>World</td>
-                    <td>50 Мбит</td>
-                  </tr>
-                  <tr>
-                    <td>Швидкість UA-IX</td>
-                    <td>100 Мбит</td>
-                  </tr>
-                  <tr>
-                    <td>Безліміт UA</td>
-                    <td><span class="rate-card__availability">+</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Зовнішній IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Гігабітний порт</span>
-                    </td>
-                    <td><span class="rate-card__availability">-</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Back-Resolving IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Додатковий IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Вартість підключення</td>
-                    <td>1<span>₴</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Авансовий платіж</td>
-                    <td>250<span>₴</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="rate-card__title-color">OMEGA.TV</span></td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
-                      <label class="field-select">
-                          <span class="field-select__select-wrap">
-                            <select class="field-select__select  field-select__select--omegaTV" disabled>
-                              <option value>Premium TV</option>
-                              <option value>Hrenium TV</option>
-                              <option value>Durium TV</option>
-                            </select>
-                          </span>
-                      </label>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="rate-card__footer">
-                <button class="rate-card__to-submit" type="button">Обрати тариф</button>
+              <input id="requestModalSubmit" form="offerForm" type="submit" class="request-modal__submit" name="offerSubmit" value="[[$langs? &uk=`Відправити запит` &ru=`Отправить запрос` &en=`Submit`]]">
+              <div class="request-modal__agreement-wrapper">     
+                <p class="request-modal__agreement-info" style="margin-bottom:0;">
+                  [[$langs? &uk=`Натискаючи на кнопку, ви приймаєте нашу <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Угоду про збір даних»</a>` &ru=`Нажимая на кнопку, вы принимаете наше <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Соглашение о сборе данных»</a>` &en=`By clicking on the button, you accept our <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Data Collection Agreement»</a>`]]
+                </p>
+                <p class="request-modal__help">
+                  [[$langs? &uk=`Якщо ви не можете визначитися з вибором, зателефонуйте нам по телефону` &ru=`Если вы не можете определиться с выбором, позвоните нам по телефону` &en=`If you can't make your choice, give us a call`]] <a href="tel:+[[++company_tel_1]]">[[++company_tel_1:phone_format]]</a>.
+                </p>
+                <p class="request-modal__help">
+                  [[$langs? &uk=`Ми підберемо для вас оптимальний варіант` &ru=`Ми підберемо для вас оптимальний варіант` &en=`We will find the best option for you`]].
+                </p>
               </div>
             </div>
-            <div class="swiper-slide  rate-card">
-              <div class="rate-card__header">
-                <h3>Гігабіт</h3>
-                <div class="rate-card__header-inner">
-                  <div class="rate-card__header-price">
-                        <span class="currency">
-                          <svg width="13" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#ua-hrn-icon"/></svg>
-                        </span>
-                    <span class="rate-card__header-sum">200
-                          <span class="rate-card__label" style="background-color: red;">Суперхит</span>
-                        </span>&thinsp;/місяць
-                  </div>
-                </div>
-              </div>
-              <div class="rate-card__body">
-                <table class="rate-card__table">
-                  <tfoot>
-                  <tr>
-                    <td class="rate-card__footer-total">Итого:</td>
-                    <td class="rate-card__footer-total">150<span>₴</span>
-                    </td>
-                  </tr>
-                  </tfoot>
-                  <tbody>
-                  <tr>
-                    <td>World</td>
-                    <td>50 Мбит</td>
-                  </tr>
-                  <tr>
-                    <td>Швидкість UA-IX</td>
-                    <td>100 Мбит</td>
-                  </tr>
-                  <tr>
-                    <td>Безліміт UA</td>
-                    <td><span class="rate-card__availability">+</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Зовнішній IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Гігабітний порт</span>
-                    </td>
-                    <td><span class="rate-card__availability">-</span></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Back-Resolving IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button class="rate-card__hint" type="button" data-container="body" data-toggle="popover" title="Зовнішній IP" data-content="Послуга «Зовнішній IP» дозволяє встановити…" aria-labels="hint (рус. подсказка)"></button>
-                      <span>Додатковий IP</span>
-                    </td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Вартість підключення</td>
-                    <td>1<span>₴</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Авансовий платіж</td>
-                    <td>250<span>₴</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><span class="rate-card__title-color">OMEGA.TV</span></td>
-                    <td>
-                      <div class="field-toggler">
-                        <div class="field-toggler__input-wrap">
-                          <label class="field-toggler__name">
-                            <input class="field-toggler__input  field-toggler__input--omegaTV" type="checkbox" name value>
-                            <span class="field-toggler__name-text" aria-labels="Переключатель" aria-role="button"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rate-card__select  rate-card__select--omegaTV" colspan="2">
-                      <label class="field-select">
-                              <span class="field-select__select-wrap">
-                                <select class="field-select__select  field-select__select--omegaTV" disabled>
-                                  <option value>Premium TV</option>
-                                  <option value>Hrenium TV</option>
-                                  <option value>Durium TV</option>
-                                </select>
-                              </span>
-                      </label>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="rate-card__footer">
-                <button class="rate-card__to-submit" type="button">Обрати тариф</button>
-              </div>
-            </div>
-          </div>
-          <div class="rates-slider__controls">
-            <div class="swiper-button-prev  swiper-button-prev--white-bg"></div>
-            <div class="swiper-pagination  swiper-pagination--white-bg"></div>
-            <div class="swiper-button-next  swiper-button-prev--white-bg"></div>
-          </div>
+          </form>
         </div>
       </div>
-    </section>*}
-  </main>
+    </div>
+  </div>
 {/block}

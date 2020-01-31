@@ -128,13 +128,19 @@
           <li class="metismenu__item">
             <a href="[[+link]]" class="h4  metismenu__link" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]
           </li>`
+          &tplHere=`@INLINE
+          <li class="metismenu__item  active">
+            <a class="h4  metismenu__link" [[+attributes]]>
+              [[+menutitle]]
+            </a>[[+wrapper]]
+          </li>`
           &tplInnerRow=`@INLINE
           <li class="metismenu__item">
             <a href="[[+link]]" class="metismenu__link" [[+attributes]]>
               <span class="metismenu__icon" style="background-image: url([[+menu_icon]]);"></span>[[+menutitle]]
             </a>[[+wrapper]]
           </li>`
-          &tplHere=`@INLINE
+          &tplInnerHere=`@INLINE
           <li class="metismenu__item  active">
             <a class="metismenu__link" [[+attributes]]>
               <span class="metismenu__icon" style="background-image: url([[+menu_icon]]);"></span>[[+menutitle]]
@@ -143,6 +149,10 @@
           &tplParentRow=`@INLINE
           <li class="metismenu__item">
             <a href="#" class="has-arrow  h4  metismenu__link" [[+attributes]] aria-expanded="false">[[+menutitle]]</a>[[+wrapper]]
+          </li>`
+          &tplParentRowActive=`@INLINE
+          <li class="metismenu__item  active">
+            <a class="has-arrow  h4  metismenu__link" [[+attributes]] aria-expanded="false">[[+menutitle]]</a>[[+wrapper]]
           </li>`
           ]]
           </nav>
@@ -179,6 +189,10 @@
               &tplParentRow=`@INLINE
               <li class="main-nav__item">
                 <a href="[[+link]]" class="h4  main-nav__link" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]
+              </li>`
+              &tplParentRowHere=`@INLINE
+              <li class="main-nav__item  active">
+                <a class="h4  main-nav__link" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]
               </li>`
               ]]
             </div>
@@ -328,9 +342,9 @@
         <div class="container">
           <div class="page-footer__bottom-inner">
             <div class="page-footer__copyrights">
-              <span class="page-footer__copyrights-item">©&thinsp;[[!+currentYear:default=`now`:strtotime:date=`%Y`]] Kyiv Link. [[$langs? &uk=`Всі права захищені` &ru=`Все права защищены` &en=`All rights reserved`]]</span>
-              <a href="[[~[[BabelTranslation:default=`57`? &resourceId=`57` &contextKey=`[[*context_key]]`]]]]" class="page-footer__copyrights-item">Правила надання послуг.</a>
-              <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]" class="page-footer__copyrights-item">Обробка персональних даних.</a>
+              <span class="page-footer__copyrights-item">©&thinsp;2012 - [[!+currentYear:default=`now`:strtotime:date=`%Y`]].  [[$langs? &uk=`ТОВ "К-ЛІНК". Всі права захищені.` &ru=`ООО "К-ЛИНК". Все права защищены.` &en=`All rights reserved`]]</span>
+              <a href="[[~[[BabelTranslation:default=`57`? &resourceId=`57` &contextKey=`[[*context_key]]`]]]]" class="page-footer__copyrights-item">[[$langs? &uk=`Правила надання послуг.` &ru=`Правила Предоставления услуг`]]</a>
+              <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]" class="page-footer__copyrights-item">[[$langs? &uk=`Публічний договір` &ru=`Публичный договор`]]</a>
             </div>
             <div class="page-footer__online">
               <ul class="list-nostyled  messengers">

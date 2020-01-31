@@ -2923,9 +2923,8 @@ pre code {
   margin-bottom: 0; }
 .metismenu__item {
   border-bottom: 2px solid #f1f1f1; }
-.metismenu__item.active .metismenu__link {
-    color: #0077ff;
-    pointer-events: none; }
+.metismenu__item.active > .metismenu__link {
+    color: #0077ff; }
 .metismenu__link {
   display: block;
   padding: 15px;
@@ -2941,6 +2940,9 @@ pre code {
   background-repeat: no-repeat; }
 .metismenu__submenu .metismenu__item:last-child {
   border-bottom: none; }
+.metismenu__submenu .metismenu__item.active .metismenu__link {
+  color: #0077ff;
+  pointer-events: none; }
 .metismenu__submenu .metismenu__link {
   font-size: 16px;
   font-weight: 500;
