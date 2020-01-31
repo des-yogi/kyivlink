@@ -49,8 +49,7 @@
           <div class="contacts__form">
             <h2>[[$langs? &uk=`Зворотній зв’язок` &ru=`Обратная связь` &en=`Feedback`]]</h2>
             [[!FormIt?
-            &preHooks=`checkSpamTime`
-            &hooks=`email`
+            &hooks=`rcv3,email`
             &emailFrom=`postman@kyivlink.com`
             &emailTpl=`@FILE chunks/emails/email_tpl.tpl`
             &emailTo=`[[++post_email]]`
@@ -60,6 +59,7 @@
             &validationErrorMessage=`[[$langs? &uk=`У формі містяться помилки!` &ru=`В форме содержатся ошибки!` &en=`The form contains errors!`]]`
             &successMessage=`[[$langs? &uk=`Повідомлення успішно відправлено!` &ru=`Сообщение успешно отправлено!` &en=`Message sent successfully!`]]`
             &submitVar=`contactForm`
+            &rcv3Action=`contactform`
             ]]
             [[!+fi.successMessage:notempty=`
               <div class="alert alert--succsess alert-dismissible fade show" role="alert">
@@ -113,6 +113,7 @@
                   [[$langs? &uk=`Натискаючи на кнопку, ви приймаєте нашу <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Угоду про збір даних»</a>` &ru=`Нажимая на кнопку, вы принимаете наше <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Соглашение о сборе данных»</a>` &en=`By clicking on the button, you accept our <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Data Collection Agreement»</a>`]]
                 </p>
               </div>
+              [[!rcv3_html? &action=`[[+rcv3Action:default=``]]` &error=`[[+fi.error.g-recaptcha-response]]`]]
             </form>
           </div>
         </div>
@@ -328,8 +329,8 @@
           '</div>'
         ;
 
-        mainMap.mapTypes.set('styled_map', styledMapType);
-        mainMap.setMapTypeId('styled_map');
+        //mainMap.mapTypes.set('styled_map', styledMapType);
+        //mainMap.setMapTypeId('styled_map');
 
         marker.addListener('click', function(e) {
           var infowindow = new google.maps.InfoWindow({

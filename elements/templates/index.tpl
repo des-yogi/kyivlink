@@ -45,29 +45,25 @@
     <section class="container  services-index">
       <div class="header-block">
         <h2><span>[[$langs? &uk=`Послуги` &ru=`Услуги` &en=`Services`]]</span><span class="header-block__help-text">[[$langs? &uk=`Це може вам допомогти` &ru=`Это может вам помочь` &en=`This can help you`]]</span></h2>
-        <!-- <a href="#" class="btn  btn&#45;&#45;link">[[$langs? &uk=`Всі послуги` &ru=`Все услуги` &en=`All services`]]</a> -->
       </div>
       <ul class="list-nostyled  services-index__list">
         <li class="services-index__item">
-          <div class="services-index__content">
+          <a href="[[~[[BabelTranslation:default=`49`? &resourceId=`49` &contextKey=`[[*context_key]]`]]]]" class="services-index__content">
             <h3>[[pdoField? &id=`[[BabelTranslation:default=`49`? &resourceId=`49` &contextKey=`[[*context_key]]`]]` &field=`pagetitle`]]</h3>
             <p>[[pdoField? &id=`[[BabelTranslation:default=`49`? &resourceId=`49` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]</p>
-          </div>
-          <a href="[[~[[BabelTranslation:default=`49`? &resourceId=`49` &contextKey=`[[*context_key]]`]]]]" class="btn  btn--link">[[$langs? &uk=`Детальніше` &ru=`Подробнее` &en=`Read more`]]</a>
+          </a>
         </li>
         <li class="services-index__item">
-          <div class="services-index__content">
+          <a href="[[~[[BabelTranslation:default=`50`? &resourceId=`50` &contextKey=`[[*context_key]]`]]]]" class="services-index__content">
             <h3>[[pdoField? &id=`[[BabelTranslation:default=`50`? &resourceId=`50` &contextKey=`[[*context_key]]`]]` &field=`pagetitle`]]</h3>
             <p>[[pdoField? &id=`[[BabelTranslation:default=`50`? &resourceId=`50` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]</p>
-          </div>
-          <a href="[[~[[BabelTranslation:default=`50`? &resourceId=`50` &contextKey=`[[*context_key]]`]]]]" class="btn  btn--link">[[$langs? &uk=`Детальніше` &ru=`Подробнее` &en=`Read more`]]</a>
+          </a>
         </li>
         <li class="services-index__item">
-          <div class="services-index__content">
+          <a href="[[~[[BabelTranslation:default=`51`? &resourceId=`51` &contextKey=`[[*context_key]]`]]]]" class="services-index__content">
             <h3>[[pdoField? &id=`[[BabelTranslation:default=`51`? &resourceId=`51` &contextKey=`[[*context_key]]`]]` &field=`pagetitle`]]</h3>
             <p>[[pdoField? &id=`[[BabelTranslation:default=`51`? &resourceId=`51` &contextKey=`[[*context_key]]`]]` &field=`introtext`]]</p>
-          </div>
-          <a href="[[~[[BabelTranslation:default=`51`? &resourceId=`51` &contextKey=`[[*context_key]]`]]]]" class="btn  btn--link">[[$langs? &uk=`Детальніше` &ru=`Подробнее` &en=`Read more`]]</a>
+          </a>
         </li>
       </ul>
     </section>
