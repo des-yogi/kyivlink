@@ -11,14 +11,14 @@
               <div class="news-card__img-col">
                 <div class="embed-responsive embed-responsive--4-3  news-card__img">
                   <picture>
-                    <source data-srcset="[[*image:phpthumbon=`w=650&h=488&zc=C&f=webp&q=75`]]" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="[[*image:phpthumbon=`w=650&h=488&zc=C&f=jpeg&q=75`]]" media="(min-width: 1280px)">
-                    <source data-srcset="[[*image:phpthumbon=`w=465&h=350&zc=C&f=webp&q=75`]]" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="[[*image:phpthumbon=`w=465&h=350&zc=C&f=jpeg&q=75`]]" media="(min-width: 768px)">
-                    <source data-srcset="[[*image:phpthumbon=`w=610&h=457&zc=C&f=webp&q=75`]]" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="[[*image:phpthumbon=`w=610&h=457&zc=C&f=jpeg&q=75`]]" media="(min-width: 480px)">
-                    <source data-srcset="[[*image:phpthumbon=`w=450&h=337&zc=C&f=webp&q=75`]]" type="image/webp">
-                    <img class="b-lazy" data-src="[[*image:phpthumbon=`w=450&h=337&zc=C&f=jpeg&q=75`]]" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="[[*pagetitle]]" width="450" height="337">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=650&h=488&zc=C&f=webp&q=75`]]" media="(min-width: 1280px)" type="image/webp">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=650&h=488&zc=C&f=jpeg&q=75`]]" media="(min-width: 1280px)">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=465&h=350&zc=C&f=webp&q=75`]]" media="(min-width: 768px)" type="image/webp">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=465&h=350&zc=C&f=jpeg&q=75`]]" media="(min-width: 768px)">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=610&h=457&zc=C&f=webp&q=75`]]" media="(min-width: 480px)" type="image/webp">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=610&h=457&zc=C&f=jpeg&q=75`]]" media="(min-width: 480px)">
+                    <source data-srcset="[[*image:replace=`/ru==`:phpthumbon=`w=450&h=337&zc=C&f=webp&q=75`]]" type="image/webp">
+                    <img class="b-lazy" data-src="[[*image:replace=`/ru==`:phpthumbon=`w=450&h=337&zc=C&f=jpeg&q=75`]]" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="[[*pagetitle]]" width="450" height="337">
                   </picture>
                 </div>
               </div>

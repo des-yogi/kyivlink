@@ -14,7 +14,7 @@
         </div>
       </section>
       <section class="cover__addresses">
-        <h2 class="visually-hidden">[[$langs? &uk=`Адреси за якими є підключення до мережі KyivLink` &ru=`Адреса по которым доступно подключение к сети KyivLink` &en=`Addresses where connection to the KyivLink network is available`]]</h2>
+        <h2>[[$langs? &uk=`Адреси за якими є підключення до мережі KyivLink` &ru=`Адреса по которым доступно подключение к сети KyivLink` &en=`Addresses where connection to the KyivLink network is available`]]</h2>
         [[*template:is=`15`:then=`
             [[pdoMenu?
             &parents=`[[*id]]`

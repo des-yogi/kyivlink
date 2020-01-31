@@ -57,9 +57,8 @@
 
     &.active {
 
-      #{$block-name}__link {
+      & > #{$block-name}__link {
         color: $main-color;
-        pointer-events: none;
       }
     }
   }
@@ -87,6 +86,14 @@
 
       &:last-child {
         border-bottom: none;
+      }
+
+      &.active {
+
+        #{$block-name}__link {
+          color: $main-color;
+          pointer-events: none;
+        }
       }
     }
 
