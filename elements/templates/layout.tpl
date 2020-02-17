@@ -280,6 +280,9 @@
                     <span>
                       <a href="tel:+[[++company_tel_1]]">[[++company_tel_1:phone_format]]</a>
                     </span>
+                    <span>
+                      <a href="tel:+[[++company_tel_2]]">[[++company_tel_2:phone_format]]</a>
+                    </span>
                   </dd>
                 </div>
                 <div class="page-footer__contacts-inner">
@@ -300,7 +303,6 @@
                     <span>
                       <a href="tel:+[[++company_tel_4]]">[[++company_tel_4:phone_format]]</a>
                     </span>
-                    
                   </dd>
                 </div>
               </dl>

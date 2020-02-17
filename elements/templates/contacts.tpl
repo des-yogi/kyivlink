@@ -46,20 +46,22 @@
           </div>
         </div>
         <div class="contacts__form-col" id="contactFormStart">
-          <div class="contacts__form">
+          <div class="contacts__form"><!-- [[++post_email]] -->
             <h2>[[$langs? &uk=`Зворотній зв’язок` &ru=`Обратная связь` &en=`Feedback`]]</h2>
             [[!FormIt?
-            &hooks=`rcv3,email`
+            &hooks=`recaptchav3,email`
+            &recaptchav3.token_key=`token-1`
+            &recaptchav3.action_key=`action-1`
+            &recaptchav3.threshold=`0.6`
             &emailFrom=`postman@kyivlink.com`
             &emailTpl=`@FILE chunks/emails/email_tpl.tpl`
-            &emailTo=`[[++post_email]]`
+            &emailTo=`dm@itdoors.com.ua`
             &emailBCC=`des.yogi@ukr.net`
             &emailSubject=`[[$langs? &uk=`Зворотній зв'язок` &ru=`Обратная связь` &en=`Feedback`]] | [[++site_name]]`
             &validate=`name:required,email:email:required,subject:required,message:required,activity:blank`
             &validationErrorMessage=`[[$langs? &uk=`У формі містяться помилки!` &ru=`В форме содержатся ошибки!` &en=`The form contains errors!`]]`
             &successMessage=`[[$langs? &uk=`Повідомлення успішно відправлено!` &ru=`Сообщение успешно отправлено!` &en=`Message sent successfully!`]]`
             &submitVar=`contactForm`
-            &rcv3Action=`contactform`
             ]]
             [[!+fi.successMessage:notempty=`
               <div class="alert alert--succsess alert-dismissible fade show" role="alert">
@@ -113,7 +115,14 @@
                   [[$langs? &uk=`Натискаючи на кнопку, ви приймаєте нашу <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Угоду про збір даних»</a>` &ru=`Нажимая на кнопку, вы принимаете наше <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Соглашение о сборе данных»</a>` &en=`By clicking on the button, you accept our <a href="[[~[[BabelTranslation:default=`68`? &resourceId=`68` &contextKey=`[[*context_key]]`]]]]">«Data Collection Agreement»</a>`]]
                 </p>
               </div>
-              [[!rcv3_html? &action=`[[+rcv3Action:default=``]]` &error=`[[+fi.error.g-recaptcha-response]]`]]
+              <div>
+                [[!recaptchav3_render?
+                  &tpl=`recaptchav3_html`
+                  &token_key=`token-1`
+                  &action_key=`action-1`
+                ]]
+                <div class="visually-hidden">[[!+fi.error.recaptchav3_error]]</div>
+              </div>
             </form>
           </div>
         </div>
