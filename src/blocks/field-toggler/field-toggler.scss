@@ -42,7 +42,7 @@ $line-height:                 1.375em !default;
       left: 0;
       width: 63px;
       height: 30px;
-      background-color: #F6F9FD;
+      background-color: #e7e7e7;
       border-radius: 30px;
       transition: background-color 0.15s;
 
@@ -64,12 +64,16 @@ $line-height:                 1.375em !default;
       transition: all 0.2s;
     }
 
-    @at-root input:checked ~ &:after {
+    @at-root input:checked ~ &::after {
       transform: translateX(33px);
     }
 
-    @at-root input:checked ~ &:before {
+    @at-root input:checked ~ &::before {
       background-color: $main-color;
+    }
+
+    @at-root input:disabled ~ &::after {
+      background: #a1a5b2;
     }
   }
 
@@ -80,6 +84,11 @@ $line-height:                 1.375em !default;
     width: 0;
     height: 0;
     opacity: 0;
+
+    &:disabled + #{$block-name}__name-text {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
 
   &__help-text-wrap {
