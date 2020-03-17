@@ -10,10 +10,10 @@
       <div class="header-block  header-block--border-bottom-mb0">
         <ul class="list-nostyled  tabs__links  header-block__btn-wrapper" role="tablist">
           <li class="tabs__link-wrap  tabs__link-wrap--active" role="presentation">
-            <a href="#tab-01" class="btn  tabs__link [[*template:is=`19`:then=`tabs__link--disabled`]]" data-toggle="tab" role="tab">Спецпропозиції</a>
+            <a href="#tab-01" class="btn  tabs__link [[*template:is=`19`:then=`tabs__link--disabled`]]" data-toggle="tab" role="tab">[[$langs? &uk=`Спецпропозиції` &ru=`Спецпредложения` &en=`Special offers`]]</a>
           </li>
           <li class="tabs__link-wrap" role="presentation">
-            <a href="#tab-02" class="btn  tabs__link [[*template:is=`19`:then=`tabs__link--disabled`]]" data-toggle="tab" role="tab">Тимчасові акції</a>
+            <a href="#tab-02" class="btn  tabs__link [[*template:is=`19`:then=`tabs__link--disabled`]]" data-toggle="tab" role="tab">[[$langs? &uk=`Тимчасові акції` &ru=`Временные акции` &en=`Temporary promotions`]]</a>
           </li>
         </ul>
         [[*template:is=`4`:then=`

@@ -1378,7 +1378,7 @@ textarea.field-text__input {
       left: 0;
       width: 63px;
       height: 30px;
-      background-color: #F6F9FD;
+      background-color: #e7e7e7;
       border-radius: 30px;
       -webkit-transition: background-color 0.15s;
       transition: background-color 0.15s; }
@@ -1400,11 +1400,13 @@ input:focus ~ .field-toggler__name-text:before {
       border-radius: 50%;
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
-input:checked ~ .field-toggler__name-text:after {
+input:checked ~ .field-toggler__name-text::after {
       -webkit-transform: translateX(33px);
               transform: translateX(33px); }
-input:checked ~ .field-toggler__name-text:before {
+input:checked ~ .field-toggler__name-text::before {
       background-color: #0077ff; }
+input:disabled ~ .field-toggler__name-text::after {
+      background: #a1a5b2; }
 .field-toggler__input {
     position: absolute;
     top: 0;
@@ -1412,6 +1414,9 @@ input:checked ~ .field-toggler__name-text:before {
     width: 0;
     height: 0;
     opacity: 0; }
+.field-toggler__input:disabled + .field-toggler__name-text {
+      pointer-events: none;
+      cursor: not-allowed; }
 .field-toggler__help-text-wrap {
     padding-left: 1.5em; }
 .field-toggler__help-text {
