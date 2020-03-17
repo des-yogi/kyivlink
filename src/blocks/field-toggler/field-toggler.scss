@@ -35,7 +35,7 @@ $line-height:                 1.375em !default;
     height: 100%;
     cursor: pointer;
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -51,7 +51,7 @@ $line-height:                 1.375em !default;
       }
     }
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       top: 4px;
@@ -73,6 +73,14 @@ $line-height:                 1.375em !default;
     }
 
     @at-root input:disabled ~ &::after {
+      background: #a1a5b2;
+    }
+
+    @at-root input:checked:disabled ~ &::after {
+      background: $white;
+    }
+
+    @at-root input:checked:disabled ~ &::before {
       background: #a1a5b2;
     }
   }

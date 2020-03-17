@@ -1371,7 +1371,7 @@ textarea.field-text__input {
     width: 100%;
     height: 100%;
     cursor: pointer; }
-.field-toggler__name-text:before {
+.field-toggler__name-text::before {
       content: '';
       position: absolute;
       top: 0;
@@ -1382,12 +1382,12 @@ textarea.field-text__input {
       border-radius: 30px;
       -webkit-transition: background-color 0.15s;
       transition: background-color 0.15s; }
-input:focus ~ .field-toggler__name-text:before {
+input:focus ~ .field-toggler__name-text::before {
         outline: 0;
         background-color: white;
         -webkit-box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.7);
                 box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.7); }
-.field-toggler__name-text:after {
+.field-toggler__name-text::after {
       content: '';
       position: absolute;
       top: 4px;
@@ -1406,6 +1406,10 @@ input:checked ~ .field-toggler__name-text::after {
 input:checked ~ .field-toggler__name-text::before {
       background-color: #0077ff; }
 input:disabled ~ .field-toggler__name-text::after {
+      background: #a1a5b2; }
+input:checked:disabled ~ .field-toggler__name-text::after {
+      background: white; }
+input:checked:disabled ~ .field-toggler__name-text::before {
       background: #a1a5b2; }
 .field-toggler__input {
     position: absolute;
