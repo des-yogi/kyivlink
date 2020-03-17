@@ -41,7 +41,7 @@
     </section>
     <section class="container  section  rates-home" style="border-top:none;">
       <div class="rates-home__intro">
-        <h2 class="rates-home__title">[[$langs? &uk=`Загальна інформація` &ru=`Общая информация` &en=`General information`]]</h2>
+        <h2 class="rates-home__title">[[$langs? &uk=`Умови тарифікації` &ru=`Условия тарификации` &en=`General information`]]</h2>
         <div class="rates-home__intro-content">
           [[*content]]
         </div>
@@ -71,7 +71,7 @@
         <div class="modal-body">
           <div class="request-modal__form">
             <input form="" type="hidden" name="external-ip" value="">
-            <input form="" type="hidden" name="back-res-ip" value="">
+            {*<input form="" type="hidden" name="back-res-ip" value="">*}
             <input form="" type="hidden" name="add-ip" value="">
             <input form="" type="hidden" name="otv-selected" value="">
             <div class="text-input">
