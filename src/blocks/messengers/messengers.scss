@@ -4,11 +4,7 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 15px;
-
-  @media (min-width: $screen-sm) {
-    padding-right: 20px;
-  }
+  padding-right: 24px;
 
   @media (min-width: $screen-md) {
     padding: 15px 20px;
@@ -28,21 +24,60 @@
       margin-left: 12px;
 
       @media (min-width: $screen-sm) {
-        margin-left: 15px;
+        margin-left: 16px;
       }
     }
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 28px;
-    height: 28px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       width: 32px;
       height: 32px;
+    }
+
+    &--messenger {
+      background-size: 20px 20px;
+      background-image: svg-load('../blocks/messengers/bg-img/fb-messenger_icon.svg', fill=$white);
+
+      @media (min-width: $screen-lg) {
+        background-size: 28px 28px;
+      }
+    }
+
+    &--tg {
+      background-size: 20px 17px;
+      background-image: svg-load('../blocks/messengers/bg-img/telegram_icon.svg', fill=$white);
+
+      @media (min-width: $screen-lg) {
+        background-size: 28px 24px;
+      }
+    }
+
+    &--viber {
+      background-size: 20px 20px;
+      background-image: svg-load('../blocks/messengers/bg-img/viber_icon.svg', fill=$white);
+
+      @media (min-width: $screen-lg) {
+        background-size: 28px 28px;
+      }
+    }
+
+    &--wapp {
+      background-size: 20px 20px;
+      background-image: svg-load('../blocks/messengers/bg-img/whatsapp_icon.svg', fill=$white);
+
+      @media (min-width: $screen-lg) {
+        background-size: 28px 28px;
+      }
     }
   }
 }
