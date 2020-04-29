@@ -9,37 +9,32 @@
       <div class="row">
 
         <div class="page-footer__col-contacts">
-          <dl class="page-footer__contacts">
 
-            <div class="page-footer__contacts-inner">
-              <dt class="h4">Підключення</dt>
-              <dd>
-                <span>
-                  <a href="tel:+380682235270">+38 (068) 223-52-70</a>
-                </span>
-              </dd>
-            </div>
+          <ul class="list-nostyled  page-footer__contacts">
 
-            <div class="page-footer__contacts-inner">
-              <dt class="h4">Напишіть нам</dt>
-              <dd>
-                <a href="mailto:kyivlink@gmail.com">kyivlink@gmail.com</a>
-              </dd>
-            </div>
+            <li class="page-footer__contacts-inner  page-footer__contacts-inner--phone">
+              <span>
+                <a href="tel:+380682235270" title="Контактный телефон">+38 (068) 223-52-70</a>
+              </span>
+            </li>
 
-            <div class="page-footer__contacts-inner">
-              <dt class="h4">Тех. підтримка</dt>
-              <dd>
-                <span>
-                  <a href="tel:+380682235270">+38 (068) 223-52-70</a>
-                </span>
-                <span>
-                  <a href="tel:+380682235270">+38 (068) 223-52-70</a>
-                </span>
-              </dd>
-            </div>
+            <li class="page-footer__contacts-inner  page-footer__contacts-inner--email">
+              <span>
+                <a href="mailto:kyivlink@gmail.com" title="Эл. почта">kyivlink@gmail.com</a>
+              </span>
+            </li>
 
-          </dl>
+            <li class="page-footer__contacts-inner  page-footer__contacts-inner--phone-service">
+              <span>
+                <a href="tel:+380682235270" title="Тех. поддержка">+38 (068) 223-52-70</a>
+              </span>
+              <span>
+                <a href="tel:+380682235270" title="Тех. поддержка">+38 (068) 223-52-70</a>
+              </span>
+            </li>
+
+          </ul>
+
         </div>
 
         <div class="page-footer__col-nav">
@@ -51,35 +46,35 @@
               <ul class="list-nostyled  page-footer__nav-list">
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Інтернет додому</a>
+                  <a href="#" class="page-footer__nav-link">Інтернет додому</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Для бізнесу</a>
+                  <a href="#" class="page-footer__nav-link">Для бізнесу</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Забудовникам</a>
+                  <a href="#" class="page-footer__nav-link">Забудовникам</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Абоненту</a>
+                  <a href="#" class="page-footer__nav-link">Абоненту</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Про нас</a>
+                  <a href="#" class="page-footer__nav-link">Про нас</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Новини</a>
+                  <a href="#" class="page-footer__nav-link">Новини</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Контакти</a>
+                  <a href="#" class="page-footer__nav-link">Контакти</a>
                 </li>
 
                 <li class="page-footer__nav-item">
-                  <a href="#" class="h4  page-footer__nav-link">Кабінет</a>
+                  <a href="#" class="page-footer__nav-link">Кабінет</a>
                 </li>
 
               </ul>
@@ -87,7 +82,7 @@
             </nav>
 
             <section class="page-footer__nav-app">
-              <h4>Мобільний додаток</h4>
+              <h4 class="">Мобільний додаток</h4>
               <div class="page-footer__app-links">
                 <a href="#" title="Get It on GooglePlay" target="_blank" rel="nofollow noopener">
                   <img src="img/google-play-app.svg" alt="GooglePlay" width="152" height="44">
@@ -112,11 +107,11 @@
 
         <div class="page-footer__copyrights">
 
-          <span class="page-footer__copyrights-item">© 2019 Kyiv Link. Все права защищены.</span>
+          <span class="page-footer__copyrights-item">© 2012 - 2020. ТОВ "К-ЛІНК". Всі права захищені.</span>
 
           <a href="#" class="page-footer__copyrights-item">Правила надання послуг.</a>
 
-          <a href="#" class="page-footer__copyrights-item">Обробка персональних даних.</a>
+          <a href="#" class="page-footer__copyrights-item">Публічний договір</a>
 
         </div>
 
@@ -124,41 +119,48 @@
 
           <ul class="list-nostyled  messengers">
             <li class="messengers__item">
-              <a href="#" class="messengers__link" title="FB Messenger">
-                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fb-messenger_icon"></use></svg>
+              <a href="#" class="messengers__link  messengers__link--messenger">
+                <span class="visually-hidden">FB Messenger</span>
+                <!-- <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fb-messenger_icon"></use></svg> -->
               </a>
             </li>
             <li class="messengers__item">
-              <a href="#" class="messengers__link" title="Telegram">
-                <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram_icon"></use></svg>
+              <a href="#" class="messengers__link  messengers__link--tg">
+                <span class="visually-hidden">Telegram</span>
+                <!-- <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram_icon"></use></svg> -->
               </a>
             </li>
             <li class="messengers__item">
-              <a href="#" class="messengers__link" title="Viber">
-                <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber_icon"></use></svg>
-              </a>
+              <a href="#" class="messengers__link  messengers__link--viber">
+                <span class="visually-hidden">Viber</span>
+                <!-- <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber_icon"></use></svg>
+              </a> -->
             </li>
             <li class="messengers__item">
-              <a href="#" class="messengers__link" title="WhatsApp">
-                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp_icon"></use></svg>
+              <a href="#" class="messengers__link  messengers__link--wapp">
+                <span class="visually-hidden">WhatsApp</span>
+                <!-- <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp_icon"></use></svg> -->
               </a>
             </li>
           </ul>
 
           <ul class="list-nostyled  socials">
             <li class="socials__item">
-              <a href="#" class="socials__link" title="Facebook">
-                <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook_icon"></use></svg>
+              <a href="#" class="socials__link  socials__link--fb">
+                <span class="visually-hidden">Facebook</span>
+                <!-- <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook_icon"></use></svg> -->
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link" title="Instagram">
-                <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram_icon"></use></svg>
+              <a href="#" class="socials__link  socials__link--insta">
+                <span class="visually-hidden">Instagram</span>
+                <!-- <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram_icon"></use></svg> -->
               </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link" title="LinkedIn">
-                <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin_icon"></use></svg>
+              <a href="#" class="socials__link  socials__link--ln">
+                <span class="visually-hidden">LinkedIn</span>
+                <!-- <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin_icon"></use></svg> -->
               </a>
             </li>
           </ul>

@@ -1,14 +1,14 @@
 .page-footer {
-  padding-top: 30px;
+  padding-top: 24px;
   color: $white;
   background-color: $main-color;
 
-  @media (min-width: $screen-md) {
-    padding-top: 40px;
-  }
+  //@media (min-width: $screen-md) {
+    //padding-top: 40px;
+  //}
 
   @media (min-width: $screen-xl) {
-    padding-top: 60px;
+    padding-top: 32px;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -28,28 +28,36 @@
   }
 
   &__top {
-    padding: 30px 0;
+    padding: 24px 0;
     border-top: 2px solid $white;
     border-bottom: 2px solid $white;
 
-    @media (min-width: $screen-md) {
-      padding: 40px 0;
-    }
+    // @media (min-width: $screen-md) {
+    //   padding: 40px 0;
+    // }
 
     @media (min-width: $screen-xl) {
-      padding: 60px 0;
+      padding: 32px 0;
     }
   }
 
   &__col-contacts {
     @include col(xs, 12, $grid-columns, 30px);
-    @include col(md, 4, $grid-columns, 30px);
+    //@include col(md, 4, $grid-columns, 30px);
     @include col(lg, 3);
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
   }
 
   &__col-nav {
     @include col(xs, 12, $grid-columns, 30px);
-    @include col(md, 8, $grid-columns, 30px);
+    //@include col(md, 8, $grid-columns, 30px);
     @include col(lg, 9);
   }
 
@@ -57,24 +65,10 @@
     margin-bottom: 30px;
 
     @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin-bottom: 0;
-    }
-
-    dt {
-      margin-bottom: 10px;
-      color: inherit;
-    }
-
-    dd {
-      margin-left: 0;
-
-      span {
-        display: block;
-      }
-
-      span + span {
-        margin-top: 10px;
-      }
     }
   }
 
@@ -82,15 +76,67 @@
     margin-bottom: 20px;
 
     @media (min-width: $screen-md) {
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
     }
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+
+      @media (min-width: $screen-lg) {
+        font-size: 16px;
+      }
+
+      &::before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+        background-color: transparent;
+        background-position: center;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    span + span {
+      margin-top: 20px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 10px;
+      }
+    }
+
+    &--phone {
+
+      span::before {
+        background-image: svg-load('../blocks/page-footer/bg-img/phone-icon.svg', fill=$white);
+      }
+    }
+
+    &--email {
+
+      span::before {
+        background-image: svg-load('../blocks/page-footer/bg-img/email-icon.svg', fill=$white);
+      }
+    }
+
+    &--phone-service {
+
+      span:first-child::before {
+        background-image: svg-load('../blocks/page-footer/bg-img/phone-service-icon.svg', fill=$white);
+      }
     }
   }
 
@@ -99,32 +145,30 @@
     @media (min-width: $screen-lg) {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       height: 100%;
     }
   }
 
   &__nav-menu {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     @media (min-width: $screen-md) {
       margin-bottom: 10px;
     }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
 
   &__nav-list {
-
-    @media (min-width: $screen-md) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      align-content: flex-start;
-      width: 100%;
-      height: 100%;
+      justify-content: space-between;
+      //align-content: flex-start;
+
+    @media (min-width: $screen-md) {
       margin-left: -15px;
       margin-right: -15px;
     }
@@ -136,19 +180,21 @@
   }
 
   &__nav-item {
+    width: calc(50% - 8px);
     margin-bottom: 10px;
 
     @media (min-width: $screen-md) {
       //flex: 0 1 50%;
-      width: 50%;
+      width: 25%;
       padding: 0 15px;
       margin-bottom: 20px;
     }
 
     @media (min-width: $screen-lg) {
       //flex: 0 1 33.333%;
-      width: 33.333%;
+      //width: 33.333%;
       padding: 0 30px;
+      margin-bottom: 20px;
     }
 
     &:last-child {
@@ -161,6 +207,34 @@
     }
   }
 
+  &__nav-link {
+    display: inline-block;
+    vertical-align: baseline;
+    font-weight: 600;
+  }
+
+  &__nav-app {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    h4 {
+      font-size: 16px;
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 0;
+        margin-right: 24px;
+      }
+
+      @media (min-width: $screen-lg) {
+        font-size: 18px;
+      }
+    }
+  }
+
   &__app-links {
     display: flex;
     justify-content: flex-start;
@@ -169,12 +243,18 @@
       display: block;
 
       &:first-child {
-        margin-right: 20px;
+        margin-right: 16px;
+
+        @media (min-width: $screen-md) {
+          margin-right: 24px;
+        }
       }
     }
 
     img {
       display: block;
+      width: 110px;
+      height: 32px;
     }
   }
 
@@ -255,29 +335,37 @@
     .socials {
 
       @media (min-width: $screen-md) {
-        padding: 20px 40px;
+        padding: 16px 48px;
       }
 
       @media (min-width: $screen-lg) {
-        padding: 20px 20px;
+        padding: 16px 20px;
       }
 
-      @media (min-width: 1440px) {
-        padding: 20px 30px;
+      @media (min-width: $screen-xl) {
+        padding: 16px 32px;
+      }
+
+      @media (min-width: $screen-xxl) {
+        padding: 16px 42px;
       }
 
       li + li {
 
         @media (min-width: $screen-md) {
-          margin-left: 20px;
+          margin-left: 42px;
         }
 
         @media (min-width: $screen-lg) {
-          margin-left: 10px;
+          margin-left: 15px;
         }
 
-        @media (min-width: 1440px) {
-           margin-left: 20px;
+        @media (min-width: $screen-xl) {
+           margin-left: 24px;
+        }
+
+        @media (min-width: $screen-xxl) {
+           margin-left: 42px;
         }
       }
     }
@@ -313,11 +401,19 @@
 
     @media (min-width: $screen-md) {
       flex: 0 1 auto;
-      padding: 20px 0 20px 40px;
+      padding: 16px 0 16px 48px;
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 20px;
+      padding-left: 24px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-left: 32px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      padding-left: 42px;
     }
 
     img {
