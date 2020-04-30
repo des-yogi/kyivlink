@@ -267,22 +267,72 @@
     @media (min-width: $screen-md) {
       flex: 0 1 auto;
     }
+
+    .messengers,
+    .socials {
+
+      @media (min-width: $screen-md) {
+        padding: 16px 48px;
+      }
+
+      @media (min-width: $screen-lg) {
+        padding: 16px 20px;
+      }
+
+      @media (min-width: $screen-xl) {
+        padding: 16px 32px;
+      }
+
+      @media (min-width: $screen-xxl) {
+        padding: 16px 42px;
+      }
+
+      li + li {
+
+        @media (min-width: $screen-md) {
+          margin-left: 42px;
+        }
+
+        @media (min-width: $screen-lg) {
+          margin-left: 15px;
+        }
+
+        @media (min-width: $screen-xl) {
+           margin-left: 24px;
+        }
+
+        @media (min-width: $screen-xxl) {
+           margin-left: 42px;
+        }
+      }
+    }
+
+    .messengers__link--messenger {
+      background-image: svg-load('../blocks/messengers/bg-img/fb-messenger_icon.svg', fill=$main-color);
+    }
+
+    .messengers__link--tg {
+      background-image: svg-load('../blocks/messengers/bg-img/telegram_icon.svg', fill=$main-color);
+    }
+
+    .messengers__link--viber {
+      background-image: svg-load('../blocks/messengers/bg-img/viber_icon.svg', fill=$main-color);
+    }
+
+    .messengers__link--wapp {
+      background-image: svg-load('../blocks/messengers/bg-img/whatsapp_icon.svg', fill=$main-color);
+    }
+
+    .socials__link--fb {
+      background-image: svg-load('../blocks/socials/bg-img/facebook_icon.svg', fill=$main-color);
+    }
+
+    .socials__link--insta {
+      background-image: svg-load('../blocks/socials/bg-img/instagram_icon.svg', fill=$main-color);
+    }
+
+    .socials__link--ln {
+      background-image: svg-load('../blocks/socials/bg-img/linkedin_icon.svg', fill=$main-color);
+    }
   }
-
-  // переключатель
-
-  /* &__toggler {
-    display: inline-block;
-    padding: 0;
-    background: none;
-    border: none;
-
-    .no-js & {
-      display: none;
-    }
-
-    @media (min-width: $menu-desktop-width) {
-      display: none;
-    }
-  } */
 }

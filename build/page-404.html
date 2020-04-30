@@ -7,144 +7,369 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
 <meta name="msapplication-config" content="/img/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head><body><noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>  <div class="page__inner">    <div class="page__content">      <!--DEV      Нужно убрать пробел между @-ами:      @ @include('blocks/page-header/page-header.html')      -->      <header class="page-header" role="banner">        <div class="container">          <div class="page-header__inner">            <a href="index.html" class="logo">              <img src="img/kyivlink_logo.svg" alt="logo" width="120" height="40">            </a>            <div class="page-header__menu-block">              <a href="#" class="page-header__icon">                <span>                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#account-32px_icon"/></svg>                </span>                <span class="page-header__icon-text">Профиль</span>              </a>              <a id="menu-toggler" class="page-header__icon" data-toggle="collapse" href="#collapseMainNav" role="button" aria-expanded="false" aria-controls="collapseMainNav">                <span>                  <svg class="page-header__icon-menu" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#menu-32px_icon"/></svg>                  <svg class="page-header__icon-close" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close-32px_icon"/></svg>                </span>                <span class="page-header__icon-text">Меню</span>              </a>            </div>            <div class="page-header__service-block">              <div class="dropdown">                <a class="dropdown__toggle  dropdown-toggle" href="#" role="button" id="dropdownPhone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                  +38 (068) 223-52-70                </a>                <ul class="dropdown-menu  dropdown__menu  list-nostyled" aria-labelledby="dropdownPhone">                  <li class="dropdown-item">                    <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>                  </li>                </ul>              </div>              <a href="#" class="page-header__callback-link">Передзвоніть мені</a>              <div class="dropdown">                <a class="dropdown__toggle  dropdown-toggle" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                  Рус                </a>                <ul class="dropdown-menu  dropdown__menu  list-nostyled" aria-labelledby="dropdownLang">                  <li class="dropdown-item">                    <a class="dropdown__link" href="#">Укр</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="#">Рус</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="#">Анг</a>                  </li>                </ul>              </div>            </div>          </div>        </div>      </header>      <!--DEV      @ @include('blocks/main-nav/main-nav.html')      -->      <div class="collapse  main-nav" id="collapseMainNav">        <div class="main-nav__inner">          <div class="main-nav__content">            <nav class="main-nav__mobile">              <ul id="metismenu" class="metismenu  list-nostyled">                <li class="metismenu__item  active">                  <a class="has-arrow  h4  metismenu__link" href="#" aria-expanded="false">Інтернет додому</a>                  <ul class="metismenu__submenu">                    <li class="metismenu__item">                      <a href="spec-offers.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі                      </a>                    </li>                    <li class="metismenu__item  active">                      <a class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>                        Послуги                      </a>                    </li>                    <li class="metismenu__item">                      <a href="rates-home.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                        Тарифи                      </a>                    </li>                    <li class="metismenu__item">                      <a href="cover.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/cover_icon.svg);"></span>                        Покриття                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/info_icon.svg);"></span>                        Правила користування мережею                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/contract_icon.svg);"></span>                        Публічний договір                      </a>                    </li>                  </ul>                </li>                <li class="metismenu__item">                  <a class="has-arrow  h4  metismenu__link" href="services.html" aria-expanded="false">Інтернет для бізнесу</a>                  <ul class="metismenu__submenu">                    <li class="metismenu__item">                      <a href="spec-offers.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі                      </a>                    </li>                    <li class="metismenu__item  active">                      <a class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>                        Послуги???                      </a>                    </li>                    <li class="metismenu__item">                      <a href="rates-home.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                        Тарифи                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>                        Реєстрація доменних імен                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>                        IP-транзит                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                        Colocation                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                        Інтернет для бізнесу                      </a>                    </li>                  </ul>                </li>                <li class="metismenu__item">                  <a href="services.html" class="has-arrow  h4  metismenu__link">Забудовникам</a>                  <ul class="metismenu__submenu">                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>ІТ інфраструктура                      </a>                    </li>                    <li class="metismenu__item  active">                      <a class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>                        Контроль доступу                      </a>                    </li>                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                        Відеонагляд                      </a>                    </li>                  </ul>                </li>                <li class="metismenu__item">                  <a href="#" class="has-arrow  h4  metismenu__link">Абоненту</a>                  <ul class="metismenu__submenu">                    <li class="metismenu__item">                      <a href="news-single.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Телебачення                      </a>                    </li>                    <li class="metismenu__item  active">                      <a class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>                        Відеонагляд                      </a>                    </li>                    <li class="metismenu__item">                      <a href="payments.html" class="metismenu__link">                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                        Методи оплати                      </a>                    </li>                    <li class="metismenu__item">                      <a href="#" class="metismenu__link" target="_blank" rel="nofollow noopener">                        <span class="metismenu__icon" style="background-image: url(img/cover_icon.svg);"></span>                        SpeedTest                      </a>                    </li>                  </ul>                </li>                <li class="metismenu__item">                  <a href="news-single.html" class="h4  metismenu__link">Про нас</a>                </li>                <li class="metismenu__item  active">                  <a href="news.html" class="h4  metismenu__link">Новини</a>                </li>                <li class="metismenu__item">                  <a href="contacts.html" class="h4  metismenu__link">Контакти</a>                </li>              </ul>            </nav>            <nav class="main-nav__desktop">              <div class="container">                <ul class="list-nostyled  main-nav__list">                  <li class="main-nav__item">                    <a class="h4  main-nav__link" href="services.html">Інтернет додому</a>                    <ul class="main-nav__submenu">                      <li class="main-nav__item">                        <a href="spec-offers.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(../img/stocks_icon.svg);"></span>Акціі                        </a>                      </li>                      <li class="main-nav__item  active">                        <a class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>                          Послуги                        </a>                      </li>                      <li class="main-nav__item">                        <a href="rates-home.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                          Тарифи                        </a>                      </li>                      <li class="main-nav__item">                        <a href="cover.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/cover_icon.svg);"></span>                          Покриття                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/info_icon.svg);"></span>                          Правила користування мережею                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/contract_icon.svg);"></span>                          Публічний договір                        </a>                      </li>                    </ul>                  </li>                  <li class="main-nav__item">                    <a class="h4  main-nav__link" href="services.html">Інтернет для бізнесу</a>                    <ul class="main-nav__submenu">                      <li class="main-nav__item">                        <a href="spec-offers.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі                        </a>                      </li>                      <li class="main-nav__item  active">                        <a class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>                          Послуги                        </a>                      </li>                      <li class="main-nav__item">                        <a href="rates-home.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                          Тарифи                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>                          Реєстрація доменних імен                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>                          IP-транзит                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                          Colocation                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                          Інтернет для бізнесу                        </a>                      </li>                    </ul>                  </li>                  <li class="main-nav__item">                    <a href="services.html" class="h4  main-nav__link">Забудовникам</a>                    <ul class="main-nav__submenu">                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>ІТ інфраструктура                        </a>                      </li>                      <li class="main-nav__item  active">                        <a class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>                          Контроль доступу                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                          Відеонагляд                        </a>                      </li>                    </ul>                  </li>                  <li class="main-nav__item">                    <a href="services.html" class="h4  main-nav__link">Абоненту</a>                    <ul class="main-nav__submenu">                      <li class="main-nav__item">                        <a href="payments.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Методи оплати?                        </a>                      </li>                      <li class="main-nav__item  active">                        <a class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>                          Телебачення                        </a>                      </li>                      <li class="main-nav__item">                        <a href="news-single.html" class="main-nav__link">                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>                          Відеонагляд                        </a>                      </li>                      <li class="main-nav__item">                        <a href="#" class="main-nav__link" target="_blank" rel="nofollow noopener">                          <span class="main-nav__icon" style="background-image: url(img/cover_icon.svg);"></span>                          SpeedTest                        </a>                      </li>                    </ul>                  </li>                  <li class="main-nav__item">                    <a href="news-single.html" class="h4  main-nav__link">Про нас</a>                  </li>                  <li class="main-nav__item">                    <a href="news.html" class="h4  main-nav__link">Новини</a>                  </li>                  <li class="main-nav__item">                    <a href="contacts.html" class="h4  main-nav__link">Контакти</a>                  </li>                </ul>              </div>            </nav>          </div>          <div class="main-nav__footer">            <div class="container">              <div class="main-nav__footer-row">                <div class="main-nav__copyrights">                  <span>© 2019 Kyiv Link. Все права защищены</span>                </div>                <div class="main-nav__applications">                  <a href="#" title="Get It on GooglePlay" target="_blank" rel="nofollow noopener">                    <img src="img/google-play-app.svg" alt="GooglePlay" width="152" height="44">                  </a>                  <a href="#" title="Download on AppStore" target="_blank" rel="nofollow noopener">                    <img src="img/apple-store-app.svg" alt="AppStore" width="152" height="44">                  </a>                </div>                <div class="main-nav__online">                  <ul class="list-nostyled  messengers">                    <li class="messengers__item">                      <a href="#" class="messengers__link" title="FB Messenger">                        <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fb-messenger_icon"/></svg>                      </a>                    </li>                    <li class="messengers__item">                      <a href="#" class="messengers__link" title="Telegram">                        <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram_icon"/></svg>                      </a>                    </li>                    <li class="messengers__item">                      <a href="#" class="messengers__link" title="Viber">                        <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber_icon"/></svg>                      </a>                    </li>                    <li class="messengers__item">                      <a href="#" class="messengers__link" title="WhatsApp">                        <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp_icon"/></svg>                      </a>                    </li>                  </ul>                  <ul class="list-nostyled  socials">                    <li class="socials__item">                      <a href="#" class="socials__link" title="Facebook">                        <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook_icon"/></svg>                      </a>                    </li>                    <li class="socials__item">                      <a href="#" class="socials__link" title="Instagram">                        <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram_icon"/></svg>                      </a>                    </li>                    <li class="socials__item">                      <a href="#" class="socials__link" title="LinkedIn">                        <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin_icon"/></svg>                      </a>                    </li>                  </ul>                </div>              </div>            </div>          </div>        </div>      </div>      <main class="main  main--noindex" role="main">        <div class="container  section  section--solo  page-404">          <div class="page-404__inner">            <h1 class="page-404__title">Сторінка не знайдена або не існує…</h1>            <p class="h4">Cхоже, не вдалося знайти сторінку, яку ви шукаєте</p>            <a href="index.html" class="btn-submit">На головну</a>          </div>          <div class="row">            <div class="page-404__col">              <img src="img/p404.svg" alt="Error 404. The page not found" title="Error 404. The page not found">            </div>          </div>        </div>      </main>    </div>    <div class="page__footer-wrapper">      <!--DEV
-      @ @include('blocks/page-footer/page-footer.html')
+<meta name="theme-color" content="#ffffff"></head><body><noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>  <div class="page__inner">    <div class="page__content">      <!--DEV      Нужно убрать пробел между @-ами:      @ @include('blocks/page-header/page-header.html')      -->      <header class="page-header" role="banner">        <div class="container">          <div class="page-header__inner">            <a href="index.html" class="logo">              <img src="img/kyivlink_logo.svg" alt="logo" width="120" height="40">            </a>            <div class="page-header__menu-block">              <a href="#" class="page-header__icon">                <span>                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#account-32px_icon"/></svg>                </span>                <span class="page-header__icon-text">Профиль</span>              </a>              <a id="menu-toggler" class="page-header__icon" data-toggle="collapse" href="#collapseMainNav" role="button" aria-expanded="false" aria-controls="collapseMainNav">                <span>                  <svg class="page-header__icon-menu" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#menu-32px_icon"/></svg>                  <svg class="page-header__icon-close" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close-32px_icon"/></svg>                </span>                <span class="page-header__icon-text">Меню</span>              </a>            </div>            <div class="page-header__service-block">              <div class="dropdown">                <a class="dropdown__toggle  dropdown-toggle" href="#" role="button" id="dropdownPhone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                  +38 (068) 223-52-70                </a>                <ul class="dropdown-menu  dropdown__menu  list-nostyled" aria-labelledby="dropdownPhone">                  <li class="dropdown-item">                    <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="tel:+380682235270">+38 (068) 223-52-70</a>                  </li>                </ul>              </div>              <a href="#" class="page-header__callback-link">Передзвоніть мені</a>              <div class="dropdown">                <a class="dropdown__toggle  dropdown-toggle" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                  Рус                </a>                <ul class="dropdown-menu  dropdown__menu  list-nostyled" aria-labelledby="dropdownLang">                  <li class="dropdown-item">                    <a class="dropdown__link" href="#">Укр</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="#">Рус</a>                  </li>                  <li class="dropdown-item">                    <a class="dropdown__link" href="#">Анг</a>                  </li>                </ul>              </div>            </div>          </div>        </div>      </header>      <!--DEV
+      @ @include('blocks/main-nav/main-nav.html')
       -->
-      <footer class="page-footer" role="contentinfo">
-        <div class="page-footer__top">
-          <div class="container">
-            <div class="row">
-              <div class="page-footer__col-contacts">
-                <ul class="list-nostyled  page-footer__contacts">
-                  <li class="page-footer__contacts-inner  page-footer__contacts-inner--phone">
-                    <span>
-                      <a href="tel:+380682235270" title="Контактный телефон">+38 (068) 223-52-70</a>
-                    </span>
+      <div class="collapse  main-nav" id="collapseMainNav">
+        <div class="main-nav__inner">
+          <div class="main-nav__content">
+            <nav class="main-nav__mobile">
+              <ul id="metismenu" class="metismenu  list-nostyled">
+                <li class="metismenu__item  active">
+                  <a class="has-arrow  h4  metismenu__link" href="#" aria-expanded="false">Інтернет додому</a>
+                  <ul class="metismenu__submenu">
+                    <li class="metismenu__item">
+                      <a href="spec-offers.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                      </a>
+                    </li>
+                    <li class="metismenu__item  active">
+                      <a class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                        Послуги
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="rates-home.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                        Тарифи
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="cover.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                        Покриття
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/info_icon.svg);"></span>
+                        Правила користування мережею
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/contract_icon.svg);"></span>
+                        Публічний договір
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="metismenu__item">
+                  <a class="has-arrow  h4  metismenu__link" href="services.html" aria-expanded="false">Інтернет для бізнесу</a>
+                  <ul class="metismenu__submenu">
+                    <li class="metismenu__item">
+                      <a href="spec-offers.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                      </a>
+                    </li>
+                    <li class="metismenu__item  active">
+                      <a class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                        Послуги???
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="rates-home.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                        Тарифи
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>
+                        Реєстрація доменних імен
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                        IP-транзит
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                        Colocation
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                        Інтернет для бізнесу
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="metismenu__item">
+                  <a href="services.html" class="has-arrow  h4  metismenu__link">Забудовникам</a>
+                  <ul class="metismenu__submenu">
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>ІТ інфраструктура
+                      </a>
+                    </li>
+                    <li class="metismenu__item  active">
+                      <a class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                        Контроль доступу
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                        Відеонагляд
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="metismenu__item">
+                  <a href="#" class="has-arrow  h4  metismenu__link">Абоненту</a>
+                  <ul class="metismenu__submenu">
+                    <li class="metismenu__item">
+                      <a href="news-single.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/stocks_icon.svg);"></span>Телебачення
+                      </a>
+                    </li>
+                    <li class="metismenu__item  active">
+                      <a class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/services_icon.svg);"></span>
+                        Відеонагляд
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="payments.html" class="metismenu__link">
+                        <span class="metismenu__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                        Методи оплати
+                      </a>
+                    </li>
+                    <li class="metismenu__item">
+                      <a href="#" class="metismenu__link" target="_blank" rel="nofollow noopener">
+                        <span class="metismenu__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                        SpeedTest
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="metismenu__item">
+                  <a href="news-single.html" class="h4  metismenu__link">Про нас</a>
+                </li>
+                <li class="metismenu__item  active">
+                  <a href="news.html" class="h4  metismenu__link">Новини</a>
+                </li>
+                <li class="metismenu__item">
+                  <a href="contacts.html" class="h4  metismenu__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="main-nav__desktop">
+              <div class="container">
+                <ul class="list-nostyled  main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="h4  main-nav__link" href="services.html">Інтернет додому</a>
+                    <ul class="main-nav__submenu">
+                      <li class="main-nav__item">
+                        <a href="spec-offers.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(../img/stocks_icon.svg);"></span>Акціі
+                        </a>
+                      </li>
+                      <li class="main-nav__item  active">
+                        <a class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                          Послуги
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="rates-home.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                          Тарифи
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="cover.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                          Покриття
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/info_icon.svg);"></span>
+                          Правила користування мережею
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/contract_icon.svg);"></span>
+                          Публічний договір
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="page-footer__contacts-inner  page-footer__contacts-inner--email">
-                    <span>
-                      <a href="mailto:kyivlink@gmail.com" title="Эл. почта">kyivlink@gmail.com</a>
-                    </span>
+                  <li class="main-nav__item">
+                    <a class="h4  main-nav__link" href="services.html">Інтернет для бізнесу</a>
+                    <ul class="main-nav__submenu">
+                      <li class="main-nav__item">
+                        <a href="spec-offers.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Акціі
+                        </a>
+                      </li>
+                      <li class="main-nav__item  active">
+                        <a class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                          Послуги
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="rates-home.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                          Тарифи
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>
+                          Реєстрація доменних імен
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                          IP-транзит
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                          Colocation
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                          Інтернет для бізнесу
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="page-footer__contacts-inner  page-footer__contacts-inner--phone-service">
-                    <span>
-                      <a href="tel:+380682235270" title="Тех. поддержка">+38 (068) 223-52-70</a>
-                    </span>
-                    <span>
-                      <a href="tel:+380682235270" title="Тех. поддержка">+38 (068) 223-52-70</a>
-                    </span>
+                  <li class="main-nav__item">
+                    <a href="services.html" class="h4  main-nav__link">Забудовникам</a>
+                    <ul class="main-nav__submenu">
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>ІТ інфраструктура
+                        </a>
+                      </li>
+                      <li class="main-nav__item  active">
+                        <a class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                          Контроль доступу
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                          Відеонагляд
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="services.html" class="h4  main-nav__link">Абоненту</a>
+                    <ul class="main-nav__submenu">
+                      <li class="main-nav__item">
+                        <a href="payments.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/stocks_icon.svg);"></span>Методи оплати?
+                        </a>
+                      </li>
+                      <li class="main-nav__item  active">
+                        <a class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/services_icon.svg);"></span>
+                          Телебачення
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="news-single.html" class="main-nav__link">
+                          <span class="main-nav__icon" style="background-image: url(img/tariffs_icon.svg);"></span>
+                          Відеонагляд
+                        </a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="#" class="main-nav__link" target="_blank" rel="nofollow noopener">
+                          <span class="main-nav__icon" style="background-image: url(img/cover_icon.svg);"></span>
+                          SpeedTest
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="news-single.html" class="h4  main-nav__link">Про нас</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="news.html" class="h4  main-nav__link">Новини</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="contacts.html" class="h4  main-nav__link">Контакти</a>
                   </li>
                 </ul>
               </div>
-              <div class="page-footer__col-nav">
-                <div class="page-footer__nav">
-                  <nav class="page-footer__nav-menu">
-                    <ul class="list-nostyled  page-footer__nav-list">
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Інтернет додому</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Для бізнесу</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Забудовникам</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Абоненту</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Про нас</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Новини</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Контакти</a>
-                      </li>
-                      <li class="page-footer__nav-item">
-                        <a href="#" class="page-footer__nav-link">Кабінет</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <section class="page-footer__nav-app">
-                    <h4 class>Мобільний додаток</h4>
-                    <div class="page-footer__app-links">
-                      <a href="#" title="Get It on GooglePlay" target="_blank" rel="nofollow noopener">
-                        <img src="img/google-play-app.svg" alt="GooglePlay" width="152" height="44">
+            </nav>
+          </div>
+          <div class="main-nav__footer">
+            <div class="container">
+              <div class="main-nav__footer-row">
+                <div class="main-nav__copyrights">
+                  <span>© 2019 Kyiv Link. Все права защищены</span>
+                </div>
+                <div class="main-nav__applications">
+                  <a href="#" title="Get It on GooglePlay" target="_blank" rel="nofollow noopener">
+                    <img src="img/google-play-app.svg" alt="GooglePlay" width="152" height="44">
+                  </a>
+                  <a href="#" title="Download on AppStore" target="_blank" rel="nofollow noopener">
+                    <img src="img/apple-store-app.svg" alt="AppStore" width="152" height="44">
+                  </a>
+                </div>
+                <div class="main-nav__online">
+                  <ul class="list-nostyled  messengers">
+                    <li class="messengers__item">
+                      <a href="#" class="messengers__link  messengers__link--messenger">
+                        <span class="visually-hidden">FB Messenger</span>
                       </a>
-                      <a href="#" title="Download on AppStore" target="_blank" rel="nofollow noopener">
-                        <img src="img/apple-store-app.svg" alt="AppStore" width="152" height="44">
+                    </li>
+                    <li class="messengers__item">
+                      <a href="#" class="messengers__link  messengers__link--tg">
+                        <span class="visually-hidden">Telegram</span>
                       </a>
-                    </div>
-                  </section>
+                    </li>
+                    <li class="messengers__item">
+                      <a href="#" class="messengers__link  messengers__link--viber">
+                        <span class="visually-hidden">Viber</span>
+                    </a></li>
+                    <li class="messengers__item">
+                      <a href="#" class="messengers__link  messengers__link--wapp">
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="list-nostyled  socials">
+                    <li class="socials__item">
+                      <a href="#" class="socials__link  socials__link--fb">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link  socials__link--insta">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link  socials__link--ln">
+                        <span class="visually-hidden">LinkedIn</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="page-footer__bottom">
-          <div class="container">
-            <div class="page-footer__bottom-inner">
-              <div class="page-footer__copyrights">
-                <span class="page-footer__copyrights-item">© 2012 - 2020. ТОВ "К-ЛІНК". Всі права захищені.</span>
-                <a href="#" class="page-footer__copyrights-item">Правила надання послуг.</a>
-                <a href="#" class="page-footer__copyrights-item">Публічний договір</a>
-              </div>
-              <div class="page-footer__online">
-                <ul class="list-nostyled  messengers">
-                  <li class="messengers__item">
-                    <a href="#" class="messengers__link  messengers__link--messenger">
-                      <span class="visually-hidden">FB Messenger</span>
-                      <!-- <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fb-messenger_icon"></use></svg> -->
-                    </a>
-                  </li>
-                  <li class="messengers__item">
-                    <a href="#" class="messengers__link  messengers__link--tg">
-                      <span class="visually-hidden">Telegram</span>
-                      <!-- <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram_icon"></use></svg> -->
-                    </a>
-                  </li>
-                  <li class="messengers__item">
-                    <a href="#" class="messengers__link  messengers__link--viber">
-                      <span class="visually-hidden">Viber</span>
-                      <!-- <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber_icon"></use></svg>
-                    </a> -->
-                  </a></li>
-                  <li class="messengers__item">
-                    <a href="#" class="messengers__link  messengers__link--wapp">
-                      <span class="visually-hidden">WhatsApp</span>
-                      <!-- <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp_icon"></use></svg> -->
-                    </a>
-                  </li>
-                </ul>
-                <ul class="list-nostyled  socials">
-                  <li class="socials__item">
-                    <a href="#" class="socials__link  socials__link--fb">
-                      <span class="visually-hidden">Facebook</span>
-                      <!-- <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook_icon"></use></svg> -->
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__link  socials__link--insta">
-                      <span class="visually-hidden">Instagram</span>
-                      <!-- <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram_icon"></use></svg> -->
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__link  socials__link--ln">
-                      <span class="visually-hidden">LinkedIn</span>
-                      <!-- <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin_icon"></use></svg> -->
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="page-footer__dev">
-                <a href="https://it-doors.com" target="_blank" rel="nofollow noopener" title="IT-Doors, компания-разработчик">
-                  <img src="img/it-doors-logo.svg" alt="IT-Doors logo" width="85" height="32">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>  </div>  <!--DEV  @ @include('blocks/request-modal/request-modal.html')  -->  <div class="request-modal modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="request-modal-title" aria-hidden="true" aria-modal="true">    <div class="modal-dialog modal-dialog-centered" role="document">      <div class="modal-content">        <div class="modal-header">          <h3 class="modal-title" id="request-modal-title">Заявка на підключення</h3>          <button type="button" class="close" data-dismiss="modal" aria-label="Close">            <span aria-hidden="true"></span>          </button>          <div class="request-modal__summary">            <table class="request-modal__table">              <tr>                <td>Итого:</td>                <td><span id="final-sum">251</span>₴</td>              </tr>            </table>          </div>        </div>        <div class="modal-body">          <div class="request-modal__form">            <!-- <input form="" type="hidden" name="external-ip" value="">            <input form="" type="hidden" name="back-res-ip" value="">            <input form="" type="hidden" name="add-ip" value="">            <input form="" type="hidden" name="otv-selected" value=""> -->            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-name" class="text-input__field" type="text" name="name" value onblur="this.setAttribute('value', this.value);" required>                <label class="text-input__label" for="input-name">                  <span class="text-input__label-content">ПІП</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-email" class="text-input__field" type="email" name="email" value onblur="this.setAttribute('value', this.value);" required>                <label class="text-input__label" for="input-email">                  <span class="text-input__label-content">E-mail</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-tel" class="text-input__field" type="tel" name="tel" value onblur="this.setAttribute('value', this.value);" required>                <label class="text-input__label" for="input-tel">                  <span class="text-input__label-content">Телефон</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-street" class="text-input__field" type="text" name="street" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="input-street">                  <span class="text-input__label-content">Улица</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="request-modal__input-group">              <div class="text-input">                <div class="text-input__wrapper">                  <input form id="input-house" class="text-input__field" type="text" name="house" value onblur="this.setAttribute('value', this.value);">                  <label class="text-input__label" for="input-house">                    <span class="text-input__label-content">Дом</span>                  </label>                </div>                <span class="text-input__error"></span>              </div>              <div class="text-input">                <div class="text-input__wrapper">                  <input form id="input-floor" class="text-input__field" type="text" name="floor" value onblur="this.setAttribute('value', this.value);">                  <label class="text-input__label" for="input-floor">                    <span class="text-input__label-content">Пов.</span>                  </label>                </div>                <span class="text-input__error"></span>              </div>              <div class="text-input">                <div class="text-input__wrapper">                  <input form id="input-apartment" class="text-input__field" type="text" name="apartment" value onblur="this.setAttribute('value', this.value);">                  <label class="text-input__label" for="input-apartment">                    <span class="text-input__label-content">Кв.</span>                  </label>                </div>                <span class="text-input__error"></span>              </div>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <textarea form id="input-message" class="text-input__field" name="message" rows="4" onblur="this.setAttribute('value', this.value);"></textarea>                <label class="text-input__label" for="input-message">                  <span class="text-input__label-content">Додаткова інформація</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <button id="requestModalSubmit" form type="submit" class="request-modal__submit">Відправити запит</button>            <div class="request-modal__agreement-wrapper">              <p class="request-modal__agreement-info">Нажимая на кнопку, вы принимаете наше <a href="#">«Соглашение о сборе данных»</a></p>              <p class="request-modal__help">Якщо ви не можете визначитися з вибором — зателефонуйте нам по телефону <a href="tel:+380682235270">+38 (068) 223-52-70</a>.</p>              <p class="request-modal__help">Ми підберемо для вас оптимальний варіант.</p>            </div>          </div>        </div>      </div>    </div>  </div>  <script src="js/script.min.js"></script></body></html>
+      </div>
+      <main class="main  main--noindex" role="main">        <div class="container  section  section--solo  page-404">          <div class="page-404__inner">            <h1 class="page-404__title">Сторінка не знайдена або не існує…</h1>            <p class="h4">Cхоже, не вдалося знайти сторінку, яку ви шукаєте</p>            <a href="index.html" class="btn-submit">На головну</a>          </div>          <div class="row">            <div class="page-404__col">              <img src="img/p404.svg" alt="Error 404. The page not found" title="Error 404. The page not found">            </div>          </div>        </div>      </main>    </div>    <div class="page__footer-wrapper">      <!--DEV      @ @include('blocks/page-footer/page-footer.html')      -->      <footer class="page-footer" role="contentinfo">        <div class="page-footer__top">          <div class="container">            <div class="row">              <div class="page-footer__col-contacts">                <ul class="list-nostyled  page-footer__contacts">                  <li class="page-footer__contacts-inner  page-footer__contacts-inner--phone">                    <span>                      <a href="tel:+380682235270" title="Контактный телефон">+38 (068) 223-52-70</a>                    </span>                  </li>                  <li class="page-footer__contacts-inner  page-footer__contacts-inner--email">                    <span>                      <a href="mailto:kyivlink@gmail.com" title="Эл. почта">kyivlink@gmail.com</a>                    </span>                  </li>                  <li class="page-footer__contacts-inner  page-footer__contacts-inner--phone-service">                    <span>                      <a href="tel:+380682235270" title="Тех. поддержка">+38 (068) 223-52-70</a>                    </span>                    <span>                      <a href="tel:+380682235270" title="Тех. поддержка">+38 (068) 223-52-70</a>                    </span>                  </li>                </ul>              </div>              <div class="page-footer__col-nav">                <div class="page-footer__nav">                  <nav class="page-footer__nav-menu">                    <ul class="list-nostyled  page-footer__nav-list">                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Інтернет додому</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Для бізнесу</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Забудовникам</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Абоненту</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Про нас</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Новини</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Контакти</a>                      </li>                      <li class="page-footer__nav-item">                        <a href="#" class="page-footer__nav-link">Кабінет</a>                      </li>                    </ul>                  </nav>                  <section class="page-footer__nav-app">                    <h4 class>Мобільний додаток</h4>                    <div class="page-footer__app-links">                      <a href="#" title="Get It on GooglePlay" target="_blank" rel="nofollow noopener">                        <img src="img/google-play-app.svg" alt="GooglePlay" width="152" height="44">                      </a>                      <a href="#" title="Download on AppStore" target="_blank" rel="nofollow noopener">                        <img src="img/apple-store-app.svg" alt="AppStore" width="152" height="44">                      </a>                    </div>                  </section>                </div>              </div>            </div>          </div>        </div>        <div class="page-footer__bottom">          <div class="container">            <div class="page-footer__bottom-inner">              <div class="page-footer__copyrights">                <span class="page-footer__copyrights-item">© 2012 - 2020. ТОВ "К-ЛІНК". Всі права захищені.</span>                <a href="#" class="page-footer__copyrights-item">Правила надання послуг.</a>                <a href="#" class="page-footer__copyrights-item">Публічний договір</a>              </div>              <div class="page-footer__online">                <ul class="list-nostyled  messengers">                  <li class="messengers__item">                    <a href="#" class="messengers__link  messengers__link--messenger">                      <span class="visually-hidden">FB Messenger</span>                      <!-- <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#fb-messenger_icon"></use></svg> -->                    </a>                  </li>                  <li class="messengers__item">                    <a href="#" class="messengers__link  messengers__link--tg">                      <span class="visually-hidden">Telegram</span>                      <!-- <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram_icon"></use></svg> -->                    </a>                  </li>                  <li class="messengers__item">                    <a href="#" class="messengers__link  messengers__link--viber">                      <span class="visually-hidden">Viber</span>                      <!-- <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber_icon"></use></svg>                    </a> -->                  </a></li>                  <li class="messengers__item">                    <a href="#" class="messengers__link  messengers__link--wapp">                      <span class="visually-hidden">WhatsApp</span>                      <!-- <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp_icon"></use></svg> -->                    </a>                  </li>                </ul>                <ul class="list-nostyled  socials">                  <li class="socials__item">                    <a href="#" class="socials__link  socials__link--fb">                      <span class="visually-hidden">Facebook</span>                      <!-- <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook_icon"></use></svg> -->                    </a>                  </li>                  <li class="socials__item">                    <a href="#" class="socials__link  socials__link--insta">                      <span class="visually-hidden">Instagram</span>                      <!-- <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram_icon"></use></svg> -->                    </a>                  </li>                  <li class="socials__item">                    <a href="#" class="socials__link  socials__link--ln">                      <span class="visually-hidden">LinkedIn</span>                      <!-- <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin_icon"></use></svg> -->                    </a>                  </li>                </ul>              </div>              <div class="page-footer__dev">                <a href="https://it-doors.com" target="_blank" rel="nofollow noopener" title="IT-Doors, компания-разработчик">                  <img src="img/it-doors-logo.svg" alt="IT-Doors logo" width="85" height="32">                </a>              </div>            </div>          </div>        </div>      </footer>    </div>  </div>  <!--DEV  @ @include('blocks/request-modal/request-modal.html')  -->  <div class="request-modal modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="request-modal-title" aria-hidden="true" aria-modal="true">    <div class="modal-dialog modal-dialog-centered" role="document">      <div class="modal-content">        <div class="modal-header">          <h3 class="modal-title" id="request-modal-title">Заявка на підключення</h3>          <button type="button" class="close" data-dismiss="modal" aria-label="Close">            <span aria-hidden="true"></span>          </button>          <div class="request-modal__summary">            <table class="request-modal__table">              <tr>                <td>Итого:</td>                <td><span id="final-sum">251</span>₴</td>              </tr>            </table>          </div>        </div>        <div class="modal-body">          <div class="request-modal__form">            <!-- <input form="" type="hidden" name="external-ip" value="">            <input form="" type="hidden" name="back-res-ip" value="">            <input form="" type="hidden" name="add-ip" value="">            <input form="" type="hidden" name="otv-selected" value=""> -->            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-name" class="text-input__field" type="text" name="name" value onblur="this.setAttribute('value', this.value);" required>                <label class="text-input__label" for="input-name">                  <span class="text-input__label-content">ПІП</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-email" class="text-input__field" type="email" name="email" value onblur="this.setAttribute('value', this.value);" required>                <label class="text-input__label" for="input-email">                  <span class="text-input__label-content">E-mail</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-tel" class="text-input__field" type="tel" name="tel" value onblur="this.setAttribute('value', this.value);" required>                <label class="text-input__label" for="input-tel">                  <span class="text-input__label-content">Телефон</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <input form id="input-street" class="text-input__field" type="text" name="street" value onblur="this.setAttribute('value', this.value);">                <label class="text-input__label" for="input-street">                  <span class="text-input__label-content">Улица</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <div class="request-modal__input-group">              <div class="text-input">                <div class="text-input__wrapper">                  <input form id="input-house" class="text-input__field" type="text" name="house" value onblur="this.setAttribute('value', this.value);">                  <label class="text-input__label" for="input-house">                    <span class="text-input__label-content">Дом</span>                  </label>                </div>                <span class="text-input__error"></span>              </div>              <div class="text-input">                <div class="text-input__wrapper">                  <input form id="input-floor" class="text-input__field" type="text" name="floor" value onblur="this.setAttribute('value', this.value);">                  <label class="text-input__label" for="input-floor">                    <span class="text-input__label-content">Пов.</span>                  </label>                </div>                <span class="text-input__error"></span>              </div>              <div class="text-input">                <div class="text-input__wrapper">                  <input form id="input-apartment" class="text-input__field" type="text" name="apartment" value onblur="this.setAttribute('value', this.value);">                  <label class="text-input__label" for="input-apartment">                    <span class="text-input__label-content">Кв.</span>                  </label>                </div>                <span class="text-input__error"></span>              </div>            </div>            <div class="text-input">              <div class="text-input__wrapper">                <textarea form id="input-message" class="text-input__field" name="message" rows="4" onblur="this.setAttribute('value', this.value);"></textarea>                <label class="text-input__label" for="input-message">                  <span class="text-input__label-content">Додаткова інформація</span>                </label>              </div>              <span class="text-input__error"></span>            </div>            <button id="requestModalSubmit" form type="submit" class="request-modal__submit">Відправити запит</button>            <div class="request-modal__agreement-wrapper">              <p class="request-modal__agreement-info">Нажимая на кнопку, вы принимаете наше <a href="#">«Соглашение о сборе данных»</a></p>              <p class="request-modal__help">Якщо ви не можете визначитися з вибором — зателефонуйте нам по телефону <a href="tel:+380682235270">+38 (068) 223-52-70</a>.</p>              <p class="request-modal__help">Ми підберемо для вас оптимальний варіант.</p>            </div>          </div>        </div>      </div>    </div>  </div>  <script src="js/script.min.js"></script></body></html>
