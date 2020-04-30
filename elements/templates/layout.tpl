@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html class="no-js  page" lang="[[++cultureKey]]" prefix="og: https://ogp.me/ns#">
 <head>
+  {ignore}
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({ 'gtm.start':
+new Date().getTime(),event:'gtm.js' });var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PX6KVDW');</script>
+<!-- End Google Tag Manager -->
+{/ignore}
   <base href="[[++site_url]]"/>
   <meta charset="utf-8">
   {block 'title'}
@@ -12,7 +21,7 @@
   <meta name="description" content="[[*description:notempty=`[[*description]]`]]"/>
   <meta name="keywords" content="[[+seoPro.keywords:notempty=`[[+seoPro.keywords]]`]]"/>
   <meta name="robots" content="[[+seoTab.robotsTag]]"/>
-  <!-- OpenGraph microdata
+  <!-- OpenGraph microdata-->
   <meta property="og:url"           content="[[~[[*id]]? &scheme=`full`]]" />
   <meta property="og:type"          content="website" />
   <meta property="og:site_name"     content="[[++site_name]]" />
@@ -23,7 +32,7 @@
   <meta property="og:image:height"  content="630" />
   <meta property="og:title"         content="[[*longtitle:default=`[[*pagetitle]]`]] | [[++site_name]]" />
   <meta property="og:description"   content="[[*description:default=`[[*description]]`]]" />
-  -->
+  
   <link rel="canonical" href="[[~[[*id]]? &scheme=`full`]]">
   <link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -45,6 +54,12 @@
   <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
   <meta name="theme-color" content="#ffffff"></head>
 <body>
+  {ignore}
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX6KVDW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  {/ignore}
 <noscript>[[$langs? &uk=`У вас відключений JavaScript. Приносимо наші вибачення, але це робить скрутним використання даного сайту` &ru=`У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта` &en=`You have javascript disabled. We apologize, but this makes it difficult to use this site`]]!</noscript>
 <div class="page__inner">
   <div class="page__content">
@@ -215,44 +230,43 @@
               </div>
               <div class="main-nav__online">
                 <ul class="list-nostyled  messengers">
+
                   <li class="messengers__item">
-                    <a href="https://www.messenger.com/t/[[++fb_messenger]]" class="messengers__link" title="FB Messenger">
-                      <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#fb-messenger_icon"/></svg>
+                    <a href="https://www.messenger.com/t/[[++fb_messenger]]" class="messengers__link  messengers__link--messenger">
+                      <span class="visually-hidden">FB Messenger</span>
                     </a>
                   </li>
                   <li class="messengers__item">
-                    <a href="https://t.me/[[++telegram]]" class="messengers__link" title="Telegram">
-                      <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#telegram_icon"/></svg>
+                    <a href="https://t.me/[[++telegram]]" class="messengers__link  messengers__link--tg">
+                      <span class="visually-hidden">Telegram</span>
                     </a>
                   </li>
                   <li class="messengers__item">
-                    <a href="viber://chat?number=+[[++viber]]" class="messengers__link" title="Viber">
-                      <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#viber_icon"/></svg>
-                    </a>
-                  </li>
+                    <a href="viber://chat?number=+[[++viber]]" class="messengers__link  messengers__link--viber">
+                      <span class="visually-hidden">Viber</span>
+                    </a></li>
                   <li class="messengers__item">
-                    <a href="whatsapp://send?phone=+[[++whatsapp]]" class="messengers__link" title="WhatsApp">
-                      <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#whatsapp_icon"/></svg>
+                    <a href="whatsapp://send?phone=+[[++whatsapp]]" class="messengers__link  messengers__link--wapp">
                     </a>
                   </li>
                 </ul>
                 <ul class="list-nostyled  socials">
                   <li class="socials__item">
-                    <a href="[[++facebook_page]]" class="socials__link" title="Facebook">
-                      <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#facebook_icon"/></svg>
+                    <a href="[[++facebook_page]]" class="socials__link  socials__link--fb">
+                      <span class="visually-hidden">Facebook</span>
                     </a>
                   </li>
                   [[++instagram_page:notempty=`
                   <li class="socials__item">
-                    <a href="[[++instagram_page]]" class="socials__link" title="Instagram">
-                      <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#instagram_icon"/></svg>
+                    <a href="[[++instagram_page]]" class="socials__link  socials__link--insta">
+                      <span class="visually-hidden">Instagram</span>
                     </a>
                   </li>
                   `]]
                   [[++linkedin_page:notempty=`
                   <li class="socials__item">
-                    <a href="[[++linkedin_page]]" class="socials__link" title="LinkedIn">
-                      <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#linkedin_icon"/></svg>
+                    <a href="[[++linkedin_page]]" class="socials__link  socials__link--ln">
+                      <span class="visually-hidden">LinkedIn</span>
                     </a>
                   </li>
                   `]]
@@ -351,43 +365,43 @@
             <div class="page-footer__online">
               <ul class="list-nostyled  messengers">
                 <li class="messengers__item">
-                  <a href="https://www.messenger.com/t/[[++fb_messenger]]" class="messengers__link" title="FB Messenger" target="_blank">
-                    <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#fb-messenger_icon"/></svg>
+                  <a href="https://www.messenger.com/t/[[++fb_messenger]]" class="messengers__link  messengers__link--messenger">
+                    <span class="visually-hidden">FB Messenger</span>
                   </a>
                 </li>
                 <li class="messengers__item">
-                  <a href="https://t.me/[[++telegram]]" class="messengers__link" title="Telegram" target="_blank">
-                    <svg width="26" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#telegram_icon"/></svg>
+                  <a href="https://t.me/[[++telegram]]" class="messengers__link  messengers__link--tg">
+                    <span class="visually-hidden">Telegram</span>
                   </a>
                 </li>
                 <li class="messengers__item">
-                  <a href="viber://chat?number=+[[++viber]]" class="messengers__link" title="Viber" target="_blank">
-                    <svg width="26" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#viber_icon"/></svg>
+                  <a href="viber://chat?number=+[[++viber]]" class="messengers__link  messengers__link--viber">
+                    <span class="visually-hidden">Viber</span>
                   </a>
                 </li>
                 <li class="messengers__item">
-                  <a href="whatsapp://send?phone=+[[++whatsapp]]" class="messengers__link" title="WhatsApp" target="_blank">
-                    <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#whatsapp_icon"/></svg>
+                  <a href="whatsapp://send?phone=+[[++whatsapp]]" class="messengers__link  messengers__link--wapp">
+                    <span class="visually-hidden">WhatsApp</span>
                   </a>
                 </li>
               </ul>
               <ul class="list-nostyled  socials">
                 <li class="socials__item">
-                  <a href="[[++facebook_page]]" class="socials__link" title="Facebook" target="_blank">
-                    <svg width="14" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#facebook_icon"/></svg>
+                  <a href="[[++facebook_page]]" class="socials__link  socials__link--fb" target="_blank" rel="nofollow noopener">
+                    <span class="visually-hidden">Facebook</span>
                   </a>
                 </li>
                 [[++instagram_page:notempty=`
                 <li class="socials__item">
-                  <a href="[[++instagram_page]]" class="socials__link" title="Instagram" target="_blank">
-                    <svg width="28.8" height="28.8"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#instagram_icon"/></svg>
+                  <a href="[[++instagram_page]]" class="socials__link  socials__link--insta" target="_blank" rel="nofollow noopener">
+                    <span class="visually-hidden">Instagram</span>
                   </a>
                 </li>
                 `]]
                 [[++linkedin_page:notempty=`
                 <li class="socials__item">
-                  <a href="[[++linkedin_page]]" class="socials__link" title="LinkedIn" target="_blank">
-                    <svg width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite-svg.svg#linkedin_icon"/></svg>
+                  <a href="[[++linkedin_page]]" class="socials__link  socials__link--ln" target="_blank" rel="nofollow noopener">
+                    <span class="visually-hidden">LinkedIn</span>
                   </a>
                 </li>
                 `]]

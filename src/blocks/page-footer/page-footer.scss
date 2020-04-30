@@ -120,7 +120,7 @@
 
     &--phone {
 
-      span::before {
+      span:first-child::before {
         background-image: svg-load('../blocks/page-footer/bg-img/phone-icon.svg', fill=$white);
       }
     }
@@ -199,6 +199,7 @@
 
     &:last-child {
       margin-bottom: 0;
+      margin-right: auto;
     }
 
     .h3,
