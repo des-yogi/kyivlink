@@ -382,6 +382,16 @@ a {
       background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
     }
   }
+
+  &--new-arrow {
+    background-size: 19px 13px;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-new.svg', fill=$text-muted);
+
+    &:hover,
+    &:focus {
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-new.svg', fill=$main-color);
+    }
+  }
 }
 
 .swiper-button-prev {
